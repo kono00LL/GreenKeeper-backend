@@ -1,3 +1,4 @@
+const { createPostRouter } = require('./posts/routes');
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
@@ -5,8 +6,21 @@ const { createHash, randomUUID } = require('node:crypto');
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-function createApp({ db, jwtSecret = process.env.JWT_SECRET || 'greenkeeper-local-development-secret', accessTokenTtl = process.env.ACCESS_TOKEN_TTL || '15m', refreshTokenTtl = process.env.REFRESH_TOKEN_TTL || '7d', defaultAvatarUrl = process.env.DEFAULT_AVATAR_URL || null }) {
+function createApp({ db, jwtSecret = process.env.JWT_SECRET || 'greenkeeper-local-development-secret', accessTokenTtl = process.env.ACCESS_TOKEN_TTL || '15m', refreshTokenTtl = process.env.REFRESH_TOKEN_TTL || '7d', defaultAvatarUrl = process.env.DEFAULT_AVATAR_URL || null, corsOrigins = (process.env.CORS_ORIGINS || 'http://localhost:8081,http://127.0.0.1:8081').split(',').map(origin => origin.trim()).filter(Boolean) }) {
   const app = express();
+  app.use((req, res, next) => {
+    const origin = req.get('origin');
+    res.vary('Origin');
+    if (origin && corsOrigins.includes(origin)) {
+      res.set('Access-Control-Allow-Origin', origin);
+      res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, OPTIONS');
+      res.set('Access-Control-Allow-Headers', 'Authorization, Content-Type');
+      if (req.method === 'OPTIONS') return res.sendStatus(204);
+    } else if (origin && req.method === 'OPTIONS') {
+      return res.status(403).json({ error: { code: 'CORS_ORIGIN_DENIED', message: 'Origin is not allowed' } });
+    }
+    next();
+  });
   app.use(express.json({ limit: '100kb' }));
   const hashToken = (token) => createHash('sha256').update(token).digest('hex');
   const selectUser = 'SELECT id AS user_id, email AS user_email, user_name, avatar_url, gender, created_at AS created_time, status, last_login_at FROM users WHERE id = ?';
@@ -115,16 +129,7 @@ function createApp({ db, jwtSecret = process.env.JWT_SECRET || 'greenkeeper-loca
   app.post('/user/logout', logout);
   app.get('/auth/me', requireAccess, (req, res) => res.json({ user: userDto(req.user) }));
 
-  app.get('/posts', (req, res) => {
-    const page = Number(req.query.page ?? 1); const pageSize = Number(req.query.pageSize ?? 10);
-    if (!Number.isInteger(page) || page < 1 || !Number.isInteger(pageSize) || pageSize < 1 || pageSize > 50) return res.status(400).json({ error: { code: 'VALIDATION_ERROR', message: 'page must be positive and pageSize must be between 1 and 50' } });
-    const total = db.prepare('SELECT COUNT(*) AS count FROM posts').get().count;
-    const items = db.prepare('SELECT id, title, excerpt, content, cover_image AS coverImage, created_at AS createdAt FROM posts ORDER BY created_at DESC, id ASC LIMIT ? OFFSET ?').all(pageSize, (page - 1) * pageSize);
-    res.json({ page, pageSize, total, totalPages: Math.ceil(total / pageSize), items });
-  });
-  app.get('/posts/:id', (req, res) => { const post = db.prepare('SELECT id, title, excerpt, content, cover_image AS coverImage, created_at AS createdAt FROM posts WHERE id = ?').get(req.params.id); if (!post) return res.status(404).json({ error: { code: 'POST_NOT_FOUND', message: 'Post not found' } }); res.json({ post }); });
-  app.put('/posts/:id/collection', requireAccess, (req, res) => { const collected = req.body?.collected; if (typeof collected !== 'boolean') return res.status(400).json({ error: { code: 'VALIDATION_ERROR', message: 'collected must be a boolean' } }); if (!db.prepare('SELECT id FROM posts WHERE id = ?').get(req.params.id)) return res.status(404).json({ error: { code: 'POST_NOT_FOUND', message: 'Post not found' } }); if (collected) db.prepare('INSERT OR IGNORE INTO collections (user_id, post_id) VALUES (?, ?)').run(req.user.user_id, req.params.id); else db.prepare('DELETE FROM collections WHERE user_id = ? AND post_id = ?').run(req.user.user_id, req.params.id); res.json({ post_id: req.params.id, collected }); });
-  app.get('/me/collections', requireAccess, (req, res) => res.json({ items: db.prepare('SELECT p.id, p.title, p.excerpt, p.content, p.cover_image AS coverImage, p.created_at AS createdAt, c.created_at AS collectedAt FROM collections c JOIN posts p ON p.id = c.post_id WHERE c.user_id = ? ORDER BY c.created_at DESC, p.created_at DESC').all(req.user.user_id) }));
+  app.use(createPostRouter({ db, requireAccess }));
   app.use((req, res) => res.status(404).json({ error: { code: 'NOT_FOUND', message: 'Route not found' } }));
   app.use((error, req, res, next) => { if (res.headersSent) return next(error); res.status(500).json({ error: { code: 'INTERNAL_ERROR', message: 'An unexpected error occurred' } }); });
   return app;

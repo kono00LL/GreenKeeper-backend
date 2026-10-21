@@ -100,4 +100,37 @@ test('keeps post browsing and collection behavior', async () => {
   assert.equal((await request(app).put(`/posts/${postId}/collection`).set(auth(owner.access_token)).send({ collected: false })).body.collected, false);
 });
 
+test('seeds seven additional articles with increasing content lengths idempotently', () => {
+  const titles = [
+    '给新手的阳台种植起步清单',
+    '用一周观察法判断植物是否缺水',
+    '从叶片变化认识室内光照',
+    '给香草植物搭配透气的盆土',
+    '换季时如何调整植物的养护节奏',
+    '用扦插繁殖一盆新的绿植',
+    '把阳台规划成四季都有收获的小花园',
+  ];
+
+  const seeded = db.prepare('SELECT title, content FROM posts WHERE title IN (?, ?, ?, ?, ?, ?, ?)').all(...titles);
+  assert.equal(seeded.length, 7);
+  assert.deepEqual(
+    db.prepare('SELECT title FROM posts ORDER BY created_at DESC, id ASC LIMIT 7').all().map((post) => post.title),
+    titles,
+  );
+  const lengths = titles.map((title) => {
+    const post = seeded.find((item) => item.title === title);
+    assert.ok(post, `missing seeded article: ${title}`);
+    return Array.from(post.content).length;
+  });
+  const expectedRanges = [[80, 180], [180, 330], [330, 480], [480, 630], [630, 780], [780, 930], [900, 1100]];
+  lengths.forEach((length, index) => {
+    assert.ok(length >= expectedRanges[index][0] && length <= expectedRanges[index][1], `article ${index + 1}: ${length} characters`);
+  });
+  assert.ok(lengths.every((length, index) => index === 0 || length > lengths[index - 1]), lengths.join(', '));
+
+  const countBefore = db.prepare('SELECT COUNT(*) AS count FROM posts').get().count;
+  initializeDatabase(db);
+  assert.equal(db.prepare('SELECT COUNT(*) AS count FROM posts').get().count, countBefore);
+});
+
 test('reports service health', async () => { const response = await request(app).get('/health'); assert.equal(response.status, 200); assert.equal(response.body.status, 'ok'); });
