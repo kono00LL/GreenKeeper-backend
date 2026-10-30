@@ -4,13 +4,16 @@ const fs = require('node:fs');
 const Database = require('better-sqlite3');
 const { initializeDatabase } = require('./database');
 const { createApp } = require('./app');
+const { createConfiguredImageStorage } = require('./images/config');
 
 const dataDirectory = process.env.DATA_DIRECTORY || path.join(__dirname, '..', 'data');
+const uploadDirectory = path.join(dataDirectory, 'uploads');
+const imageStorage = createConfiguredImageStorage({ directory: uploadDirectory });
 fs.mkdirSync(dataDirectory, { recursive: true });
 const db = new Database(path.join(dataDirectory, 'greenkeeper.sqlite'));
 initializeDatabase(db);
 
-const app = createApp({ db });
+const app = createApp({ db, uploadDirectory, imageStorage, uploadTempDirectory: path.join(dataDirectory, '.uploads-tmp') });
 const port = Number(process.env.PORT || 8080);
 const server = app.listen(port, '0.0.0.0', () => {
   console.log(`GreenKeeper API listening on http://localhost:${port}`);
@@ -25,3 +28,9 @@ function shutdown() {
 
 process.on('SIGINT', shutdown);
 process.on('SIGTERM', shutdown);
+process.on('uncaughtException', (error) => {
+  console.error('[uncaughtException]', error);
+});
+process.on('unhandledRejection', (reason) => {
+  console.error('[unhandledRejection]', reason);
+});

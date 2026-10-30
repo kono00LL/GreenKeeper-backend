@@ -1,13 +1,30 @@
+const { createPlantnetClient } = require('./identifications/plantnet-client');
+const { createIdentificationRouter } = require('./identifications/routes');
 const { createPostRouter } = require('./posts/routes');
+const { createPlantRouter } = require('./plants/routes');
+const { createPlantRepository } = require('./plants/repository');
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { createHash, randomUUID } = require('node:crypto');
+const path = require('node:path');
+const { createImageRouter, createImageReadRouter } = require('./images/routes');
+const { createImageStorage } = require('./images/storage');
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-function createApp({ db, jwtSecret = process.env.JWT_SECRET || 'greenkeeper-local-development-secret', accessTokenTtl = process.env.ACCESS_TOKEN_TTL || '15m', refreshTokenTtl = process.env.REFRESH_TOKEN_TTL || '7d', defaultAvatarUrl = process.env.DEFAULT_AVATAR_URL || null, corsOrigins = (process.env.CORS_ORIGINS || 'http://localhost:8081,http://127.0.0.1:8081').split(',').map(origin => origin.trim()).filter(Boolean) }) {
+function createApp({ db, identificationClient = createPlantnetClient({ apiKey: process.env.PLANTNET_API_KEY || '' }), uploadDirectory = path.join(process.env.DATA_DIRECTORY || path.join(__dirname, '..', 'data'), 'uploads'), uploadTempDirectory = path.join(path.dirname(uploadDirectory), '.uploads-tmp'), imageStorage = createImageStorage(uploadDirectory), jwtSecret = process.env.JWT_SECRET || 'greenkeeper-local-development-secret', accessTokenTtl = process.env.ACCESS_TOKEN_TTL || '15m', refreshTokenTtl = process.env.REFRESH_TOKEN_TTL || '7d', defaultAvatarUrl = process.env.DEFAULT_AVATAR_URL || null, corsOrigins = (process.env.CORS_ORIGINS || 'http://localhost:8081,http://127.0.0.1:8081').split(',').map(origin => origin.trim()).filter(Boolean) }) {
   const app = express();
+  const debug = process.env.DEBUG === '1' || process.env.NODE_ENV !== 'production';
+  if (debug) {
+    app.use((req, res, next) => {
+      const startedAt = Date.now();
+      res.on('finish', () => {
+        console.log(`[http] ${req.method} ${req.originalUrl} ${res.statusCode} ${Date.now() - startedAt}ms`);
+      });
+      next();
+    });
+  }
   app.use((req, res, next) => {
     const origin = req.get('origin');
     res.vary('Origin');
@@ -129,9 +146,18 @@ function createApp({ db, jwtSecret = process.env.JWT_SECRET || 'greenkeeper-loca
   app.post('/user/logout', logout);
   app.get('/auth/me', requireAccess, (req, res) => res.json({ user: userDto(req.user) }));
 
+  app.use(createIdentificationRouter({ requireAccess, uploadTempDirectory, client: identificationClient, plantRepository: createPlantRepository(db) }));
+  app.use(createImageRouter({ requireAccess, imageStorage, uploadTempDirectory }));
+  app.use('/uploads', express.static(uploadDirectory, { index: false, dotfiles: 'deny', setHeaders: (res) => res.set('X-Content-Type-Options', 'nosniff') }));
+  app.use(createImageReadRouter(imageStorage));
+  app.use('/plants', createPlantRouter({ db }));
   app.use(createPostRouter({ db, requireAccess }));
   app.use((req, res) => res.status(404).json({ error: { code: 'NOT_FOUND', message: 'Route not found' } }));
-  app.use((error, req, res, next) => { if (res.headersSent) return next(error); res.status(500).json({ error: { code: 'INTERNAL_ERROR', message: 'An unexpected error occurred' } }); });
+  app.use((error, req, res, next) => {
+    if (res.headersSent) return next(error);
+    if (debug) console.error(`[error] ${req.method} ${req.originalUrl}`, error);
+    res.status(500).json({ error: { code: 'INTERNAL_ERROR', message: 'An unexpected error occurred' } });
+  });
   return app;
 }
 

@@ -5,6 +5,7 @@ const Database = require('better-sqlite3');
 const jwt = require('jsonwebtoken');
 const { createApp } = require('../src/app');
 const { initializeDatabase } = require('../src/database');
+const { seedStarterPlants } = require('../src/plants/seed-starter');
 
 let db; let app;
 beforeEach(() => { db = new Database(':memory:'); initializeDatabase(db); app = createApp({ db, jwtSecret: 'test-secret', accessTokenTtl: '1h', refreshTokenTtl: '7d' }); });
@@ -134,3 +135,64 @@ test('seeds seven additional articles with increasing content lengths idempotent
 });
 
 test('reports service health', async () => { const response = await request(app).get('/health'); assert.equal(response.status, 200); assert.equal(response.body.status, 'ok'); });
+
+test('serves plant categories, category lists, and detail as read-only public data', async () => {
+  seedStarterPlants(db);
+
+  const categories = await request(app).get('/plants/categories');
+  assert.equal(categories.status, 200);
+  assert.equal(categories.body.categories.length, 8);
+  assert.equal(categories.body.categories.find((item) => item.slug === 'ferns').plantCount, 2);
+
+  const list = await request(app).get('/plants?category=ferns');
+  assert.equal(list.status, 200);
+  assert.equal(list.body.items.length, 2);
+  const fern = list.body.items.find((item) => item.nameZh === '铁线蕨');
+  assert.deepEqual(fern, {
+    id: '9eb1ef55-e45b-46e3-93e3-ab9ce86c9ae3',
+    nameZh: '铁线蕨',
+    nameEn: null,
+    scientificName: 'Adiantum capillus-veneris',
+    identityStatus: 'pending',
+    categories: [{ slug: 'ferns', nameZh: '蕨类', nameEn: 'Ferns' }],
+  });
+
+  const detail = await request(app).get(`/plants/${fern.id}`);
+  assert.equal(detail.status, 200);
+  assert.equal(detail.body.plant.summary, null);
+  assert.equal(detail.body.plant.wateringRequirement, null);
+  assert.equal(detail.body.plant.categories[0].nameZh, '蕨类');
+  assert.equal((await request(app).get('/plants/not-a-plant')).status, 404);
+  assert.equal((await request(app).get('/plants?category=not-a-category')).status, 400);
+});
+
+test('plant lists preserve multiple categories and reject malformed category filters', async () => {
+  seedStarterPlants(db);
+  const list = await request(app).get('/plants?category=flowers');
+  const hibiscus = list.body.items.find((plant) => plant.nameZh === '朱槿');
+  assert.deepEqual(hibiscus.categories.map((category) => category.slug), ['flowers', 'shrubs']);
+  assert.equal((await request(app).get('/plants?category=')).status, 400);
+  assert.equal((await request(app).get('/plants?category=ferns&category=cacti')).status, 400);
+  const all = await request(app).get('/plants');
+  assert.equal(all.body.items.length, 20);
+  assert.equal(new Set(all.body.items.map((plant) => plant.id)).size, 20);
+});
+
+test('plant reads return database values, nulls, aliases and an empty category without writes', async () => {
+  const categories = await request(app).get('/plants/categories');
+  assert.ok(categories.body.categories.every((category) => category.plantCount === 0));
+  assert.deepEqual((await request(app).get('/plants?category=ferns')).body.items, []);
+  seedStarterPlants(db);
+  const id = db.prepare("SELECT id FROM plants WHERE name_zh = '铁线蕨'").get().id;
+  db.prepare('UPDATE plants SET temperature_min_c = 0, temperature_notes = ?, summary = ? WHERE id = ?')
+    .run('测试说明', '来自数据库的测试简介', id);
+  db.prepare('INSERT INTO plant_aliases (plant_id, alias, language) VALUES (?, ?, ?)').run(id, '测试别名', 'zh');
+  const before = db.prepare('SELECT * FROM plants WHERE id = ?').get(id);
+  const response = await request(app).get('/plants/' + id);
+  assert.equal(response.body.plant.summary, before.summary);
+  assert.equal(response.body.plant.temperatureMinC, 0);
+  assert.equal(response.body.plant.temperatureMaxC, null);
+  assert.deepEqual(response.body.plant.aliases, [{ name: '测试别名', language: 'zh' }]);
+  assert.equal(response.body.plant.publicationStatus, undefined);
+  assert.deepEqual(db.prepare('SELECT * FROM plants WHERE id = ?').get(id), before);
+});

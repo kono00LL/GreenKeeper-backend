@@ -1,0 +1,1104 @@
+openapi: 3.0.3
+info:
+  title: GreenKeeper 后端接口
+  version: 1.0.0
+  description: >-
+    GreenKeeper 后端提供健康检查、用户认证与资料管理、图片上传读取、文章浏览和文章收藏功能。
+    除特别注明外，文章浏览接口允许访客访问；需要身份的接口使用 JWT Bearer Token。
+    /auth/register、/auth/login、/auth/refresh 与 /auth/me 为兼容旧客户端保留的路径，功能对应相应的 /user 或用户资料接口。
+servers:
+  - url: http://localhost:8080
+    description: 本地开发服务器；可按实际部署地址替换
+tags:
+  - name: 植物识别
+    description: 通过 Pl@ntNet 识别单张植物照片，返回候选物种，不永久保存照片。
+  - name: 植物资料
+    description: 公开只读植物分类、植物列表和详情，当前包含身份待核对的试点资料。
+  - name: 健康检查
+    description: 检查 API 服务是否正常响应。
+  - name: 用户认证
+    description: 注册、登录、刷新令牌和退出登录。访问受保护接口时使用 access_token；刷新接口使用 refresh_token。
+  - name: 用户资料
+    description: 查看或更新当前登录用户的资料。
+  - name: 图片
+    description: 上传图片并读取已上传图片。上传需要登录，支持 JPEG、PNG、WebP，单张最大 10 MiB。
+  - name: 文章
+    description: 分页浏览文章列表并读取文章详情。访客可访问；携带 Authorization 时必须提供有效的访问令牌。
+  - name: 收藏
+    description: 管理当前用户的文章收藏并查看收藏列表。
+paths:
+  /plant-identifications:
+    post:
+      tags: [植物识别]
+      operationId: identifyPlant
+      summary: 识别一张植物照片
+      description: >-
+        需要有效的 access_token。仅接收一个 image 文件字段，支持真实 JPEG 或 PNG，最大 10 MiB。
+        照片只暂存于后端，校验后将二进制提交给 Pl@ntNet，请求结束清理临时文件。
+        返回最多三个候选，按上游匹配分数排序；分数不是经过校准的识别准确率。
+        无匹配返回 200、bestMatch 为 null、candidates 为空数组。不会自动重试上游请求。
+        后端以无作者学名精确关联本地资料，只有唯一、已核对且已发布的记录提供详情 UUID。
+        关联结果不改变候选顺序、分数或 bestMatch。
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              additionalProperties: false
+              required: [image]
+              properties:
+                image:
+                  type: string
+                  format: binary
+                  description: 单张 JPEG 或 PNG，最大 10485760 字节。
+            encoding:
+              image:
+                contentType: image/jpeg, image/png
+      responses:
+        '200':
+          description: 候选识别结果或无匹配结果。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/PlantIdentification' }
+        '400':
+          description: IMAGE_REQUIRED、IMAGE_REQUEST_INVALID 或 IMAGE_INVALID；缺图、额外字段、多图、格式错误或损坏图片。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '413':
+          description: IMAGE_TOO_LARGE，文件超过 10 MiB。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '415':
+          description: IMAGE_TYPE_UNSUPPORTED，仅支持 JPEG/PNG 且实际格式必须与声明匹配。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '429':
+          description: IDENTIFICATION_LIMIT_REACHED，上游识别额度不足或请求过于频繁。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '500':
+          description: IMAGE_STORAGE_ERROR，临时文件操作失败，或其他后端内部错误。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '502':
+          description: IDENTIFICATION_UNAVAILABLE，上游网络错误、服务异常或无效响应。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '503':
+          description: IDENTIFICATION_NOT_CONFIGURED，后端未设置 PLANTNET_API_KEY；或 IDENTIFICATION_CONFIGURATION_ERROR，上游密钥鉴权失败。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '504':
+          description: IDENTIFICATION_TIMEOUT，上游识别超时（25 秒）。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+  /plants/categories:
+    get:
+      tags: [植物资料]
+      operationId: listPlantCategories
+      summary: 读取按数据库顺序排列的植物分类及数量
+      security: []
+      responses:
+        '200':
+          description: 分类数量可为零；一种植物可以计入多个分类。
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [categories]
+                properties:
+                  categories:
+                    type: array
+                    items: { $ref: '#/components/schemas/PlantCategory' }
+
+  /plants:
+    get:
+      tags: [植物资料]
+      operationId: listPlants
+      summary: 按分类读取植物列表
+      description: 不传 category 时返回全部植物且每株只出现一次。每项包含植物的全部分类；当前返回所有待核对试点，不表示已经发布或完成身份核验。按中文名和内部 ID 稳定排序。
+      security: []
+      parameters:
+        - in: query
+          name: category
+          required: false
+          schema: { type: string, minLength: 1 }
+          description: 分类 slug，例如 ferns。空值、重复参数或未知分类返回 400。
+      responses:
+        '200':
+          description: 有效分类暂无植物时 items 为空数组。
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/PlantSummary' }
+        '400':
+          description: INVALID_CATEGORY，分类参数无效。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+
+  /plants/{id}:
+    get:
+      tags: [植物资料]
+      operationId: getPlant
+      summary: 按内部 UUID 读取植物详情
+      description: 缺失资料使用 null，别名与分类始终为数组。不包含图片、来源管理字段或个人花园写入能力。
+      security: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: 植物基础身份、简介和五项养护资料。
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [plant]
+                properties:
+                  plant: { $ref: '#/components/schemas/PlantDetail' }
+        '404':
+          description: PLANT_NOT_FOUND，不存在该内部 ID。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+
+  /health:
+    get:
+      tags: [健康检查]
+      operationId: getHealth
+      summary: 检查服务状态
+      responses:
+        '200':
+          description: 服务正常运行，返回状态值 ok。
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [status]
+                properties:
+                  status:
+                    type: string
+                    example: ok
+
+  /user/register:
+    post:
+      tags: [用户认证]
+      operationId: registerUser
+      summary: 注册用户
+      description: 使用邮箱和密码创建账户。密码长度为 8 至 72 个字符；可选提供昵称和头像地址。注册成功后会立即创建会话并返回用户资料及 access_token、refresh_token。
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterRequest'
+      responses:
+        '201':
+          description: 注册成功，返回用户资料以及用于访问和续期的令牌。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '409':
+          description: 该邮箱已注册，请改用其他邮箱或直接登录。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiError'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /auth/register:
+    post:
+      tags: [用户认证]
+      operationId: registerUserCompatibilityAlias
+      summary: 注册用户（兼容路径）
+      description: 与 POST /user/register 功能相同，为仍在使用旧版路径的客户端保留。请求字段、校验规则和响应结构均一致。
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterRequest'
+      responses:
+        '201':
+          description: 注册成功，返回用户资料以及用于访问和续期的令牌。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '409':
+          description: 该邮箱已注册，请改用其他邮箱或直接登录。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiError'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /user/login:
+    post:
+      tags: [用户认证]
+      operationId: loginUser
+      summary: 用户登录
+      description: 使用已注册邮箱和密码登录。邮箱会去除首尾空白并按小写形式匹配；成功后返回用户资料及新的令牌对。
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        '200':
+          description: 登录成功，返回用户资料以及用于访问和续期的令牌。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          description: 邮箱或密码错误，或账户当前不可用。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiError'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /auth/login:
+    post:
+      tags: [用户认证]
+      operationId: loginUserCompatibilityAlias
+      summary: 用户登录（兼容路径）
+      description: 与 POST /user/login 功能相同，为仍在使用旧版路径的客户端保留。请求字段、校验规则和响应结构均一致。
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        '200':
+          description: 登录成功，返回用户资料以及用于访问和续期的令牌。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          description: 邮箱或密码错误，或账户当前不可用。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiError'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /user/refresh:
+    get:
+      tags: [用户认证]
+      operationId: refreshUserTokens
+      summary: 刷新访问令牌
+      description: 使用当前 refresh_token 换取一对新令牌。请将 refresh_token 放在 Authorization 请求头的 Bearer 值中；旧 refresh_token 刷新成功后立即失效。重复使用已失效令牌会返回 401。
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: 刷新成功，返回新的 access_token 和 refresh_token。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenPair'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /auth/refresh:
+    get:
+      tags: [用户认证]
+      operationId: refreshUserTokensCompatibilityGet
+      summary: 刷新访问令牌（GET 兼容路径）
+      description: 与 GET /user/refresh 功能相同，为仍在使用旧版路径的客户端保留。refresh_token 通过 Authorization Bearer 传递。
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: 刷新成功，返回新的 access_token 和 refresh_token。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenPair'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+    post:
+      tags: [用户认证]
+      operationId: refreshUserTokensCompatibilityPost
+      summary: 刷新访问令牌（POST 兼容路径）
+      description: >-
+        与 GET /user/refresh 及 GET /auth/refresh 功能相同，为旧版客户端提供 POST 兼容方式。
+        refresh_token 可通过 Authorization Bearer 传递，也可放在 JSON 请求体的 refreshToken 字段中；两者同时提供时优先使用请求头令牌。
+      security:
+        - bearerAuth: []
+        - {}
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                refreshToken:
+                  type: string
+                  description: 未提供 Authorization 请求头时使用的当前刷新令牌。
+      responses:
+        '200':
+          description: 刷新成功，返回新的 access_token 和 refresh_token。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenPair'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /user/userinfo:
+    get:
+      tags: [用户资料]
+      operationId: getUserInfo
+      summary: 获取当前用户资料
+      description: 使用有效的 access_token 查询当前登录用户资料。响应中的 user 对象包含用户标识、邮箱、昵称、头像、性别、创建时间、账户状态和最近登录时间。
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: 当前用户资料，字段结构见 User。
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [user]
+                properties:
+                  user:
+                    $ref: '#/components/schemas/User'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+    put:
+      tags: [用户资料]
+      operationId: updateUserInfo
+      summary: 更新当前用户资料
+      description: 至少提交一个可修改字段。user_name 长度为 1 至 10 个字符，avatar_url 最长 500 个字符且可传 null，gender 仅接受 male、female 或 private。未提交的字段保持原值。
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateUserRequest'
+      responses:
+        '200':
+          description: 更新后的完整用户资料。
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [user]
+                properties:
+                  user:
+                    $ref: '#/components/schemas/User'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /auth/me:
+    get:
+      tags: [用户资料]
+      operationId: getCurrentUserCompatibilityAlias
+      summary: 获取当前用户资料（兼容路径）
+      description: 与 GET /user/userinfo 功能相同，为仍在使用旧版路径的客户端保留；需要有效的 access_token。
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: 当前用户资料，字段结构见 User。
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [user]
+                properties:
+                  user:
+                    $ref: '#/components/schemas/User'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /user/logout:
+    post:
+      tags: [用户认证]
+      operationId: logoutUser
+      summary: 退出登录并撤销会话
+      description: 使用当前 access_token 或 refresh_token 撤销会话。令牌可放在 Authorization Bearer 请求头中；也可在 JSON 请求体中通过 refreshToken 提供刷新令牌。使用 access_token 时会撤销该用户尚未撤销的刷新会话。
+      security:
+        - bearerAuth: []
+        - {}
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                refreshToken:
+                  type: string
+                  description: 需要撤销的 refresh_token；请求头未提供令牌时使用。
+      responses:
+        '200':
+          description: 令牌已接受撤销请求，返回 success=true。
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [success]
+                properties:
+                  success:
+                    type: boolean
+                    enum: [true]
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /images:
+    post:
+      tags: [图片]
+      operationId: uploadImage
+      summary: 上传图片
+      description: 需要有效的 access_token。使用 multipart/form-data 上传且只允许一个名为 image 的文件字段；支持 JPEG、PNG、WebP，文件内容必须与声明格式匹配，最大 10 MiB。成功响应包含生成的 key、可读取路径、媒体类型、大小和图片尺寸。
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [image]
+              properties:
+                image:
+                  type: string
+                  format: binary
+                  description: 单张图片文件；支持 JPEG、PNG 或 WebP，最大 10 MiB。
+      responses:
+        '201':
+          description: 图片保存成功，返回图片标识、访问路径、媒体类型、字节数和宽高。
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [image]
+                properties:
+                  image:
+                    $ref: '#/components/schemas/UploadedImage'
+        '400':
+          description: 缺少文件、字段名错误、上传多张文件、请求格式错误或图片数据损坏。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '413':
+          description: 图片文件超过 10 MiB 限制。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiError'
+        '415':
+          description: 不支持该图片格式，或文件内容与声明的媒体类型不匹配。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiError'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /uploads/{key}:
+    get:
+      tags: [图片]
+      operationId: getUploadedImage
+      summary: 读取已上传图片
+      description: 根据上传接口返回的图片 key 读取图片。优先返回历史本地文件；COS 模式下非本地文件返回 302 到有效期 5 分钟的签名 HTTPS 地址。应用图片路径稳定，可长期保存，签名目标不能长期保存。读取允许访客；对象不存在时由本地后端或 COS 返回错误。
+      parameters:
+        - name: key
+          in: path
+          required: true
+          description: POST /images 上传成功后返回的图片 key，包含生成文件名及扩展名。
+          schema:
+            type: string
+            pattern: '^[a-f0-9-]+\.(jpg|png|webp)$'
+      responses:
+        '200':
+          description: 图片二进制内容，响应媒体类型与实际文件格式一致。
+          content:
+            image/jpeg:
+              schema:
+                type: string
+                format: binary
+            image/png:
+              schema:
+                type: string
+                format: binary
+            image/webp:
+              schema:
+                type: string
+                format: binary
+        '302':
+          description: COS 模式跳转到私有桶的短时签名地址；Cache-Control 为 no-store。
+          headers:
+            Location:
+              description: 有效期 5 分钟的 COS HTTPS 读取地址。
+              schema:
+                type: string
+                format: uri
+        '404':
+          description: 本地模式图片不存在，或 COS 模式的文件名不在允许范围。
+        '500':
+          description: COS 签名失败，IMAGE_STORAGE_ERROR。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+
+  /posts:
+    get:
+      tags: [文章]
+      operationId: listPosts
+      summary: 分页获取文章列表
+      description: 访客可直接读取文章列表；如果请求携带 Authorization，则必须是有效的 access_token。page 从 1 开始，默认值为 1；pageSize 默认 10，范围为 1 至 50。响应包含分页统计和文章数组；登录用户还会得到个性化收藏状态。
+      security:
+        - bearerAuth: []
+        - {}
+      parameters:
+        - name: page
+          in: query
+          required: false
+          description: 页码，从 1 开始，默认 1。
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: pageSize
+          in: query
+          required: false
+          description: 每页文章数量，范围 1 至 50，默认 10。
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 50
+            default: 10
+      responses:
+        '200':
+          description: 分页结果包含当前页、每页数量、总数、总页数和文章列表。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostPage'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /posts/{id}:
+    get:
+      tags: [文章]
+      operationId: getPost
+      summary: 获取文章详情
+      description: 访客可读取文章详情；如果请求携带 Authorization，则必须是有效的 access_token。成功时返回文章正文、封面、按顺序排列的图片、收藏总数以及当前用户的收藏状态；未找到文章时返回 404。
+      security:
+        - bearerAuth: []
+        - {}
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: 文章唯一标识。
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 文章详情对象，字段结构见 Post。
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [post]
+                properties:
+                  post:
+                    $ref: '#/components/schemas/Post'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/PostNotFound'
+
+  /posts/{id}/collection:
+    put:
+      tags: [收藏]
+      operationId: setPostCollection
+      summary: 添加或移除文章收藏
+      description: 需要有效的 access_token。将 collected 设为 true 表示收藏，false 表示取消收藏；重复提交相同状态是幂等的。成功响应返回文章标识、最终收藏状态和当前收藏总数。
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: 要收藏或取消收藏的文章唯一标识。
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [collected]
+              properties:
+                collected:
+                  type: boolean
+                  description: true 表示收藏文章；false 表示取消收藏。
+      responses:
+        '200':
+          description: 操作完成后的收藏状态及该文章的收藏总数。
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CollectionResult'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/PostNotFound'
+
+  /me/collections:
+    get:
+      tags: [收藏]
+      operationId: listMyCollections
+      summary: 获取当前用户的收藏列表
+      description: 需要有效的 access_token。按收藏时间倒序返回当前用户收藏的文章；可选 category 参数筛选 article 或 encyclopedia 类型。未提供分类时返回全部收藏。
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: category
+          in: query
+          required: false
+          description: 可选文章分类筛选，仅接受 article 或 encyclopedia。
+          schema:
+            type: string
+            enum: [article, encyclopedia]
+      responses:
+        '200':
+          description: 收藏文章数组；每项包含文章详情及收藏时间 collectedAt。
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/CollectedPost'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    PlantCandidate:
+      type: object
+      required: [scientificName, scientificNameWithoutAuthor, commonNames, score, localMatch]
+      properties:
+        scientificName: { type: string, minLength: 1 }
+        scientificNameWithoutAuthor:
+          type: string
+          nullable: true
+          description: 上游提供的无作者学名；缺失或无效时为 null，不自行截断完整学名。
+        commonNames:
+          type: array
+          description: 请求中文常见名，数据缺失时为空数组；不保证每个名称都是中文。
+          items: { type: string }
+        score: { type: number, minimum: 0, maximum: 1, description: 模型匹配分数，不代表识别准确率。 }
+        localMatch:
+          oneOf:
+            - $ref: '#/components/schemas/MatchedLocalPlant'
+            - $ref: '#/components/schemas/UnavailableLocalPlant'
+    MatchedLocalPlant:
+      type: object
+      required: [status, plant]
+      properties:
+        status: { type: string, enum: [matched] }
+        plant:
+          type: object
+          required: [id, nameZh]
+          properties:
+            id: { type: string, format: uuid, description: '本地稳定植物 UUID，供 GET /plants/{id} 和前端详情路由使用。' }
+            nameZh: { type: string }
+    UnavailableLocalPlant:
+      type: object
+      required: [status, plant]
+      properties:
+        status:
+          type: string
+          enum: [unmatched, not_ready, ambiguous]
+          description: 未收录、唯一记录尚未核对或发布、全部本地记录中存在重名歧义。
+        plant:
+          nullable: true
+          enum: [null]
+          description: 未关联时始终为 null，不泄露草稿 UUID。
+    PlantIdentification:
+      type: object
+      required: [bestMatch, candidates]
+      properties:
+        bestMatch: { type: string, nullable: true, description: 首个候选的完整学名；无候选时为 null。 }
+        candidates:
+          type: array
+          maxItems: 3
+          items: { $ref: '#/components/schemas/PlantCandidate' }
+    PlantCategoryRef:
+      type: object
+      required: [slug, nameZh, nameEn]
+      properties:
+        slug: { type: string }
+        nameZh: { type: string }
+        nameEn: { type: string }
+    PlantCategory:
+      allOf:
+        - $ref: '#/components/schemas/PlantCategoryRef'
+        - type: object
+          required: [id, plantCount]
+          properties:
+            id: { type: string }
+            plantCount: { type: integer, minimum: 0 }
+    PlantSummary:
+      type: object
+      required: [id, nameZh, nameEn, scientificName, identityStatus, categories]
+      properties:
+        id: { type: string }
+        nameZh: { type: string }
+        nameEn: { type: string, nullable: true }
+        scientificName: { type: string }
+        identityStatus: { type: string, enum: [pending, verified] }
+        categories:
+          type: array
+          items: { $ref: '#/components/schemas/PlantCategoryRef' }
+    PlantDetail:
+      allOf:
+        - $ref: '#/components/schemas/PlantSummary'
+        - type: object
+          required: [aliases, summary, appearanceFeatures, temperatureMinC, temperatureMaxC, temperatureNotes, sunlightRequirement, wateringRequirement, repottingRequirement, pests]
+          properties:
+            aliases:
+              type: array
+              items:
+                type: object
+                required: [name, language]
+                properties:
+                  name: { type: string }
+                  language: { type: string, nullable: true }
+            summary: { type: string, nullable: true }
+            appearanceFeatures: { type: string, nullable: true }
+            temperatureMinC: { type: number, nullable: true, description: 摄氏度下限 }
+            temperatureMaxC: { type: number, nullable: true, description: 摄氏度上限 }
+            temperatureNotes: { type: string, nullable: true }
+            sunlightRequirement: { type: string, nullable: true }
+            wateringRequirement: { type: string, nullable: true }
+            repottingRequirement: { type: string, nullable: true }
+            pests: { type: string, nullable: true }
+    ApiError:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message]
+          properties:
+            code:
+              type: string
+              description: 稳定的机器可读错误代码。
+            message:
+              type: string
+              description: 面向调用方的错误说明。
+    User:
+      type: object
+      required: [user_id, user_email, user_name, avatar_url, gender, created_time, status, last_login_at]
+      properties:
+        user_id:
+          type: string
+          description: 用户唯一标识。
+        user_email:
+          type: string
+          format: email
+          description: 已规范化为小写的用户邮箱。
+        user_name:
+          type: string
+          description: 用户显示昵称。
+          example: 匿名用户
+        avatar_url:
+          type: string
+          nullable: true
+          description: 用户头像地址；未设置时为 null。
+        gender:
+          type: string
+          enum: [male, female, private]
+          description: 性别设置；private 表示不公开。
+        created_time:
+          type: string
+          format: date-time
+          description: 账户创建时间，使用 ISO 8601 日期时间。
+        status:
+          type: integer
+          enum: [0, 1]
+          description: 账户状态，1 表示可用，0 表示停用。
+        last_login_at:
+          type: string
+          nullable: true
+          format: date-time
+          description: 最近登录时间；从未登录时为 null。
+    TokenPair:
+      type: object
+      required: [access_token, refresh_token]
+      properties:
+        access_token:
+          type: string
+          description: 用于访问受保护接口的短期 JWT。
+        refresh_token:
+          type: string
+          description: 用于换取新令牌的 JWT；成功刷新后旧令牌失效。
+    AuthResponse:
+      allOf:
+        - $ref: '#/components/schemas/TokenPair'
+        - type: object
+          required: [user]
+          properties:
+            user:
+              $ref: '#/components/schemas/User'
+    RegisterRequest:
+      type: object
+      required: [email, password]
+      properties:
+        email:
+          type: string
+          format: email
+          maxLength: 254
+          description: 注册邮箱，最长 254 个字符；服务端会去除首尾空白并转为小写。
+        password:
+          type: string
+          format: password
+          minLength: 8
+          maxLength: 72
+          description: 登录密码，长度为 8 至 72 个字符。
+        user_name:
+          type: string
+          maxLength: 10
+          description: 可选昵称，最多 10 个字符；未提供或为空时默认为“匿名用户”。
+        avatar_url:
+          type: string
+          nullable: true
+          maxLength: 500
+          description: 可选头像地址，最多 500 个字符；也可传 null。
+    LoginRequest:
+      type: object
+      required: [email, password]
+      properties:
+        email:
+          type: string
+          format: email
+          maxLength: 254
+          description: 已注册账户的邮箱地址。
+        password:
+          type: string
+          format: password
+          minLength: 8
+          maxLength: 72
+          description: 对应账户的密码，长度为 8 至 72 个字符。
+    UpdateUserRequest:
+      type: object
+      minProperties: 1
+      properties:
+        user_name:
+          type: string
+          minLength: 1
+          maxLength: 10
+          description: 新昵称，长度为 1 至 10 个字符。
+        avatar_url:
+          type: string
+          nullable: true
+          maxLength: 500
+          description: 新头像地址，最多 500 个字符；传 null 可清空头像。
+        gender:
+          type: string
+          enum: [male, female, private]
+          description: 新性别设置，仅接受 male、female 或 private。
+    UploadedImage:
+      type: object
+      required: [key, url, mimeType, size, width, height]
+      properties:
+        key:
+          type: string
+          description: 服务端生成的图片文件标识，包含随机文件名和扩展名。
+          example: 1842baf0-49b8-4d4c-b5cd-2a7be8ad48c8.jpg
+        url:
+          type: string
+          description: 可用于读取图片的相对路径。
+          example: /uploads/1842baf0-49b8-4d4c-b5cd-2a7be8ad48c8.jpg
+        mimeType:
+          type: string
+          enum: [image/jpeg, image/png, image/webp]
+          description: 服务端检测到的图片媒体类型。
+        size:
+          type: integer
+          format: int64
+          maximum: 10485760
+          description: 图片文件大小，单位为字节，最大 10 MiB。
+        width:
+          type: integer
+          description: 图片宽度，单位为像素。
+        height:
+          type: integer
+          description: 图片高度，单位为像素。
+    PostImage:
+      type: object
+      required: [id, url, width, height]
+      properties:
+        id:
+          type: string
+        url:
+          type: string
+        width:
+          type: integer
+          nullable: true
+        height:
+          type: integer
+          nullable: true
+    Post:
+      type: object
+      required: [id, title, excerpt, content, coverImage, category, createdAt, images, collectionCount, collected]
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        excerpt:
+          type: string
+        content:
+          type: string
+          description: 文章纯文本正文。
+        coverImage:
+          type: string
+          nullable: true
+        category:
+          type: string
+          enum: [article, encyclopedia]
+        createdAt:
+          type: string
+          format: date-time
+        images:
+          type: array
+          items:
+            $ref: '#/components/schemas/PostImage'
+        collectionCount:
+          type: integer
+          minimum: 0
+        collected:
+          type: boolean
+    CollectedPost:
+      allOf:
+        - $ref: '#/components/schemas/Post'
+        - type: object
+          required: [collectedAt]
+          properties:
+            collectedAt:
+              type: string
+              format: date-time
+    PostPage:
+      type: object
+      required: [page, pageSize, total, totalPages, items]
+      properties:
+        page:
+          type: integer
+        pageSize:
+          type: integer
+        total:
+          type: integer
+        totalPages:
+          type: integer
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/Post'
+    CollectionResult:
+      type: object
+      required: [post_id, collected, collectionCount]
+      properties:
+        post_id:
+          type: string
+        collected:
+          type: boolean
+        collectionCount:
+          type: integer
+          minimum: 0
+  responses:
+    ValidationError:
+      description: 请求参数缺失、格式错误或超出允许范围。响应 error 对象包含错误代码和说明。
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiError'
+    Unauthorized:
+      description: 缺少令牌，或令牌无效、过期、类型不符或已撤销。请检查 Authorization 请求头及令牌类型。
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiError'
+    InternalError:
+      description: 服务端发生未预期错误。响应包含统一格式的错误代码和说明。
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiError'
+    PostNotFound:
+      description: 指定文章不存在，或文章标识无效。
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiError'

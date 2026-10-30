@@ -1,4 +1,5 @@
 const { randomUUID } = require('node:crypto');
+const { initializePlantDatabase } = require('./plants/database');
 
 const seedPosts = [
   { category: 'article', title: '为室内植物建立稳定的浇水节奏', excerpt: '观察土壤和光照，比固定日历更能帮助你判断植物何时需要水。', content: '先检查盆土表层和花盆重量，再决定是否浇水。不同植物、季节和光照环境的需水量都不同。', coverImage: 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=80' },
@@ -108,6 +109,8 @@ function initializeDatabase(db) {
   db.prepare("UPDATE users SET gender = 'private' WHERE gender IS NULL OR gender NOT IN ('male', 'female', 'private')").run();
   addColumnIfMissing(db, 'posts', 'category', "TEXT NOT NULL DEFAULT 'article' CHECK (category IN ('article', 'encyclopedia'))");
   db.prepare("UPDATE posts SET category = 'article' WHERE category IS NULL OR category NOT IN ('article', 'encyclopedia')").run();
+
+  initializePlantDatabase(db);
 
   const insert = db.prepare(insertPostSql);
   if (db.prepare('SELECT COUNT(*) AS count FROM posts').get().count === 0) {

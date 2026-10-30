@@ -1,0 +1,1333 @@
+[
+  {
+    "id": "9eb1ef55-e45b-46e3-93e3-ab9ce86c9ae3",
+    "scientificName": "Adiantum capillus-veneris",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/adiantum-capillus-veneris/",
+    "sourceTitle": "Adiantum capillus-veneris Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:14.142304+00:00",
+    "sha256": "112a9032609c459def9b6bde2c02075ac7c231b3d5f4669e55489eb166dd9994",
+    "scope": "species",
+    "summaryEvidence": "The Southern Maidenhair is a deciduous, perennial fern in the Ribbon-fern family (Pteridaceae). It is native to temperate and tropical regions worldwide. The genus name comes from the Greek word adiantos , meaning “unwet",
+    "careEvidence": [
+      "The genus name comes from the Greek word adiantos , meaning “unwetted,” in reference to the water-repellent foliage.",
+      "The fern spreads by short, creeping rhizomes and prefers moist, humus-rich, alkaline to neutral soil in partial shade to shade."
+    ]
+  },
+  {
+    "id": "f9796242-3603-4727-a62b-7ae2a7d8ad44",
+    "scientificName": "Nephrolepis exaltata",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/nephrolepis-exaltata/",
+    "sourceTitle": "Nephrolepis exaltata Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:14.297857+00:00",
+    "sha256": "a8dfa39037da2522d43615b7ec6929ca0acf45b1eaff3598650967cb3a2d8062",
+    "scope": "species",
+    "summaryEvidence": "Boston fern is a terrestrial or epiphytic, herbaceous perennial fern in the polypody family (Polypodiaceae). It is native to tropical and subtropical America and commonly grown as a houseplant in North Carolina and other",
+    "careEvidence": [
+      "The species epithet is Latin for \"very tall.\" Plant in bright, indirect light and warmth (60 to 70 degrees Fahrenheit).",
+      "This fern needs high humidity and moist soil that should never be allowed to dry out."
+    ]
+  },
+  {
+    "id": "5278c47c-a0c3-4afa-b0f0-c57399caa46b",
+    "scientificName": "Echinocactus grusonii",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/echinocactus/",
+    "sourceTitle": "Echinocactus Play pronunciation",
+    "checkedAt": "2026-10-30T09:03:14.014985+00:00",
+    "sha256": "180429518e1bfdecd59050f7e5fb4d287cacfcc4984ee745b201a65b5b4f6421",
+    "scope": "needs-review",
+    "summaryEvidence": "Echinocactus or Barrel Cactus is a small genus of cacti that includes 5 accepted species that are indigenous to the Southwestern United States and Mexico. In the past, this genus included hundreds of species, but in the ",
+    "careEvidence": [
+      "These plants grow best in full sun, but they can tolerate a little bit of shade.",
+      "They prefer low humidity, dry soil, and need a cactus mix with coarse sand or perlite to promote good drainage."
+    ]
+  },
+  {
+    "id": "af942934-eb13-4ffb-be0c-c8da6016a7a7",
+    "scientificName": "Schlumbergera truncata",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/schlumbergera-truncata/",
+    "sourceTitle": "Schlumbergera truncata Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:16.511899+00:00",
+    "sha256": "a9c7db71ce0438e5ba3c9b9d7db89fc597587382f9e0633cc842494479023003",
+    "scope": "species",
+    "summaryEvidence": "The Thanksgiving cactus is a tough, epiphytic succulent that has showy flowers in the winter, usually around Thanksgiving, hence its most popular common name. The Thanksgiving cactus is native to the rainforests of South",
+    "careEvidence": [
+      "This plant prefers partial shade and temperatures between 70 to 80 degrees Fahrenheit.",
+      "Avoid overwatering."
+    ]
+  },
+  {
+    "id": "2a386aa9-f1f5-4be3-9983-f1e34dc74180",
+    "scientificName": "Hibiscus rosa-sinensis",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/hibiscus-rosa-sinensis/",
+    "sourceTitle": "Hibiscus rosa-sinensis Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:15.281291+00:00",
+    "sha256": "26d284b832fa744fb594d820bb35865a9d33337d4dc07b7bc9d9166a416c2d54",
+    "scope": "species",
+    "summaryEvidence": "Chinese hibiscus is a woody perennial shrub of the mallow family (Malvaceae). It is native to Asia. This is a tropical, evergreen plant known for its bold flowers that can be up to 6 inches across with a showy central tu",
+    "careEvidence": [
+      "The genus name, Hibiscus , is Latin for mallow, and the species epithet, r osa-sinensis , is Latin for “rose of China.” Plant in a location with full sun to partial shade and in rich, moist soil with good drainage."
+    ]
+  },
+  {
+    "id": "cc7ab488-b833-4413-9feb-dee03ee359c5",
+    "scientificName": "Gerbera jamesonii",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/gerbera-jamesonii/",
+    "sourceTitle": "Gerbera jamesonii Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:16.037902+00:00",
+    "sha256": "0be8d68bc0632fe185b963219498a7d60dfa946f450c80ce88820913d1ebd488",
+    "scope": "species",
+    "summaryEvidence": "Barberton daisy is a herbaceous perennial flower in the aster family with showy flowers and is native to SE Africa. This plant is the parent to many of the hybrid gerberas (Gerbera x hybrid) now available with many culti",
+    "careEvidence": [
+      "This plant prefers moist, well-drained soil rich in organic matter in full sun.",
+      "The crown should be level with the soil."
+    ]
+  },
+  {
+    "id": "11b73fdd-d214-4e56-a038-bc83d5cd950e",
+    "scientificName": "Helianthus annuus",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/helianthus-annuus/",
+    "sourceTitle": "Helianthus annuus Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:16.808455+00:00",
+    "sha256": "5efe3565ed2e7a33ae9168d7dfddac9b06ec7ea4bce4e61ee5f27c3c8cad9b68",
+    "scope": "species",
+    "summaryEvidence": "Common sunflower is a warm-season, fast-growing annual with tall, upright stalks and 3- to 6-inch-wide flowers with orangish-yellow petal rays and blackish-brown to purplish center disks. Blooming occurs from July to Oct",
+    "careEvidence": [
+      "It prefers full sun and moist, well-drained, loamy, sandy, or clay soils, with a neutral or alkaline pH.",
+      "It is tolerant of poor soils and dry soils and is drought-tolerant once established."
+    ]
+  },
+  {
+    "id": "2bcee436-725b-457f-ac5a-5e366a2cf227",
+    "scientificName": "Lilium lancifolium",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/lilium-lancifolium/",
+    "sourceTitle": "Lilium lancifolium Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:18.110996+00:00",
+    "sha256": "f70c9449bd13d64275ac551a13b731dddf1a036ea0c5c7bdcd83f724dacfc6aa",
+    "scope": "species",
+    "summaryEvidence": "Tiger lily is an herbaceous perennial member of the lily family (Liliaceae). It is classified in the Asiatic Lily group. It is native to far eastern Russia, Tibet, China, the Korean Peninsula and Japan but has escaped an",
+    "careEvidence": [
+      "It thrives in full sun on moist, acidic soil."
+    ]
+  },
+  {
+    "id": "c56c9442-1c85-450d-b3c1-9fec2f7e6045",
+    "scientificName": "Solanum lycopersicum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/solanum-lycopersicum/",
+    "sourceTitle": "Solanum lycopersicum Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:18.001690+00:00",
+    "sha256": "4c328289dbbcd50bbe840c5b9c866c3e4df87e90561a435e19ad94a30dae9024",
+    "scope": "species",
+    "summaryEvidence": "Tomatoes are an edible, annual or herbaceous perennial warm-season vegetable in the nightshade family (Solanaceae). The genus name, Solanum, is the Latin word solamen , which means \"comforting or soothing.\" The species e",
+    "careEvidence": [
+      "Tomatoes need full sun and prefer moist, loamy and slightly acidic soil with a pH of 5.8 to 6.8.",
+      "Keep the soil consistently watered to avoid blossom end rot and splitting fruit."
+    ]
+  },
+  {
+    "id": "a19a7272-8572-4205-bedb-bc18587a067a",
+    "scientificName": "Fragaria × ananassa",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/fragaria-x-ananassa/",
+    "sourceTitle": "Fragaria x ananassa Play pronunciation",
+    "checkedAt": "2026-10-30T09:00:13.273096+00:00",
+    "sha256": "336c52e65bd74c24fcc23e4b561e8ae58258db744e837df2cbea82f234b3bef9",
+    "scope": "species",
+    "summaryEvidence": "Strawberries are a rosette-forming, broadleaf evergreen perennial in the Rosaceae (rose) family and originated in Europe as an accidental cross between a North American species and one from Chile. They are widely grown i",
+    "careEvidence": [
+      "Plant strawberries in full sun to partial shade and 1 to 2.5 feet apart in rows that are spaced 3 to 5 feet apart.",
+      "They prefer highly organic loam or clay soil that is moist but has good drainage."
+    ]
+  },
+  {
+    "id": "819996ab-684e-4452-b8df-ee37ef42b408",
+    "scientificName": "Sedum sarmentosum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/sedum-sarmentosum/",
+    "sourceTitle": "Sedum sarmentosum Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:18.039992+00:00",
+    "sha256": "bf1289d7839972c67e33300f5bdf533f6e8201038eecb17a606c7b2f6e8ef309",
+    "scope": "species",
+    "summaryEvidence": "Stringy Stonecrop is a mat-forming perennial groundcover that has creeping bright yellow-green leaves with branches reaching a width of about 10 inches. The branches take root at the nodes so it is very easy to propagate",
+    "careEvidence": [
+      "Plant in the full sun, some partial shade is tolerated but too much shade and the plant will struggle.",
+      "Well-drained soil is a must and sedums prefer sandy or rocky soil."
+    ]
+  },
+  {
+    "id": "d7a3cb53-3437-4b22-85de-af8c4bab0369",
+    "scientificName": "Citrus limon",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/citrus-x-limon/",
+    "sourceTitle": "Citrus x limon Play pronunciation",
+    "checkedAt": "2026-10-30T09:00:12.749937+00:00",
+    "sha256": "51949efaaf704ea364c6ac68f0e412c898cbe82daf6e8df5260bbea7fa5e0a13",
+    "scope": "needs-review",
+    "summaryEvidence": "The lemon is a species of small evergreen trees in the Rutaceae family that grows 10 to 20 feet tall and usually has sharp thorns on its twigs. It is a hybrid citrus that produces bright yellow fruits that have a tart, a",
+    "careEvidence": [
+      "The lemon requires full sun, protected from the wind.",
+      "They need plenty of water during the growing season and regular small applications of nitrogenous fertilizer to promote growth and fruit size."
+    ]
+  },
+  {
+    "id": "2540f751-1e93-40a1-b767-ee8f1b139c1f",
+    "scientificName": "Ocimum basilicum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/ocimum-basilicum/",
+    "sourceTitle": "Ocimum basilicum Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:24.690011+00:00",
+    "sha256": "b282bda7908dfc2a9f266b6fd1ef03556c6089301206998159b4cbd0f5e6059b",
+    "scope": "species",
+    "summaryEvidence": "Sweet basil is an herb in the Lamiaceae (mint) family and native to the tropical regions of Africa and Asia. Thai and Genovese basil are cultivars of this plant. The fragrant edible leaves are great in soups, stews, and ",
+    "careEvidence": [
+      "Sweet basil prefers full sun and moist, well-drained soils."
+    ]
+  },
+  {
+    "id": "6b1b361f-d3a6-4944-a2cb-40f02d51d8a9",
+    "scientificName": "Salvia rosmarinus",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/salvia-rosmarinus/",
+    "sourceTitle": "Salvia rosmarinus Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:24.401961+00:00",
+    "sha256": "4fbf8c0ed6690f1d03dfaef4e480a8ba6c8a0088b42658003f540d7921764f2f",
+    "scope": "species",
+    "summaryEvidence": "Rosemary is an aromatic, perennial, evergreen shrub in the Lamiaceae or mint family that is valued for its fragrant, ornamental foliage, and as an enhancement in cooking. The shrub grows from 4 to 5 feet tall and is gene",
+    "careEvidence": [
+      "Rosemary does best in light, slightly acidic, dry to medium, well-drained soils in full sun.",
+      "It tolerates drought, partial shade, salt, heavy pruning, and most soil types except clay."
+    ]
+  },
+  {
+    "id": "d8822da4-dc45-4162-9b35-159e999d4401",
+    "scientificName": "Mentha spicata",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/mentha-spicata/",
+    "sourceTitle": "Mentha spicata Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:24.714971+00:00",
+    "sha256": "77c3856eacb14a720a717c971ddfb8d9bc0c75b79ac16fc8fd117c25331900fe",
+    "scope": "species",
+    "summaryEvidence": "Spearmint is a flowering, aromatic herb or groundcover in the Lamiaceae (mint) family native to Europe. In its natural haibtat it is found growing in moist fields and pond or lake margins. It can be distinguished from ot",
+    "careEvidence": [
+      "The genus name comes from Minthe or Menthe, a water nymph in Greek mythology, who was transformed by Persephone into a mint plant in revenge for Minthe's ongoing affair with Hades (husband of Persephone).",
+      "This upright perennial thrives in full sun in organically rich, well-drained, moist soils growing quickly 1 to 2 feet high and wide with bright green leaves and shoots."
+    ]
+  },
+  {
+    "id": "811fa9ca-11a5-4f6f-8f48-f67ef7e4ac3d",
+    "scientificName": "Thymus vulgaris",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/thymus-vulgaris/",
+    "sourceTitle": "Thymus vulgaris Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:26.875973+00:00",
+    "sha256": "347b453ae1b555acfa1b323623284ef6d39382b5697246fba8355f7a690672e3",
+    "scope": "species",
+    "summaryEvidence": "Common thyme is a woody, broadleaf evergreen perennial in the mint family (Lamiaceae) native to Southwestern Europe and southeastern Italy. There are many cultivars. The origin of the word \"thyme\" is from the Greek word,",
+    "careEvidence": [
+      "The word thyme may also be derived from the Greek word, thymos , meaning \"perfume.\" The species name, vulgaris , is Latin and means \"common\" or \"widespread.\" It performs best in dry, sandy, or rocky soils, prefers full sun, requires good drainage, an"
+    ]
+  },
+  {
+    "id": "f333e33a-8f42-4dcd-b065-697385c7170a",
+    "scientificName": "Camellia japonica",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/camellia-japonica/",
+    "sourceTitle": "Camellia japonica Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:26.576579+00:00",
+    "sha256": "bd9d63ddbbf98d5ba57cd555650bfd0e2fed3921bc386aadc1b48aa95207cc3b",
+    "scope": "species",
+    "summaryEvidence": "Japanese camellia is an evergreen woody shrub or small tree in the tea family (Theaceae). Native to China, Korea, and parts of Japan, it has become a southern gardening favorite. The genus name Camellia is derived from G",
+    "careEvidence": [
+      "The species epithet is Latin for “Japanese.” Camellia prefers shade to part-shade with some protection from drying winter winds and well-drained soils that are high in organic matter and slightly acidic (pH 5.5 to 6.5).",
+      "Because plants are slow to establish, it is best to dig a large hole, three to four times wider, but not deeper, than the root ball, to reduce competition for water and nutrients from surrounding trees and shrubs."
+    ]
+  },
+  {
+    "id": "0a419d13-fdc4-4334-b848-405aa0a2da7e",
+    "scientificName": "Gardenia jasminoides",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/gardenia-jasminoides/",
+    "sourceTitle": "Gardenia jasminoides Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:26.228930+00:00",
+    "sha256": "d7b23b056cfa492b92ea0d4a9971f509fc82417508ec93ada9f75f71b1050cb3",
+    "scope": "species",
+    "summaryEvidence": "Gardenias are a woody, broadleaf evergreen shrub in the Rubiaceae (coffee) family. They originated along the stream banks of Southern China and Japan. The plant is named for Alexander Garden, a Scottish naturalist. Garde",
+    "careEvidence": [
+      "Gardenias prefer bright indirect sunlight or partial shade.",
+      "Plant in rich, acidic, well-drained soil."
+    ]
+  },
+  {
+    "id": "95ef8cc8-a9d9-4700-b8e2-14c617e75552",
+    "scientificName": "Hydrangea macrophylla",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/",
+    "sourceTitle": "Hydrangea macrophylla Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:27.233042+00:00",
+    "sha256": "f7d3e3f3ca265bd3a0204d1fd5db981d7fbbfebeb69465443cc2adeb2e14f180",
+    "scope": "species",
+    "summaryEvidence": "Bigleaf hydrangea is a woody, deciduous, perennial shrub in the hydrangea family (Hydrangeaceae) and is native to Japan, China, Korea, and Southeast Asia. The species epithet is from the Greek meaning \"large leaf.\" Bigle",
+    "careEvidence": [
+      "The species epithet is from the Greek meaning \"large leaf.\" Bigleaf hydrangea performs best in areas with dappled sunlight, partial shade, or deep shade.",
+      "It is tolerant of both clay and sandy soil and has some salt tolerance."
+    ]
+  },
+  {
+    "id": "00383d04-365d-4e6a-847b-caf438fa887a",
+    "scientificName": "Ophiopogon japonicus",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/ophiopogon-japonicus/",
+    "sourceTitle": "Ophiopogon japonicus Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:27.104935+00:00",
+    "sha256": "35024d5cc7689ba237475255ba02a4e96142689f27b1985a67338cb09bf46f5a",
+    "scope": "species",
+    "summaryEvidence": "Dwarf lilyturf, or mondo grass, is a broadleaf evergreen ground cover or ornamental grass in the asparagus family (Asparagaceae) and is native to Japan, Korea and China. It may grow up to 1 foot tall and wide, is grass-l",
+    "careEvidence": [
+      "This plant prefers shade and moist, well-drained soils."
+    ]
+  },
+  {
+    "id": "d794d4a4-bd89-440c-826d-0ae222b97476",
+    "scientificName": "Epipremnum aureum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/",
+    "sourceTitle": "Epipremnum aureum Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:28.413366+00:00",
+    "sha256": "21958b944e3613f1b56cf38a564deba9e0533bc932d4503f0091055e430449cd",
+    "scope": "species",
+    "summaryEvidence": "Pothos is a low-maintenance, herbaceous perennial, broadleaf evergreen houseplant in the arum family (Araceae) grown for its glossy, green or variegated leaves on cascading stems. It is native to the Society Islands. It ",
+    "careEvidence": [
+      "It prefers bright, indirect light and survives for long periods in low light.",
+      "Use a humidifier or place the plant container on a tray of wet pebbles to increase humidity, and let the well-drained potting medium dry out between watering."
+    ]
+  },
+  {
+    "id": "12051770-404e-42b3-9221-55a380965758",
+    "scientificName": "Monstera deliciosa",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/monstera-deliciosa/",
+    "sourceTitle": "Monstera deliciosa Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:28.735421+00:00",
+    "sha256": "ab44dd183cb995851a301c8202243ee16a982eb8caf36b8051157664286f0f45",
+    "scope": "species",
+    "summaryEvidence": "Split-leaf philodendron is not actually a philodendron but a woody, perennial, broadleaf evergreen, climbing vine in the arum family (Araceae). It is native from Mexico to Panama and can grow to 70 feet tall, though it s",
+    "careEvidence": [
+      "It prefers an average warm temperature of 60 to 85 degrees F, moderate brightness but not direct sunlight, and high humidity.",
+      "Variegated cultivars will need more sunlight than darker green cultivars."
+    ]
+  },
+  {
+    "id": "15ce8bfc-adac-4d4a-830b-7f0a41c7a187",
+    "scientificName": "Monstera adansonii",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/monstera-adansonii/",
+    "sourceTitle": "Monstera adansonii Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:29.410213+00:00",
+    "sha256": "8baeb859a52f902b6d9ee4ed622fd27b66caba5e84f434f793f5b579c1207c0b",
+    "scope": "species",
+    "summaryEvidence": "The Swiss Cheese Plant is a tender, evergreen, herbaceous perennial climber that hails from the tropical rainforests of Mexico, Central America, and South America. In its native habitat, it uses aerial roots to attach it",
+    "careEvidence": [
+      "In its native habitat, it uses aerial roots to attach itself to a large tree so it can climb upwards to have access to more sunlight.",
+      "The holes in the leaves help sunlight to filter down to the plant."
+    ]
+  },
+  {
+    "id": "25e72ed2-f2b4-4810-a97a-00f8b3810014",
+    "scientificName": "Philodendron hederaceum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/philodendron-hederaceum/",
+    "sourceTitle": "Philodendron hederaceum Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:29.600624+00:00",
+    "sha256": "5c8f9638fcef2da6d7a03058b4a6f9f38507e8aed9e748725d0ca93d6fd6fd6d",
+    "scope": "species",
+    "summaryEvidence": "Heartleaf Philodendron is a tropical evergreen trailing or climbing member of the Arum family (Araceae). The plant grows up to 13 feet tall and is grown as a houseplant in temperate climates. The species epithet means iv",
+    "careEvidence": [
+      "It prefers average indoor air temperatures and can tolerate dry air although it prefers medium relative humidity and moist soil, and it appreciates misting.",
+      "Keep soil slightly moist, and slow down on watering in the winter."
+    ]
+  },
+  {
+    "id": "52978182-7acb-4e92-8e27-19ffc4b96d45",
+    "scientificName": "Philodendron erubescens",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/philodendron-erubescens/",
+    "sourceTitle": "Philodendron erubescens Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:31.309048+00:00",
+    "sha256": "fc7b3d89d024ce18376a267e5598fee90c61557f4da2fb4bef852f813ca40fe2",
+    "scope": "species",
+    "summaryEvidence": "Philodendron erubescens is a climbing tropical herbaceous perennial in the arum family (Araceae). It is native to Colombia and will grow up to 60 feet tall in its native rainforests. It is commonly known as the Blushing ",
+    "careEvidence": [
+      "This species prefers warm temperatures, high humidity, moist, well-drained soil rich in organic matter, and partial shade.",
+      "Direct sunlight should also be avoided."
+    ]
+  },
+  {
+    "id": "caff481f-4458-4e68-adbf-b5a541554c46",
+    "scientificName": "Philodendron bipinnatifidum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/philodendron-bipinnatifidum/",
+    "sourceTitle": "Philodendron bipinnatifidum Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:32.036912+00:00",
+    "sha256": "9f75702589fbbbc9b06eb0daa50dcd0ca60d8a8017b39fc7bf5e465f4fc86928",
+    "scope": "species",
+    "summaryEvidence": "Tree philodendron, a member of the arum family (Araceae) is an upright, perennial, woody, broadleaf evergreen shrub in its South American native habitats, but it is grown as a houseplant in most of North Carolina. It can",
+    "careEvidence": [
+      "Grow this plant in moist, well-drained soil high in organic matter.",
+      "It does not tolerate salt buildup, so flush soil regularly, allow it to get rained on, or use distilled water for irrigation."
+    ]
+  },
+  {
+    "id": "4ceb9a53-39d1-430a-8f01-12c01e1f1fe6",
+    "scientificName": "Spathiphyllum wallisii",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/spathiphyllum/",
+    "sourceTitle": "Spathiphyllum Play pronunciation",
+    "checkedAt": "2026-10-30T09:00:12.661268+00:00",
+    "sha256": "d03fd3664053152592a486ca4d997bdb0eba444ae44ba918d25ad5f7c2e3c7b0",
+    "scope": "needs-review",
+    "summaryEvidence": "Peace lily is a group of about 60 species of flowering plants that are semi-evergreen, perennial herbs typically grown as houseplants. They are members of the arum family (Araceae) and are native to Mexico, tropical Amer",
+    "careEvidence": [
+      "Keep the soil moist, but not soggy; allow it to dry between waterings.",
+      "Watering from below works very well for peace lilies."
+    ]
+  },
+  {
+    "id": "15ec7317-4816-459c-9719-96829d5cd284",
+    "scientificName": "Anthurium andraeanum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/anthurium-andraeanum/",
+    "sourceTitle": "Anthurium andraeanum Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:32.298399+00:00",
+    "sha256": "8d3b98a7bb17b867c9c673cc879ab2031c0768b4c1725e0de32f71e2a7c1ac4c",
+    "scope": "species",
+    "summaryEvidence": "The Flamingo Flower is a strikingly beautiful and popular perennial houseplant that is native to tropical Colombia and Ecuador. It thrives in warm, humid, and shaded rainforests. In its native habitat, it grows as an epi",
+    "careEvidence": [
+      "This plant prefers bright, indirect sunlight, moist, well-drained soil, and warm and humid conditions.",
+      "It is best to water the plant when the top inch of the soil feels dry."
+    ]
+  },
+  {
+    "id": "74fc7e86-b755-4349-a5ea-0c66a939874e",
+    "scientificName": "Aglaonema commutatum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/aglaonema/",
+    "sourceTitle": "Aglaonema Play pronunciation",
+    "checkedAt": "2026-10-30T09:03:12.705249+00:00",
+    "sha256": "38ad84d55b2709d967648736d5ed6bf96c1a0ab1cdbbb6d2bc3fc232ae65a22f",
+    "scope": "needs-review",
+    "summaryEvidence": "Chinese evergreen is an herbaceous perennial in the Araceae (arum) family and is native to the tropical and subtropical areas of Southeast Asia and New Guinea. There are 26 species in the genus and many cultivars. It is ",
+    "careEvidence": [
+      "The plant does well in diffuse sun or good indirect light and prefers high humidity but will tolerate dryer air.",
+      "It does not require a winter dormancy period but prefers a reduction in watering during the winter."
+    ]
+  },
+  {
+    "id": "d2bdad15-38a1-4976-ba18-0c79d4518777",
+    "scientificName": "Dieffenbachia seguine",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/dieffenbachia-seguine/",
+    "sourceTitle": "Dieffenbachia seguine",
+    "checkedAt": "2026-10-30T08:58:36.513765+00:00",
+    "sha256": "6d749b92af52bcb6c6a9ab79724c2d39c24603221359c1221f83dc83b1d3114a",
+    "scope": "species",
+    "summaryEvidence": "Dieffenbachia is an erect, broadleaf evergreen perennial in the Araceae family that is native to Central and South America. The large, shiny, green leaves are variegated in a variety of patterns of patches or blotches in",
+    "careEvidence": [
+      "This plant prefers loose, fertile, high organic soil and indirect light, moderate temperatures, and high humidity.",
+      "Water the plant thoroughly and allow the top 1-inch surface of the soil to dry completely before watering the plant again."
+    ]
+  },
+  {
+    "id": "718d0939-65a6-4b85-8449-780b5bb80c2f",
+    "scientificName": "Alocasia macrorrhizos",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/alocasia/",
+    "sourceTitle": "Alocasia Play pronunciation",
+    "checkedAt": "2026-10-30T09:03:12.021458+00:00",
+    "sha256": "18cc12cf4a79c7944e77928d630e31bf7cae6a51f704c4d6c508802eb2016ac5",
+    "scope": "needs-review",
+    "summaryEvidence": "Alocasia is a genus of 80 species of tuberous, herbaceous perennials in the Arum family (Araceae) from the tropical and subtropical regions of Asia and eastern Australia where rainfall is plentiful. Here it is grown as a",
+    "careEvidence": [
+      "The plant prefers a shaded site with slightly acidic, moist, well-drained, humus-rich, fertile loam, though it does tolerate a wide range of soil types.",
+      "Water and fertilize regularly."
+    ]
+  },
+  {
+    "id": "5a3ff192-8d52-4df7-b7ce-2ca803daacc9",
+    "scientificName": "Zantedeschia aethiopica",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/zantedeschia-aethiopica/",
+    "sourceTitle": "Zantedeschia aethiopica Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:33.742112+00:00",
+    "sha256": "a03a3a5c37be7e10f4f4902976922f6d5f40f198b03c449314ade7b3693eac7a",
+    "scope": "species",
+    "summaryEvidence": "Calla lilies are a rhizomatous herbaceous perennial plant in the Araceae (Jack-in-the-pulpit) family native to Africa. Contrary to the common name, they are not true lilies, the genus name is derived from Italian botanis",
+    "careEvidence": [
+      "Plant in the full sun to partial shade in moist, organically rich soil with plenty of leaf mold, rotted manure, and humus.",
+      "In hotter climates, partial shade is preferred to avoid leaf and flower scorch though flowering may suffer."
+    ]
+  },
+  {
+    "id": "f8cbfe69-2be6-4fd4-8c0e-2bad731cd42c",
+    "scientificName": "Syngonium podophyllum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/syngonium-podophyllum/",
+    "sourceTitle": "Syngonium podophyllum Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:34.108458+00:00",
+    "sha256": "02ddf57dc6d1e3efe43137d084c27c9b03439b7f180e5fe0982b6fa47b0ba43b",
+    "scope": "species",
+    "summaryEvidence": "The American evergreen is a tropical perennial shrub or vine in the Araceae family climbing to 6 feet. It is desired in interior settings for its low-maintenance, green or variegated, long-petioled leaves and bush-like h",
+    "careEvidence": [
+      "Avoid locations with full sun, as direct sunlight will tend to burn or bleach the foliage.",
+      "Repotting every few years and trimming the root system can keep the plant manageable."
+    ]
+  },
+  {
+    "id": "ade7c629-abb1-441e-b827-3094f5d2ba9e",
+    "scientificName": "Zamioculcas zamiifolia",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/",
+    "sourceTitle": "Zamioculcas zamiifolia Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:33.920922+00:00",
+    "sha256": "fec196a02f21fc7411ef2006523a44110cd6a13cc3b6f17198fd7b31a70c5f80",
+    "scope": "species",
+    "summaryEvidence": "ZZ plant is a rhizomatous, evergreen herbaceous perennial in the aroid family (Araceae) native to tropical Africa. The pinnate leaves are erect, emerging from a thick, underground rhizome. The species epithet is compound",
+    "careEvidence": [
+      "In the landscape, ZZ plant needs to be planted in partial to deep shade and highly organic or sandy soil with good drainage.",
+      "It has bulbous fleshy rhizomes that give rise to glossy leaves that store water and make it highly drought tolerant."
+    ]
+  },
+  {
+    "id": "d6dbdf22-9894-4e15-9106-5534ce070a6b",
+    "scientificName": "Dracaena trifasciata",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+    "sourceTitle": "Dracaena trifasciata Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:37.081718+00:00",
+    "sha256": "bcae5f60e51445fa54e88ce99034b9488ea85cb68d7fbb3387f3a677022515e8",
+    "scope": "species",
+    "summaryEvidence": "Snake plant is an erect, clumping, broadleaf evergreen, tropical herbaceous perennial in the asparagus family (Asparagaceae). It is native to central Africa. The species epithet means \"having three transverse stripes\" an",
+    "careEvidence": [
+      "Place in a location where it will receive direct sunlight only part of the day, 2 to 6 hours, as it will tolerate very low light.",
+      "Well-drained soil and careful watering are a must; do not overwater, as the roots will rot."
+    ]
+  },
+  {
+    "id": "622061b2-7e48-46b3-ae14-46532daea11c",
+    "scientificName": "Dracaena fragrans",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/dracaena-fragrans/",
+    "sourceTitle": "Dracaena fragrans Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:39.640664+00:00",
+    "sha256": "b2c635686afaa871d59faab3624aa873009aa37c7be497917cd9f94dafbab17c",
+    "scope": "species",
+    "summaryEvidence": "Corn plant is a slow-growing, broadleaf evergreen, perennial shrub in the asparagus family (Asparagaceae). Its native home is tropical Africa, but it is widely grown as a houseplant or interiorscape plant in the United S",
+    "careEvidence": [
+      "Keep the soil moist during the growing season but cut back on the water in the winter.",
+      "Grow it in commercial potting soil in a pot with drainage holes."
+    ]
+  },
+  {
+    "id": "5396253a-f7c8-4abd-a57e-1228820319d7",
+    "scientificName": "Dracaena sanderiana",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/dracaena-sanderiana/",
+    "sourceTitle": "Dracaena sanderiana Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:36.876899+00:00",
+    "sha256": "aa76819fed1760e32171f832ffdc67a2a3aa87cab909176b752734e9ba5c3f88",
+    "scope": "species",
+    "summaryEvidence": "Lucky bamboo is not a bamboo at all. It is a tropical, perennial shrub from West Africa and a member of the asparagus family (Asparagaceae). The species epithet commemorates German-born nurseryman and orchid specialist H",
+    "careEvidence": [
+      "It performs well in containers with partial shade outdoors in summer or bright but indirect light indoors all year.",
+      "It requires a moist potting mix, or it can be grown in chlorine-free water."
+    ]
+  },
+  {
+    "id": "8234914c-7e14-4319-98c3-b5572c313339",
+    "scientificName": "Dracaena reflexa",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/dracaena-reflexa-var-angustifolia/",
+    "sourceTitle": "Dracaena reflexa var. angustifolia Play pronunciation",
+    "checkedAt": "2026-10-30T09:00:20.422883+00:00",
+    "sha256": "edefcd3eba8a17da29180a8cded42a384de71d01a76e5052c2cad98b69c89a22",
+    "scope": "needs-review",
+    "summaryEvidence": "Dracaena is a drought-tolerant, slow-growing perennial shrub native to Madagascar and nearby islands in the Indian Ocean. It is a member of the asparagus family (Asparagaceae). The species epithet refers to the reflexed ",
+    "careEvidence": [
+      "Plant in a well-draining potting mix and allow the plants to dry between waterings but not severely.",
+      "Bright, indirect light is ideal."
+    ]
+  },
+  {
+    "id": "c6fc39a1-d9df-4364-a44d-ff65c1c41eb8",
+    "scientificName": "Cordyline fruticosa",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/cordyline-fruticosa/",
+    "sourceTitle": "Cordyline fruticosa Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:39.499373+00:00",
+    "sha256": "3d494c37fcc350c580445365338003275d7bca4ea1c41c9605cbd6752652fc47",
+    "scope": "species",
+    "summaryEvidence": "The Ti plant is a broadleaf evergreen shrub or small tree with multi-colored leaves and is popular as a houseplant. This flowering tropical plant has stunning foliage with shades of pale pink, green, purple or deep red d",
+    "careEvidence": [
+      "This plant requires bright indirect light to maintain its bright foliage colors.",
+      "It prefers moist, well-drained, fertile loamy soil or peat-based potting mix and medium humidity."
+    ]
+  },
+  {
+    "id": "57775a93-08e8-4b0a-99e4-7180ff5894c1",
+    "scientificName": "Chlorophytum comosum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/chlorophytum-comosum/",
+    "sourceTitle": "Chlorophytum comosum Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:45.399863+00:00",
+    "sha256": "161079a0634ac40e3dabbd1b7d10f0e9385a75d3891fbbf0ba854a29693c2021",
+    "scope": "species",
+    "summaryEvidence": "Spider plant is an herbaceous perennial houseplant in the Asparagaceae (asparagus) family. Its native region is tropical West Africa to Cameroon and Ethiopia to South Africa. It is commonly grown as a houseplant for its ",
+    "careEvidence": [
+      "It is intolerant of direct sunlight.",
+      "It grows best in moist soil and medium air humidity, though it is tolerant of drought and dry soil."
+    ]
+  },
+  {
+    "id": "dc53c3f0-73d6-4358-9d52-381c89ad4e73",
+    "scientificName": "Beaucarnea recurvata",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/beaucarnea-recurvata/",
+    "sourceTitle": "Beaucarnea recurvata Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:39.391143+00:00",
+    "sha256": "ca0c484a1dffe7a78a6dc7ea91873fc63ac590c04ab8a8a9d1283d36756399ca",
+    "scope": "species",
+    "summaryEvidence": "Ponytail palm is an evergreen perennial in the asparagus family (Asparagaceae). It is native to Mexico and is commonly grown as a houseplant. It grows in rocky, poor soils in low deciduous forests. It is slow growing, dr",
+    "careEvidence": [
+      "It grows in rocky, poor soils in low deciduous forests.",
+      "Plant in well-drained soils such as those for cactus and succulents and provide a sunny window."
+    ]
+  },
+  {
+    "id": "bc7a1a35-c2ca-4628-92b8-447dbd95a423",
+    "scientificName": "Yucca gigantea",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/yucca-gigantea/",
+    "sourceTitle": "Yucca gigantea Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:45.262669+00:00",
+    "sha256": "2fd9617d77fe637232e6c1483bc7876ec60f2291fb1b88c8637068f191a68153",
+    "scope": "species",
+    "summaryEvidence": "The giant yucca or spineless yucca is a tropical perennial grown for its stunning foliage. It is a popular, low-maintenance indoor and outdoor plant that presents as a large, upright succulent shrub or small tree. It is ",
+    "careEvidence": [
+      "The giant yucca prefers full sun, and moist, well-drained, loam and sandy soil.",
+      "This plant is drought tolerant, and overwatering can be problematic."
+    ]
+  },
+  {
+    "id": "102d6314-2459-464f-8313-85fa752de213",
+    "scientificName": "Ficus elastica",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/ficus-elastica/",
+    "sourceTitle": "Ficus elastica Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:46.467505+00:00",
+    "sha256": "ac8ebfa06b5acc88e8c9c01749d11afa11cfb8b06fe435fac9d9e099f1267fa9",
+    "scope": "species",
+    "summaryEvidence": "The Rubber Plant is a broadleaf evergreen, flowering, tree in the Mulberry family typically grown as a popular ornamental house plant in temperate climates. In the wild and left to its own devices, the tree can grow to 1",
+    "careEvidence": [
+      "Rubber Plant does best in partial shade or low light in dry soil and medium relative humidity with a temperature of greater than 55 degrees F.",
+      "When grown indoors, plant in a soil-based potting mix under bright indirect light or partial shade and protection from the afternoon sun."
+    ]
+  },
+  {
+    "id": "72154cfd-2cc9-42ee-8b57-ac97ce035d15",
+    "scientificName": "Ficus lyrata",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/ficus-lyrata/",
+    "sourceTitle": "Ficus lyrata Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:45.197932+00:00",
+    "sha256": "d03d1654ad8d53f3ae5f029afa291dfe743041a55efd6fd4efdb99f2949e3bb0",
+    "scope": "species",
+    "summaryEvidence": "The fiddle-leaf fig is a small tropical tree and broadleaf evergreen, commonly grown and popular as a houseplant in many areas of the United States. As a houseplant, it will grow 2 to 10 feet tall. It has large, broad, l",
+    "careEvidence": [
+      "The fiddle-leaf fig prefers bright indirect light or partial shade and moist, well-drained, loamy, acidic soils.",
+      "They are sensitive to overwatering and also need protection from the afternoon sun."
+    ]
+  },
+  {
+    "id": "6b63dfd3-41f7-4cf6-84b2-dd5d3962b1e8",
+    "scientificName": "Ficus benjamina",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/ficus-benjamina/",
+    "sourceTitle": "Ficus benjamina Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:45.740888+00:00",
+    "sha256": "dfbf02eaff0bb76d21e0d297259cde6d7544c2e8c20a56fd00841489153ea513",
+    "scope": "species",
+    "summaryEvidence": "The weeping fig is a member of the Moraceae (fig) family. A broadleaf evergreen, it is native to southeastern Asia and Australia, with its range extending into the southwestern Pacific. The tree may reach a height of 40 ",
+    "careEvidence": [
+      "It grows well in a soil-based potting mix.",
+      "Water just often enough to keep the soil from completely drying out."
+    ]
+  },
+  {
+    "id": "261c1111-4ebd-40ee-b724-da797ca7a4eb",
+    "scientificName": "Ficus pumila",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/ficus-pumila/",
+    "sourceTitle": "Ficus pumila Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:52.638453+00:00",
+    "sha256": "247cccdf2306c9d15a9ddd0018bdd1dd96adc395571ab4bd71b9cda7c65bcfa7",
+    "scope": "species",
+    "summaryEvidence": "Creeping fig is a broadleaf, evergreen, woody, climber in the mulberry family (Moraceae). It is native to central and southern China and eastern Asia. It is a vigorous grower and, in favorable conditions, will climb 8 to",
+    "careEvidence": [
+      "Indoors, grow it in a soil-based potting mix placed in a spot that receives bright indirect light or part shade and protection from afternoon sun.",
+      "Water regularly during the growing season and reduce watering from fall to late winter."
+    ]
+  },
+  {
+    "id": "f43dd23f-4dd1-4228-bc38-f9dbb783ccbe",
+    "scientificName": "Heptapleurum arboricola",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/heptapleurum-arboricola/",
+    "sourceTitle": "Heptapleurum arboricola Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:52.440651+00:00",
+    "sha256": "40a40b142e2b7b8de77b005865d8a2f4947aa0a06f7dab76e0e6de66fb5cd129",
+    "scope": "species",
+    "summaryEvidence": "Dwarf umbrella tree is an evergreen flowering shrub in the ginseng family (Araliaceae) native to China and Taiwan. Although the dwarf umbrella tree may grow 10-15 feet tall when planted outside in South Florida, this tro",
+    "careEvidence": [
+      "While it can tolerate some full sun outdoors, as a houseplant, bright, direct light will burn the leaves.",
+      "Allow the soil to dry out and then thoroughly soak it with water."
+    ]
+  },
+  {
+    "id": "150a364a-5a71-4c99-bb39-e71afdeaa39f",
+    "scientificName": "Pachira aquatica",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/pachira-aquatica/",
+    "sourceTitle": "Pachira aquatica Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:53.857434+00:00",
+    "sha256": "eba304f58f61c796a8d8db954e96aa02a76a162ec274bcf0e3c613d2a64bb37f",
+    "scope": "species",
+    "summaryEvidence": "The money tree is native to Southern Mexico to Bolivia and Northern Brazil and is found in freshwater swamps, estuaries, along riverbanks, or tropical rainforests. The genus name, Pachira, means \"sweetwater nut' and refe",
+    "careEvidence": [
+      "The money tree is native to Southern Mexico to Bolivia and Northern Brazil and is found in freshwater swamps, estuaries, along riverbanks, or tropical rainforests.",
+      "The genus name, Pachira, means \"sweetwater nut' and refers to the tree's fruits."
+    ]
+  },
+  {
+    "id": "2e3ac6f0-fc60-4812-b88b-e1d51ad48def",
+    "scientificName": "Pilea peperomioides",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/pilea-peperomioides/",
+    "sourceTitle": "Pilea peperomioides Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:52.334399+00:00",
+    "sha256": "97bff2ee90975752b5ae4e036ca77319fb0e135426a15f6287c39d413f6b0f47",
+    "scope": "species",
+    "summaryEvidence": "The Chinese Money Plant is a popular evergreen perennial houseplant that is native to the Yunnan Province of Southern China where it grows in the shady and cool mountain areas. It is a member of the nettle or Urticaceae ",
+    "careEvidence": [
+      "The Chinese Money Plant prefers bright, indirect sunlight, and moist, well-drained potting mix.",
+      "They are susceptible to root rot if overwatered."
+    ]
+  },
+  {
+    "id": "43c2d30a-70b1-4c52-9836-522fbe63d77c",
+    "scientificName": "Peperomia obtusifolia",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/peperomia-obtusifolia/",
+    "sourceTitle": "Peperomia obtusifolia Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:52.457509+00:00",
+    "sha256": "172020ed2c4b4cf5a542474671714cc7189f3f7f4978a64952354c6b2a9a9ad2",
+    "scope": "species",
+    "summaryEvidence": "Baby Rubber Plant is a tropical evergreen herbaceous shrub that is erect and bushy and grows up to 2 feet tall. It is native to South America, and it is a member of the Piperaceae or pepper family. The glossy cupped, obo",
+    "careEvidence": [
+      "It is intolerant of wet soil, very dry soil, or very drafty sites.",
+      "This plant prefers bright indirect light, dry soil, and medium to low relative humidity."
+    ]
+  },
+  {
+    "id": "f2c29216-8d74-4fe4-a9a4-4dc91d1afaa7",
+    "scientificName": "Peperomia caperata",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/peperomia-caperata/",
+    "sourceTitle": "Peperomia caperata Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:59.682147+00:00",
+    "sha256": "f17e736a925df0bfab1d012ab6f3b1e67b593f0c77b82e4e3d3c3c4380ba5e8f",
+    "scope": "species",
+    "summaryEvidence": "Emerald Ripple Peperomia is a tropical plant in the Piperaceae (pepper) family that is commonly used as a houseplant in temperate climates. In the tropics, this plant is an evergreen herbaceous ground cover with an erect",
+    "careEvidence": [
+      "Medium light conditions such as sun filtered through a thin curtain are ideal, along with soil that dries between watering and medium to low relative humidity.",
+      "It is tolerant of low light for several months without stress but it will not tolerate wet soil, very dry soil, or very drafty sites."
+    ]
+  },
+  {
+    "id": "243a7231-ea54-4511-a5b6-daafcebe4da1",
+    "scientificName": "Peperomia argyreia",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/peperomia-argyraea/",
+    "sourceTitle": "Peperomia argyraea Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:59.983669+00:00",
+    "sha256": "9dfe2ea5af7350f2a64797fa2ea635a3a8cf203bce41c792cc903b3beff69ccc",
+    "scope": "needs-review",
+    "summaryEvidence": "Watermelon Peperomia is a tropical evergreen herbaceous shrub that has an erect and bushy habit and is native to South America. It is a member of the Piperaceae or pepper family. The plant grows up to 8 inches tall and c",
+    "careEvidence": [
+      "Watermelon Peperomia is a tropical evergreen herbaceous shrub that has an erect and bushy habit and is native to South America.",
+      "The decorative, watermelon-striped, waxy leaves and cream-colored, spiked inflorescence add interest to this plant."
+    ]
+  },
+  {
+    "id": "cfa822a9-7133-44cc-bea0-07b945a8dfeb",
+    "scientificName": "Codiaeum variegatum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/codiaeum-variegatum/",
+    "sourceTitle": "Codiaeum variegatum Play pronunciation",
+    "checkedAt": "2026-10-30T08:58:59.878679+00:00",
+    "sha256": "d15054ee548d6dadc60fef9dbbdf188f4691020ac0b5fbd6e5fda74e57935e76",
+    "scope": "species",
+    "summaryEvidence": "Crotons are woody, flowering, broadleaf evergreen shrubs in the spurge family (Euphorbiaceae) reaching heights of 8 feet in the narrow climate range of their native habitat, Malaysia, the Pacific islands, and northern Au",
+    "careEvidence": [
+      "Crotons prefer full sun or partial shade and well-drained, humus-rich soil that is occasionally dry with low to medium relative humidity.",
+      "Water them liberally from spring to autumn, sparingly in winter."
+    ]
+  },
+  {
+    "id": "d3b18b2a-ae02-49c9-8e79-ae0198559898",
+    "scientificName": "Coleus scutellarioides",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/coleus-scutellarioides/",
+    "sourceTitle": "Coleus scutellarioides Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:01.500969+00:00",
+    "sha256": "67b92090b463b7b73cab95664e525b9958ab8e3d94820ed4fb25a68216c17657",
+    "scope": "species",
+    "summaryEvidence": "Coleus is an upright annual or herbaceous perennial in the Lamiaceae (mint) family. Its native range is tropical and subtropical Asia to northern Australia. The species name resembles the genus Scutellaria, which comes f",
+    "careEvidence": [
+      "This plant grows best in moist, rich, loose soil in part shade, even tolerating full shade.",
+      "Plants may wilt in full sun."
+    ]
+  },
+  {
+    "id": "8a923291-e555-4506-a0c5-fded2d288fa0",
+    "scientificName": "Fittonia albivenis",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/fittonia-albivenis/",
+    "sourceTitle": "Fittonia albivenis Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:00.935620+00:00",
+    "sha256": "3dc979ed3d39ae197bfe05f8c1e7e39acbb54a3f3cb4a70a8689184ce2ce614c",
+    "scope": "species",
+    "summaryEvidence": "The nerve plant is native to the tropical rainforests of South America. In its native habitat, the plant grows as a creeping evergreen, up to 8 inches tall, and spreads to about 18 inches wide. In the United States, it i",
+    "careEvidence": [
+      "Plant in well-drained potting soil.",
+      "Recommend watering two times a week."
+    ]
+  },
+  {
+    "id": "075cfaa1-ebc4-4760-9e0a-4cc8fa10bf81",
+    "scientificName": "Hypoestes phyllostachya",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/hypoestes-phyllostachya/",
+    "sourceTitle": "Hypoestes phyllostachya Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:02.398487+00:00",
+    "sha256": "f96d747bf971e62ea82e2123736cd12687c86599d0f1c64bd57268385ea1534f",
+    "scope": "species",
+    "summaryEvidence": "Once thought of as simply a houseplant, the polka dot plant has progressed to an annual in the garden. Used in a container grouping, a dish garden, window boxes or placed directly as a border plant is sure to brighten yo",
+    "careEvidence": [
+      "Polka-dot plants will tolerate some direct sunlight, however, achieving the best color can be accomplished by locating this plant in an area that receives bright, filtered lighting.",
+      "Too much direct sunlight can cause the leaves to crinkle and curl."
+    ]
+  },
+  {
+    "id": "ef303c86-bfa0-4e14-ab5b-fb3c2669e6de",
+    "scientificName": "Maranta leuconeura",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/maranta-leuconeura/",
+    "sourceTitle": "Maranta leuconeura Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:02.295518+00:00",
+    "sha256": "31a0a0b4397ece2448d9a2089eea6bcec3aefe4992b48d527c89b969891f6890",
+    "scope": "species",
+    "summaryEvidence": "The Prayer Plant is an evergreen tropical plant in the arrowroot family commonly grown as a houseplant in temperate climates. The Prayer Plant has variegated ovate leaves with entire margins that fold at night to resembl",
+    "careEvidence": [
+      "When grown indoors, place in bright, indirect light.",
+      "Keep potting soil evenly moist throughout the growing season, but hold back on watering to allow the soil to dry out in the winter months."
+    ]
+  },
+  {
+    "id": "e6798dc4-79df-4903-bcbc-b8e42c2a2524",
+    "scientificName": "Goeppertia makoyana",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/goeppertia-makoyana/",
+    "sourceTitle": "Goeppertia makoyana Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:02.264014+00:00",
+    "sha256": "0018f0bccf5cd5c74505d4a4295582cf03f00a542454d20e40735de982823577",
+    "scope": "species",
+    "summaryEvidence": "The peacock plant is an evergreen herbaceous perennial species native to the tropical rainforests of southeastern Brazil. It thrives in an environment that is warm, shaded, and humid. The plant's foliage has a decorative",
+    "careEvidence": [
+      "This plant prefers bright, indirect sun or partial shade and moist, well-drained potting mix with high organic matter and perlite to improve drainage.",
+      "The soil needs to be moist but not wet or soggy."
+    ]
+  },
+  {
+    "id": "a315544e-1d52-4a5d-af6b-9fa84851b675",
+    "scientificName": "Stromanthe thalia",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/stromanthe-thalia/",
+    "sourceTitle": "Stromanthe thalia Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:04.384661+00:00",
+    "sha256": "e23ae21cdc96b6c089b2a5d54388b0c406f06e03e57737ae4fc849f7daf3dad4",
+    "scope": "species",
+    "summaryEvidence": "Stromanthe is a tender evergreen herbaceous perennial that is native to the rainforests of Brazil. It prefers high humidity and warm temperatures. The plant has beautiful foliage that is up to 20 inches long, elliptical ",
+    "careEvidence": [
+      "It prefers partial to dappled shade and moist, well-drained soils.",
+      "Direct sun can scorch the leaves, and it is intolerant of dry soils."
+    ]
+  },
+  {
+    "id": "7b2ffc51-8477-4735-b6c3-767780ef465f",
+    "scientificName": "Chamaedorea elegans",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/chamaedorea-elegans/",
+    "sourceTitle": "Chamaedorea elegans Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:04.352074+00:00",
+    "sha256": "20aaa919e414bacf3ca0eaa40e0920660d74950921507c166eddbec40b3bc7ad",
+    "scope": "species",
+    "summaryEvidence": "Parlor palm is a solitary, understory member of the palm family (Arecaceae) native to southern Mexico and northern Central America. The genus name is compounded from the Greek chamai- , meaning “of the ground,” and -dore",
+    "careEvidence": [
+      "They need bright indirect light and low to medium humidity levels, though they can tolerate low-light conditions.",
+      "Overwatering can be a problem, so be sure to plant in well-drained soil and let the soil dry slightly out between waterings."
+    ]
+  },
+  {
+    "id": "b2fbadce-075a-4e99-bd0f-15c017f09722",
+    "scientificName": "Dypsis lutescens",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/chrysalidocarpus-lutescens/",
+    "sourceTitle": "Chrysalidocarpus lutescens Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:14.470535+00:00",
+    "sha256": "7fafb4de28981d9354ade24661cb1eee7f2f083af722642dc9238251a0c14855",
+    "scope": "species",
+    "summaryEvidence": "Areca palm is a tropical perennial native to Madagascar in the palm family (Arecaceae). It is a multi-stemmed (clustering or clumping) palm that can grow to 30 feet tall and 15 feet wide in its native habitat. The genus ",
+    "careEvidence": [
+      "Grow in well-drained potting soil and keep moist but not soggy during the growing season.",
+      "Increase humidity with a humidifier, if needed, and provide bright indirect light."
+    ]
+  },
+  {
+    "id": "78ffffc6-6257-4e28-a71b-ad48ec4152ba",
+    "scientificName": "Rhapis excelsa",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/rhapis-excelsa/",
+    "sourceTitle": "Rhapis excelsa Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:05.135573+00:00",
+    "sha256": "76f78cfd4dbbb9510bc3f83e2b790fc5f1fcc03448ed387418d8a4379a6a2c73",
+    "scope": "species",
+    "summaryEvidence": "Lady palm is a tropical, evergreen, rhizomatous perennial in the palm family (Arecaceae). The species is native to southern China and Vietnam, where it grows in the understory of wet forests. The genus name is from the G",
+    "careEvidence": [
+      "As an indoor plant, it needs indirect light, withstands deep shade and has low humidity requirements.",
+      "It needs well-drained potting soil and regular watering except in the winter when watering can be reduced."
+    ]
+  },
+  {
+    "id": "23540d82-0668-45ac-8e7c-d8a8946dc729",
+    "scientificName": "Hedera helix",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/hedera-helix/",
+    "sourceTitle": "Hedera helix Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:10.858597+00:00",
+    "sha256": "716403e85d95b8813b5e01d885e9b11fb03cc4b6a361b8f9d0dae1a1a7f9db1e",
+    "scope": "species",
+    "summaryEvidence": "English ivy is a broadleaf evergreen, woody, vining, perennial ground cover in the ginseng family (Araliaceae) that rapidly grows 20 to 80 feet high and 3 to 50 feet wide. It is an invasive species in North Carolina that",
+    "careEvidence": []
+  },
+  {
+    "id": "dd652c2c-282d-4e26-907a-6d51d91cde4b",
+    "scientificName": "Trachelospermum jasminoides",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/trachelospermum-jasminoides/",
+    "sourceTitle": "Trachelospermum jasminoides Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:11.508098+00:00",
+    "sha256": "9bca2149773d81c246ae959413e307561631a4bf44ae71f1eac26bd04d538df3",
+    "scope": "species",
+    "summaryEvidence": "Star Jasmine is an evergreen perennial vine in the dogbane family (Apocynaceae). It is native to Japan and China. The genus name refers to the Greek words trachelos and sperma for neck and seed. The specific epithet mean",
+    "careEvidence": [
+      "For best flowers, grow in fertile, well-drained soil in a sheltered, sunny spot.",
+      "Apply a spring fertilizer if the soil is not fertile."
+    ]
+  },
+  {
+    "id": "1d78cf30-1294-49f9-b583-84ca4016c391",
+    "scientificName": "Hoya carnosa",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/hoya-carnosa/",
+    "sourceTitle": "Hoya carnosa Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:10.810073+00:00",
+    "sha256": "b05a45033d0472bd07fd4616ce2181052ccc98dfdca4bea97d05d48ad20cd2c6",
+    "scope": "species",
+    "summaryEvidence": "Wax plant is a broadleaf evergreen, epiphytic, vining, herbaceous perennial in the dogbane family (Asclepiadaceae). It is native to Southeast Asia, Japan, and Taiwan. The species epithet means “fleshy,” referring to the ",
+    "careEvidence": [
+      "Bright indirect light year-round is ideal.",
+      "Allow the soil to dry out between watering."
+    ]
+  },
+  {
+    "id": "96240518-86ae-4da8-9d25-5ecc7f07533f",
+    "scientificName": "Tradescantia zebrina",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/tradescantia-zebrina/",
+    "sourceTitle": "Tradescantia zebrina Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:11.162962+00:00",
+    "sha256": "3cb291942a03205c6cf1aedb2e17ad2c52f0115d21f3858a7746ea0dd26ccca0",
+    "scope": "species",
+    "summaryEvidence": "The zebra plant is an herbaceous perennial often grown as an ornamental houseplant with interesting, variegated foliage striped, green, white, and silver with purple undersides. It is native from Mexico to Colombia. This",
+    "careEvidence": [
+      "It does best in filtered sun, average room temperatures and moist but well-drained soil.",
+      "When located in full sunlight, the greatest color intensity can be appreciated."
+    ]
+  },
+  {
+    "id": "b19f8d9b-15e8-4c02-9245-fe6f9148b0db",
+    "scientificName": "Tradescantia pallida",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/tradescantia-pallida/",
+    "sourceTitle": "Tradescantia pallida Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:13.410417+00:00",
+    "sha256": "d0ee73a5ec8cb0cd99966f2ec0e2c2cd70ed1de9e059d375cbd9d0658e44b429",
+    "scope": "species",
+    "summaryEvidence": "Purple heart is a tender low-growing, trailing, perennial in the spiderwort family (Commelinaceae) that is commonly used as a houseplant or an annual. The plant species is from Mexico, where it grows as a ground cover. T",
+    "careEvidence": [
+      "To plant outdoors find a location with full sun to partial shade and moist, well-drained soil that is rich in organic matter.",
+      "Full sun will result in the best color development."
+    ]
+  },
+  {
+    "id": "fd1c2560-eac2-43d3-8bf9-85327642fa66",
+    "scientificName": "Oxalis triangularis",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/oxalis-triangularis/",
+    "sourceTitle": "Oxalis triangularis Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:13.491687+00:00",
+    "sha256": "59c60067bb99a62e3609b4f253793be84934211437a701b77379c877d111a268",
+    "scope": "species",
+    "summaryEvidence": "Purple shamrock plant is a rhizomatous, herbaceous perennial in the wood sorrel family (Oxalidaceae) native to South America. It is grown as an ornamental garden or houseplant. The species epithet is Latin for “triangula",
+    "careEvidence": [
+      "Use a loamy potting mix with good drainage and allow the surface to dry between waterings.",
+      "Place in full sun to partial shade."
+    ]
+  },
+  {
+    "id": "9bca602a-38f3-490e-b288-79c74580c786",
+    "scientificName": "Cyclamen persicum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/cyclamen-persicum/",
+    "sourceTitle": "Cyclamen persicum Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:13.795263+00:00",
+    "sha256": "a2c9f6bba6d6210c0e4d437f67af2bdef4290f5c63b853c190587ce9c4a248f6",
+    "scope": "species",
+    "summaryEvidence": "Persian Cyclamen is a flowering herbaceous perennial that grows from a tuber. This species is very popular with florists, and it is frequently called the \"Florist's Cyclamen.\" They have a mounded growth habit and measure",
+    "careEvidence": [
+      "The plant prefers rich, well-drained soils and bright indirect sunlight.",
+      "Avoid watering the crown of the plant, which can result in the tubers rotting, and only water when the soil feels dry."
+    ]
+  },
+  {
+    "id": "9189a51a-66ff-4158-9178-55778c122aff",
+    "scientificName": "Kalanchoe blossfeldiana",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/kalanchoe-blossfeldiana/",
+    "sourceTitle": "Kalanchoe blossfeldiana Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:19.077553+00:00",
+    "sha256": "305f4d89bd17a39310f5692e08cc36eeba9fdb9f24ed90165c6638007829c194",
+    "scope": "species",
+    "summaryEvidence": "The florist kalanchoe is a popular flowering succulent that is grown for its ornamental value. It is native to Northeast Madagascar and is a member of the stonecrop family (Crassulaceae). The specific epithet, blossfeldi",
+    "careEvidence": [
+      "The florist kalanchoe prefers bright indirect sunlight or partial shade.",
+      "For houseplants, the soil should be a well-drained potting mix that is suited for cactus or succulents."
+    ]
+  },
+  {
+    "id": "ee1b5a3f-4939-480a-8cf4-627a29b7f48e",
+    "scientificName": "Begonia cucullata",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/begonia-wax-types/",
+    "sourceTitle": "Begonia – Wax Types Play pronunciation",
+    "checkedAt": "2026-10-30T09:03:12.216227+00:00",
+    "sha256": "80073243f836852fec43f13ed3b429208f95a4916a5aa6105f083e54e0add13e",
+    "scope": "needs-review",
+    "summaryEvidence": "Wax begonias are a very popular member of the Begoniaceae (begonia) family, often used as an annual bedding plant or as a tender, herbaceous perennial grown in containers and brought indoors for the winter. Wax begonias ",
+    "careEvidence": [
+      "Once established, wax begonias adapt to a wide range of light conditions, though they do require moderately humus-rich, well-drained moist soils.",
+      "Mulch well in the summer to protect roots, and water well."
+    ]
+  },
+  {
+    "id": "f093f2b0-1035-4d0f-86a5-288c6be94f18",
+    "scientificName": "Pelargonium zonale",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/pelargonium/",
+    "sourceTitle": "Pelargonium Play pronunciation",
+    "checkedAt": "2026-10-30T09:03:19.346199+00:00",
+    "sha256": "80f75bdbd0fb449a9caf5fa9d5661060c0e97b469fd0cbe2e1d7a4e69780cdec",
+    "scope": "needs-review",
+    "summaryEvidence": "Pelargoniums are annuals, tender perennials (often grown as annuals), shrubs or tuberous geophytes from Africa, Madagascar, the Arabian Peninsula, and Australia, but most species are endemic to South Africa. Pelargoniums",
+    "careEvidence": [
+      "Pelargoniums require full sun and soils that are well-drained.",
+      "Plants in containers may be allowed to dry out between waterings."
+    ]
+  },
+  {
+    "id": "3375736b-20ef-49bf-9c79-662e2a9c7d36",
+    "scientificName": "Petunia × atkinsiana",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/petunia-x-hybrida/",
+    "sourceTitle": "Petunia x hybrida Play pronunciation",
+    "checkedAt": "2026-10-30T09:00:28.016924+00:00",
+    "sha256": "973b7016fcfecca5cc7c7349b8b29339f9565d7d582aa282badc4f9c6091dfdd",
+    "scope": "needs-review",
+    "summaryEvidence": "Garden petunia is a tender perennial in the nightshade family (Solanaceae). Its hardiness zones range from 10a to 11b, which results in it being an annual in North Carolina gardens. Petunia’s genus name is derived from t",
+    "careEvidence": [
+      "Plant in full sun to partial shade and in light and well-drained soils.",
+      "It can tolerate poor soils as long as they have good drainage."
+    ]
+  },
+  {
+    "id": "a332d13e-6868-47ca-ae8e-1ab10dae097f",
+    "scientificName": "Catharanthus roseus",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/catharanthus-roseus/",
+    "sourceTitle": "Catharanthus roseus Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:18.813958+00:00",
+    "sha256": "3e2a4aecaee11b78df506a2cd548db556f24ced451d43fc69b4b6412bf550501",
+    "scope": "species",
+    "summaryEvidence": "Madagascar periwinkle is an evergreen, tender, erect-to-spreading perennial in the dogbane family (Apocynaceae). It is native to Madagascar but has naturalized in warm areas around the world. The species epithet means \"p",
+    "careEvidence": [
+      "The species epithet means \"pink.\" Plant it in full sun to partial or dappled shade in moist, well-drained soil.",
+      "While it prefers acidic soil, it tolerates a range of soil types, so as long as it has good drainage."
+    ]
+  },
+  {
+    "id": "56a7fc8c-e020-4d40-ae2f-52597eae5c57",
+    "scientificName": "Impatiens balsamina",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/impatiens-balsamina/",
+    "sourceTitle": "Impatiens balsamina Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:25.950187+00:00",
+    "sha256": "8963f2c8d79ee0805a1dcc6fe0b0451f1c52425768c57f8e9955c2f04ba6b78f",
+    "scope": "species",
+    "summaryEvidence": "Garden balsam is a frost-tender annual in Balsaminaceae (impatens) family. The sparsely branched succulent stems can grow up to 30\" tall but frequently exceeds this height in the wild. The vibrant cup-shaped flowers come",
+    "careEvidence": []
+  },
+  {
+    "id": "30a4f5bc-d308-4a31-be02-0d53057309ed",
+    "scientificName": "Streptocarpus ionanthus",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/streptocarpus-ionanthus/",
+    "sourceTitle": "Streptocarpus ionanthus Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:26.010994+00:00",
+    "sha256": "de2c4bdba2cd1a06187a4137174201ba570514557214fd8fc5d1486f63d3d627",
+    "scope": "species",
+    "summaryEvidence": "African violet is an evergreen, tropical houseplant in the gloxinia family (Gesneriaceae). A popular potted houseplant, its flowers are red, purple, blue, white or pink. The species epithet is compounded from the Greek m",
+    "careEvidence": [
+      "The species epithet is compounded from the Greek meaning “having the flower of a violet.” As it is rarely grown outdoors, it prefers interior sites with bright, filtered light and moist soil.",
+      "This mixture will allow the water to pass through quickly."
+    ]
+  },
+  {
+    "id": "82cc921a-b62e-40e1-bf8d-d135835837b2",
+    "scientificName": "Phalaenopsis aphrodite",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/phalaenopsis/",
+    "sourceTitle": "Phalaenopsis Play pronunciation",
+    "checkedAt": "2026-10-30T09:00:27.417754+00:00",
+    "sha256": "90666497af9d48125af219242409aaad001d624c65757b9698b8f1dbc7a4db89",
+    "scope": "needs-review",
+    "summaryEvidence": "Moth orchid is an epiphytic, tropical, herbaceous perennial in the orchid family (Orchidaceae). Moth orchids can range from a few inches to 2 feet in height and up to 2 feet (but usually less) in spread. Their region of ",
+    "careEvidence": [
+      "Orchids should be watered in the mornings with tepid water by placing plants in a sink and allowing water to flow freely through potting medium and foliage.",
+      "Let the pot drain completely so that plants do not stand in water."
+    ]
+  },
+  {
+    "id": "31b63c34-6944-4c4d-a276-2c180ce00b66",
+    "scientificName": "Jasminum sambac",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/jasminum/",
+    "sourceTitle": "Jasminum Play pronunciation",
+    "checkedAt": "2026-10-30T09:03:19.706309+00:00",
+    "sha256": "0f3bed89756e19d37c5a9e59824882f26e8f0a79c2775718db1c657d25db1f15",
+    "scope": "needs-review",
+    "summaryEvidence": "The jasmines are a genus of perennial, evergreen or deciduous shrubs or vines with over 200 species in the olive family (Oleaceae). The species are native to tropical and subtropical areas of Africa, Asia and Australia b",
+    "careEvidence": [
+      "Jasmines need full sun for optimal health or at least bright light.",
+      "Most will need moist, well-drained soil, though some species are somewhat tolerant of dry soils."
+    ]
+  },
+  {
+    "id": "430c9730-a3bb-42c7-960d-1b93bc804fd4",
+    "scientificName": "Bougainvillea glabra",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/bougainvillea-glabra/",
+    "sourceTitle": "Bougainvillea glabra Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:27.369468+00:00",
+    "sha256": "d0c87f63a0b2b58ec25e041cd216e08ffabc2066b15d4b0d7c218a2aec504836",
+    "scope": "species",
+    "summaryEvidence": "Lesser Bougainvillea is an evergreen, flowering vine in the 4-O'Clock family. It is frost sensitive so it is often grown as an annual or as a container plant. The actual flower is small and insignificant, it is the color",
+    "careEvidence": [
+      "Lesser Bougainvillea is best suited to a hot, dry climate and should be watered deeply but allowed to dry out between waterings.",
+      "It grows best in full sun or partial shade with well-drained, acidic soil."
+    ]
+  },
+  {
+    "id": "7003a300-4bf1-4a75-b01a-44efde753c88",
+    "scientificName": "Rhododendron simsii",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/rhododendron/",
+    "sourceTitle": "Rhododendron Play pronunciation",
+    "checkedAt": "2026-10-30T09:03:19.639616+00:00",
+    "sha256": "f74ae5753303204a6d4f399d7bc127cc78085d7b14619dc79cd5bd96870f026f",
+    "scope": "needs-review",
+    "summaryEvidence": "Azaleas and rhododendrons are woody, evergreen or deciduous, rounded shrubs in the Ericaceae blueberry family (Ericaceae). They are native to North America, Europe and Asia, and there are many cultivars and varieties. So",
+    "careEvidence": [
+      "The genus name is compounded from the Greek words rhodo , which means “rose,” and dendron , meaning “tree.” These plants prefer moist, well-drained, acidic soils in dappled shade and protection from afternoon sun, which can scorch the leaves.",
+      "They do not tolerate dense clay, so amend clay soil with organic material."
+    ]
+  },
+  {
+    "id": "d52dc7ca-077e-409c-9f95-c12f08a05922",
+    "scientificName": "Chrysanthemum × morifolium",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/chrysanthemum-x-morifolium/",
+    "sourceTitle": "Chrysanthemum x morifolium Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:34.340650+00:00",
+    "sha256": "bfcee7264305520127ecfed1b2a9cc44494f4d4eac5cd078a487a29b43492a71",
+    "scope": "species",
+    "summaryEvidence": "Autumn mum is an herbaceous perennial in the daisy family (Asteraceae). It is a complex hybrid involving five Chinese species: C. argyrophyllum , C. dichrum , C. indicum , C. nankingense and C. zawadzkii . There are hund",
+    "careEvidence": [
+      "Plant in areas with full sun and well-drained soil, with protection from the afternoon sun in warmer locations."
+    ]
+  },
+  {
+    "id": "e90ce60a-efe7-4f83-b344-57d5ff34b6c1",
+    "scientificName": "Aloe vera",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/aloe-vera/",
+    "sourceTitle": "Aloe vera Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:33.049584+00:00",
+    "sha256": "90cc8d3e4790debb380f52cbec826740a367698e7557383329a647b783c73443",
+    "scope": "species",
+    "summaryEvidence": "Aloe Vera is an evergreen succulent plant in the daylily family (Asphodelaceae) native to the Arabian Peninsula that has spread to many other regions and is considered invasive in some counties. The genus name is derived",
+    "careEvidence": [
+      "Grow this plant in full sun to partial shade in very well-drained soils suitable for succulents.",
+      "Allow the soil to completely dry between waterings."
+    ]
+  },
+  {
+    "id": "3d32fb76-d038-4487-b291-5b4ae19d3e9e",
+    "scientificName": "Crassula ovata",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/crassula-ovata/",
+    "sourceTitle": "Crassula ovata Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:32.826256+00:00",
+    "sha256": "aa6c59ee5b5fee3c9ea6e6e6475bd06a1acf9167e2d98ee013541d15113049c1",
+    "scope": "species",
+    "summaryEvidence": "Jade plant is a subtropical, broadleaf evergreen, flowering, succulent shrub in the stonecrop family. It is a native of South Africa and a popular, low maintenance, houseplant worldwide. The species name \"ovata\" means eg",
+    "careEvidence": [
+      "Plant in well-drained potting soil that contains a lot of loam and place the pot in a sunny location indoors that also provides some afternoon shade.",
+      "Water in moderation when the soil is dry and reduce watering from fall to late winter."
+    ]
+  },
+  {
+    "id": "1281ecfd-c6d0-416d-840a-3b4580542bcc",
+    "scientificName": "Aeonium arboreum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/aeonium/",
+    "sourceTitle": "Aeonium Play pronunciation",
+    "checkedAt": "2026-10-30T09:03:19.281901+00:00",
+    "sha256": "efd8f6e726cc9cc110f0a124cdc7d3aa6da0ad57194b20688e81269cc689392c",
+    "scope": "needs-review",
+    "summaryEvidence": "Aeonium is a genus of small to medium sized, evergreen, succulent plants native to Macaronesia, Southwest Morocco, Northeast and East Africa and the Southwest Arabian Peninsula. The genus name, Aeonium , is from the Gree",
+    "careEvidence": [
+      "They prefer full sun to partial shade and well-drained soil of loam or sand with an acidic to neutral pH.",
+      "Restrict the water to just enough to stop the leaves from fading over the winter months."
+    ]
+  },
+  {
+    "id": "34c34874-8db7-47ee-b371-feb73d0748f9",
+    "scientificName": "Graptopetalum paraguayense",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/graptopetalum-paraguayense/",
+    "sourceTitle": "Graptopetalum paraguayense Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:39.837221+00:00",
+    "sha256": "09770eec60763f6fd6b26514ca15ca29864d97af70df73c9dea98d41ddf04eca",
+    "scope": "species",
+    "summaryEvidence": "Ghost Plant is a succulent in the jade family that is native to Mexico, The fleshy leaves form a rosette 3-6 inches across at the tips of stems. The whitish-green leaves become pink-tinged in hot dry weather and blueish ",
+    "careEvidence": [
+      "The whitish-green leaves become pink-tinged in hot dry weather and blueish in partial shade.",
+      "This plant will grow in full sun to partial shade."
+    ]
+  },
+  {
+    "id": "2bc94eab-1632-4538-acd5-6c87a224c8c4",
+    "scientificName": "Haworthiopsis attenuata",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/haworthiopsis-attenuata/",
+    "sourceTitle": "Haworthiopsis attenuata Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:39.824376+00:00",
+    "sha256": "264fc718b81406fc4f35897ded956f045a9ba3353d82e81aecff59a1b37b6232",
+    "scope": "species",
+    "summaryEvidence": "The zebra plant is a popular succulent perennial that is native to the Cape Provinces of South Africa. It is slow growing and has a long life span of up to 50 years. In the wild, these plants grow in very harsh condition",
+    "careEvidence": [
+      "While they are somewhat tolerant of low-light conditions, they prefer bright indirect sunlight, which also produces the best colors in the leaves.",
+      "Avoid over-watering and allow the soil to dry out between waterings."
+    ]
+  },
+  {
+    "id": "4c34a592-2a6a-4e41-92f6-bcd1bf9bef69",
+    "scientificName": "Selenicereus undatus",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/selenicereus-undatus/",
+    "sourceTitle": "Selenicereus undatus Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:46.700688+00:00",
+    "sha256": "2d77b704d4e00010942927810d22adaf809565c8c3a89783108bdd2ef6ea3420",
+    "scope": "species",
+    "summaryEvidence": "Dragon fruit or pitaya is native from Mexico to Honduras and is found in warm tropical climates. This plant is a member of the cactus family (Cactaceae) and is a succulent, epiphyte that has fragrant, night-blooming flow",
+    "careEvidence": [
+      "The dragon fruit prefers bright, direct sunlight, warm temperatures, and moderate humidity.",
+      "Water this plant when the soil is almost completely dry and provide good air circulation to prevent disease."
+    ]
+  },
+  {
+    "id": "97f7731b-ed25-4d64-a192-c7dadfeb0008",
+    "scientificName": "Epiphyllum oxypetalum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/epiphyllum-oxypetalum/",
+    "sourceTitle": "Epiphyllum oxypetalum Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:46.702031+00:00",
+    "sha256": "8a4f27f4492ebf28af9d4e08c72a7586b1635b85ef48e7c532109cc9f44706f6",
+    "scope": "species",
+    "summaryEvidence": "Queen of the night is a tropical, epiphytic or lithophytic, spineless cactus grown for its large, fragrant flowers. It is native to Central America and thrives in wet tropical and subtropical climates rather than in dry,",
+    "careEvidence": [
+      "This plant requires bright, indirect light and protection from the harsh afternoon sun.",
+      "Soak the soil completely when watering, and water regularly during the spring and summer."
+    ]
+  },
+  {
+    "id": "31d69411-06e1-4c3d-b18e-23666025e715",
+    "scientificName": "Plumbago auriculata",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/plumbago-auriculata/",
+    "sourceTitle": "Plumbago auriculata Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:46.638492+00:00",
+    "sha256": "a9839cfade83d8c1c7e75be0a8f3604cdcef381a9c51a021906dc5d91c8b6370",
+    "scope": "species",
+    "summaryEvidence": "Cape plumbago can be grown as an annual, or in a container as a perennial, that is brought indoors and placed in a bright sunny room for the colder months. Water container plants sparingly in the winter. If treating as a",
+    "careEvidence": [
+      "Water container plants sparingly in the winter."
+    ]
+  },
+  {
+    "id": "869b261c-b435-4d33-a5fe-9fef28593d5c",
+    "scientificName": "Lavandula angustifolia",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/lavandula-angustifolia/",
+    "sourceTitle": "Lavandula angustifolia Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:46.857848+00:00",
+    "sha256": "41261b002f43aa062bafa001378bd0a247557da0b8898a347fbebb307196bcf3",
+    "scope": "species",
+    "summaryEvidence": "English lavender is an evergreen perennial shrub in the Lamiaceae (mint) family that is native to Mediterranean areas. It is well loved but at times difficult to grow in North Carolina. This plant requires perfectly drai",
+    "careEvidence": [
+      "This plant requires perfectly drained soil, preferably on the dry side, and full sun.",
+      "It is easily transplanted and prefers neutral to alkaline soils."
+    ]
+  },
+  {
+    "id": "74bddb19-da4e-45fe-940a-425695962d2e",
+    "scientificName": "Origanum vulgare",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/origanum-vulgare/",
+    "sourceTitle": "Origanum vulgare Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:48.796889+00:00",
+    "sha256": "244dbc66b08ee13730d338f77d156642b606693f5d9cf19059d1b181d0166a1e",
+    "scope": "species",
+    "summaryEvidence": "Oregano is a woody, branching, herbaceous perennial with a bushy habit in the mint family native to Europe and Asia. At maturity, it can reach a height of 3 feet with a 2 foot spread. Oregano is valued for its leaves tha",
+    "careEvidence": [
+      "Oregano does best in average soil including sandy loams, dry to medium moisture with good drainage, and planted in a site with full sun.",
+      "Diseases, Insect Pests, and Other Plant Problems: Root rot can occur in wet, poorly drained soils."
+    ]
+  },
+  {
+    "id": "775773c4-1495-4f2b-8c17-7735d2f83593",
+    "scientificName": "Petroselinum crispum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/petroselinum-crispum/",
+    "sourceTitle": "Petroselinum crispum Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:54.418804+00:00",
+    "sha256": "627f7390a65d2438b39aa655086857027540c1440788b76f1e4dbbabfbbe2384",
+    "scope": "species",
+    "summaryEvidence": "Parsley is a hardy biennial that is usually grown as an annual in the carrot family (Apiaceae). It is native to the Mediterranean area. The genus name comes from the Greek words for rock and celery because it was often f",
+    "careEvidence": [
+      "Parsley prefers consistently moist, well-drained rich soil in full sun or light shade.",
+      "When grown indoors, keep it in bright light and water well."
+    ]
+  },
+  {
+    "id": "f27da69f-f4a9-4d0c-a858-7aa29e5c02b2",
+    "scientificName": "Allium schoenoprasum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/allium-schoenoprasum/",
+    "sourceTitle": "Allium schoenoprasum Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:48.803743+00:00",
+    "sha256": "118778408ff3121d3df354b721f6e1871e13b09c764225bd503d60ed8d262db3",
+    "scope": "species",
+    "summaryEvidence": "Chives are a bulbous perennial used as ornamental or culinary herbs. Chives have edible flowers and leaves used for flavoring with eggs, soups, salads, butter, cheese, dips and spreads. Chives are from the amaryllis fami",
+    "careEvidence": [
+      "Plant chives in average well-drained soils in full sun to partial shade.",
+      "Seeds can be started indoors eight to ten weeks before the last frost date or directly sown in full sun after the last frost date."
+    ]
+  },
+  {
+    "id": "2918df48-0e98-4354-a832-a60e0bf83df4",
+    "scientificName": "Capsicum annuum",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/capsicum-annuum/",
+    "sourceTitle": "Capsicum annuum Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:49.088925+00:00",
+    "sha256": "fff9c2138bedd1eade25a760da9fbb9cdb5e9712ba148fce69b673f1c18964dc",
+    "scope": "species",
+    "summaryEvidence": "Cayenne pepper is a frost-tender perennial in the nightshade family (Solanaceae) native to northern regions of South America and southwestern regions of North America. There are many cultivars available to use as food or",
+    "careEvidence": [
+      "The peppers require full sun but is heat and drought-tolerant.",
+      "It can be temperamental if its roots are disturbed and it prefers full sun and moist, well-drained, rich soil."
+    ]
+  },
+  {
+    "id": "853ea145-5d9b-4040-98b1-d116c29316b3",
+    "scientificName": "Cucumis sativus",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/cucumis-sativus/",
+    "sourceTitle": "Cucumis sativus Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:54.415580+00:00",
+    "sha256": "555cd51e4b4761590f1f14c3dc92b0ef76e3309512264b1afe146c4ad0ec0b0d",
+    "scope": "species",
+    "summaryEvidence": "Cucumber is an annual climbing or spreading vine and common vegetable grown for its crisp, green fruit. It is a member of the Cucurbitaceae (gourd) family, and its native growing region is Himalaya to northern Thailand. ",
+    "careEvidence": [
+      "If given proper soil and water, cucumber plants can be an incredibly prolific addition to your vegetable garden.",
+      "Cucumber grows best in full sun and moist, rich, well-drained soil."
+    ]
+  },
+  {
+    "id": "d116e3ca-ccc9-423a-8b62-47e668899747",
+    "scientificName": "Lactuca sativa",
+    "sourceUrl": "https://plants.ces.ncsu.edu/plants/lactuca-sativa/",
+    "sourceTitle": "Lactuca sativa Play pronunciation",
+    "checkedAt": "2026-10-30T08:59:54.976165+00:00",
+    "sha256": "66a7ef2a0045d468beadc1f81aa2abe3739379919538d92d3edacd93d365b096",
+    "scope": "species",
+    "summaryEvidence": "Lettuce is an erect, edible, annual, cool season vegetable plant in the daisy family (Asteraceae). It is native from the Mediterranean to Siberia and has been bred to grow in an array of shapes, colors, and textures for ",
+    "careEvidence": [
+      "Lettuce grows best in full sun to partial shade and organically rich, moist, well-drained soils.",
+      "Lettuce has a shallow root system and requires consistently moist soil for proper growth and flavor."
+    ]
+  }
+]

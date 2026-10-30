@@ -1,6 +1,9 @@
 node_modules/
-.env
-data/
+
+.env*
+!.env.example
+
+/data/
 coverage/
 docs/
 
