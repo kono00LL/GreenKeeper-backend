@@ -21,7 +21,7 @@ function normalizeResult(body) {
 
 function createPlantnetClient({ apiKey = '', fetchImpl = globalThis.fetch, timeoutMs = 25_000, logger = console } = {}) {
   return {
-    async identify(file, { signal } = {}) {
+    async identify(file, { signal, requestId } = {}) {
       if (!apiKey.trim()) throw new IdentificationError(503, 'IDENTIFICATION_NOT_CONFIGURED', '植物识别功能尚未配置');
       const url = new URL('https://my-api.plantnet.org/v2/identify/all');
       url.search = new URLSearchParams({ 'api-key': apiKey.trim(), lang: 'zh', 'nb-results': '3', 'include-related-images': 'false', detailed: 'false' });
@@ -49,7 +49,7 @@ function createPlantnetClient({ apiKey = '', fetchImpl = globalThis.fetch, timeo
           ? new IdentificationError(504, 'IDENTIFICATION_TIMEOUT', '植物识别超时，请重试', upstreamStatus)
           : error instanceof IdentificationError ? error : unavailable(upstreamStatus);
         // Only log explicit safe fields; fetch errors may contain the API key in their URL.
-        logger.error({ event: 'plant-identification-error', code: failure.code, upstreamStatus, durationMs: Date.now() - startedAt });
+        logger.error({ event: 'plant-identification-error', requestId, code: failure.code, upstreamStatus, durationMs: Date.now() - startedAt });
         throw failure;
       }
     },

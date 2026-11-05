@@ -37,6 +37,33 @@ test('creates an empty plant library and seeds the eight ordered categories', ()
   );
   assert.equal(db.prepare('PRAGMA index_list(plants)').all()
     .find((index) => index.name === 'idx_plants_scientific_name').unique, 0);
+  assert.ok(db.prepare("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'plant_images'").get());
+});
+
+test('plant images enforce plant ownership and one cover per plant', () => {
+  const id = insertPlant();
+  const image = db.prepare(`INSERT INTO plant_images
+    (id, plant_id, image_type, storage_key, mime_type, width, height, file_size, sha256,
+     source_name, source_url, license, checked_at, created_at, updated_at)
+    VALUES (?, ?, 'cover', ?, 'image/webp', 120, 100, 1000, ?, 'Test', 'https://example.com/a', 'CC0', ?, ?, ?)`);
+  image.run('image-1', id, 'a.webp', 'hash-1', '2026-01-01', '2026-01-01', '2026-01-01');
+  assert.throws(() => image.run('image-2', id, 'b.webp', 'hash-2', '2026-01-01', '2026-01-01', '2026-01-01'), /UNIQUE/);
+  assert.throws(() => image.run('image-3', 'missing', 'c.webp', 'hash-3', '2026-01-01', '2026-01-01', '2026-01-01'), /FOREIGN KEY/);
+  db.prepare('DELETE FROM plants WHERE id = ?').run(id);
+  assert.equal(db.prepare('SELECT COUNT(*) AS count FROM plant_images').get().count, 0);
+});
+
+test('plant images reject duplicate hashes across cover/gallery and invalid sizes', () => {
+  const id = insertPlant();
+  const image = db.prepare(`INSERT INTO plant_images
+    (id, plant_id, image_type, storage_key, mime_type, width, height, file_size, sha256,
+     source_name, source_url, license, checked_at, created_at, updated_at)
+    VALUES (?, ?, ?, 'a.webp', 'image/webp', ?, ?, ?, ?, 'Self', 'https://example.com/a', 'CC0', '2026-11-03', '2026-11-03', '2026-11-03')`);
+  image.run('cover', id, 'cover', 100, 100, 1000, 'same-hash');
+  assert.throws(() => image.run('gallery', id, 'gallery', 100, 100, 1000, 'same-hash'), /UNIQUE/);
+  for (const sizes of [[0, 100, 1000], [100, -1, 1000], [100, 100, 0], [1.5, 100, 1000], [100, 'bad', 1000]]) {
+    assert.throws(() => image.run('invalid', id, 'gallery', ...sizes, 'new-hash'), /CHECK/);
+  }
 });
 
 test('repeated initialization preserves category edits, plant records and existing user data', () => {

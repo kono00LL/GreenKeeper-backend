@@ -3,9 +3,9 @@ const { matchLocalPlant } = require('../plants/match-identification');
 
 function createIdentificationService(client, plantRepository) {
   return {
-    async identify(file, signal) {
+    async identify(file, signal, requestId) {
       await validateImage(file, ['image/jpeg', 'image/png']);
-      const result = await client.identify(file, { signal });
+      const result = await client.identify(file, { signal, requestId });
       if (signal?.aborted) throw signal.reason;
       if (result.candidates.length === 0) return result;
       const plants = plantRepository.identificationRecords();

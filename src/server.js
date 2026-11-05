@@ -5,6 +5,7 @@ const Database = require('better-sqlite3');
 const { initializeDatabase } = require('./database');
 const { createApp } = require('./app');
 const { createConfiguredImageStorage } = require('./images/config');
+const { errorDetails } = require('./diagnostics');
 
 const dataDirectory = process.env.DATA_DIRECTORY || path.join(__dirname, '..', 'data');
 const uploadDirectory = path.join(dataDirectory, 'uploads');
@@ -29,8 +30,16 @@ function shutdown() {
 process.on('SIGINT', shutdown);
 process.on('SIGTERM', shutdown);
 process.on('uncaughtException', (error) => {
-  console.error('[uncaughtException]', error);
+  logProcessError('uncaughtException', error);
 });
 process.on('unhandledRejection', (reason) => {
-  console.error('[unhandledRejection]', reason);
+  logProcessError('unhandledRejection', reason);
 });
+
+function logProcessError(event, error) {
+  if (process.env.NODE_ENV === 'production') {
+    console.error(JSON.stringify({ event }));
+    return;
+  }
+  console.error(JSON.stringify({ event, error: errorDetails(error) }));
+}

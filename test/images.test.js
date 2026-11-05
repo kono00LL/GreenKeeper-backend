@@ -99,10 +99,41 @@ test('reports storage failures using the shared error format', async () => {
   assert.equal(response.body.error.code, 'IMAGE_STORAGE_ERROR');
 });
 
+test('logs an image storage cause in development without exposing it in the response', async () => {
+  const previousNodeEnv = process.env.NODE_ENV;
+  const previousDebug = process.env.DEBUG;
+  delete process.env.NODE_ENV;
+  delete process.env.DEBUG;
+  const error = console.error;
+  const records = [];
+  console.error = (...args) => records.push(args);
+  try {
+    app = createApp({ db, jwtSecret: 'test-secret', uploadDirectory,
+      imageStorage: { async save() { throw new Error('api-key=private-api-key'); }, async getReadUrl() { return null; } },
+    });
+    const response = await upload().set('X-Request-ID', 'frontend-upload-123').attach('image', await image(), 'plant.jpg');
+    assert.equal(response.status, 500);
+    assert.equal(response.body.error.code, 'IMAGE_STORAGE_ERROR');
+    assert.equal(response.headers['x-request-id'], 'frontend-upload-123');
+    assert.doesNotMatch(response.text, /storage write failed/);
+    assert.ok(records.some((args) => JSON.stringify(args).includes('[redacted]')));
+    assert.doesNotMatch(JSON.stringify(records), /private-api-key/);
+    assert.ok(records.some((args) => JSON.stringify(args).includes('frontend-upload-123')));
+  } finally {
+    console.error = error;
+    if (previousNodeEnv === undefined) delete process.env.NODE_ENV;
+    else process.env.NODE_ENV = previousNodeEnv;
+    if (previousDebug === undefined) delete process.env.DEBUG;
+    else process.env.DEBUG = previousDebug;
+  }
+});
+
 test('allows upload preflight for configured Web origins', async () => {
   const response = await request(app).options('/images').set('Origin', 'http://localhost:8081').set('Access-Control-Request-Method', 'POST').set('Access-Control-Request-Headers', 'authorization,content-type');
   assert.equal(response.status, 204);
   assert.match(response.headers['access-control-allow-methods'], /POST/);
+  assert.match(response.headers['access-control-allow-headers'], /X-Request-ID/i);
+  assert.match(response.headers['access-control-expose-headers'], /X-Request-ID/i);
 });
 
 test('uploads to COS and redirects private image reads to freshly signed HTTPS URLs', async () => {

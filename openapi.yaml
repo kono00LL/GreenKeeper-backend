@@ -3,8 +3,9 @@ info:
   title: GreenKeeper 后端接口
   version: 1.0.0
   description: >-
-    GreenKeeper 后端提供健康检查、用户认证与资料管理、图片上传读取、文章浏览和文章收藏功能。
+    GreenKeeper 后端提供健康检查、邮箱验证码及密码认证、用户资料管理、图片上传读取、文章浏览、文章收藏和 AI 植物养护建议功能。
     除特别注明外，文章浏览接口允许访客访问；需要身份的接口使用 JWT Bearer Token。
+    每个响应都包含 X-Request-ID 请求关联标识；调用方可传入 8 至 80 位字母、数字或连字符组成的标识，否则服务端会生成 UUID。
     /auth/register、/auth/login、/auth/refresh 与 /auth/me 为兼容旧客户端保留的路径，功能对应相应的 /user 或用户资料接口。
 servers:
   - url: http://localhost:8080
@@ -14,12 +15,16 @@ tags:
     description: 通过 Pl@ntNet 识别单张植物照片，返回候选物种，不永久保存照片。
   - name: 植物资料
     description: 公开只读植物分类、植物列表和详情，当前包含身份待核对的试点资料。
+  - name: AI 养护
+    description: 根据本地植物资料生成登录用户可调用的养护建议。
   - name: 健康检查
     description: 检查 API 服务是否正常响应。
   - name: 用户认证
-    description: 注册、登录、刷新令牌和退出登录。访问受保护接口时使用 access_token；刷新接口使用 refresh_token。
+    description: 邮箱验证码注册/登录、密码登录、密码重设、刷新令牌和退出登录。访问受保护接口时使用 access_token；刷新接口使用 refresh_token。
   - name: 用户资料
     description: 查看或更新当前登录用户的资料。
+  - name: 兼容接口
+    description: 为旧客户端保留的 /auth 路径；新客户端请使用用户认证或用户资料分组中的 /user 路径。
   - name: 图片
     description: 上传图片并读取已上传图片。上传需要登录，支持 JPEG、PNG、WebP，单张最大 10 MiB。
   - name: 文章
@@ -27,6 +32,161 @@ tags:
   - name: 收藏
     description: 管理当前用户的文章收藏并查看收藏列表。
 paths:
+  /auth/email-code:
+    post:
+      tags: [用户认证]
+      operationId: requestEmailCode
+      summary: 发送邮箱验证码
+      description: >-
+        请求向邮箱发送登录/注册验证码或密码重设验证码。成功或邮箱尚无账户时均返回相同受理结果；验证码有效期 5 分钟、只能使用一次。
+        同一邮箱 60 秒内不能重复请求，每小时最多 5 次；同一 IP 每小时最多 20 次。发送失败时验证码不可用。
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/EmailCodeRequest' }
+      responses:
+        '202':
+          description: 请求已受理；出于账户隐私考虑，不指示该邮箱是否已注册。
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [success]
+                properties:
+                  success: { type: boolean, enum: [true] }
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '429':
+          description: 邮箱或 IP 请求过于频繁。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '502':
+          description: 腾讯云 SES 暂时无法发送邮件。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '503':
+          description: 后端邮箱服务配置不完整。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+  /auth/email-code/verify:
+    post:
+      tags: [用户认证]
+      operationId: verifyEmailCode
+      summary: 验证邮箱并登录或注册
+      description: 验证 login 用途的验证码。邮箱尚无账户时自动创建密码为空的账户；已有账户直接登录。验证码最多允许错误 5 次，成功后立即失效。
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/EmailCodeVerifyRequest' }
+      responses:
+        '200':
+          description: 验证成功，返回用户资料和 JWT 令牌。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/AuthResponse' }
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          description: 验证码错误、过期、已使用或尝试次数已达上限。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '403':
+          description: 账户当前不可用。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+  /auth/password/reset:
+    post:
+      tags: [用户认证]
+      operationId: resetPasswordByEmailCode
+      summary: 使用邮箱验证码重设密码
+      description: 仅适用于已有密码的账户。验证 password_reset 用途的验证码后设置新密码，并撤销该账户现存的刷新会话。
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/PasswordResetRequest' }
+      responses:
+        '200':
+          description: 密码已更新，已有登录会话已撤销。
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [success]
+                properties:
+                  success: { type: boolean, enum: [true] }
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          description: 验证码无效、过期、已使用，或账户不支持密码重设。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+  /ai/plant-advice:
+    post:
+      tags: [AI 养护]
+      operationId: askPlantAdvice
+      summary: 咨询植物养护建议
+      description: >-
+        需要有效的 access_token。后端根据 plantId 从本地植物资料库读取资料，再将资料和问题发送给 DeepSeek；
+        API Key 只保存在后端。回答是辅助建议，资料不足时模型会提示用户继续观察或查证。
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/PlantAdviceRequest' }
+      responses:
+        '200':
+          description: AI 生成的养护建议。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/PlantAdviceResponse' }
+        '400':
+          description: 问题为空或超过 500 个字符。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          description: PLANT_NOT_FOUND，植物资料不存在。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '429':
+          description: AI_RATE_LIMITED，上游请求过于频繁。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '502':
+          description: AI_UNAVAILABLE，上游网络或响应异常。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '503':
+          description: AI_NOT_CONFIGURED 或 AI_CONFIGURATION_ERROR，后端未配置或配置错误。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '504':
+          description: AI_TIMEOUT，上游响应超时。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '500':
+          $ref: '#/components/responses/InternalError'
   /plant-identifications:
     post:
       tags: [植物识别]
@@ -123,6 +283,8 @@ paths:
                   categories:
                     type: array
                     items: { $ref: '#/components/schemas/PlantCategory' }
+        '500':
+          $ref: '#/components/responses/InternalError'
 
   /plants:
     get:
@@ -154,6 +316,8 @@ paths:
           content:
             application/json:
               schema: { $ref: '#/components/schemas/ApiError' }
+        '500':
+          $ref: '#/components/responses/InternalError'
 
   /plants/{id}:
     get:
@@ -166,7 +330,7 @@ paths:
         - in: path
           name: id
           required: true
-          schema: { type: string }
+          schema: { type: string, format: uuid }
       responses:
         '200':
           description: 植物基础身份、简介和五项养护资料。
@@ -182,12 +346,15 @@ paths:
           content:
             application/json:
               schema: { $ref: '#/components/schemas/ApiError' }
+        '500':
+          $ref: '#/components/responses/InternalError'
 
   /health:
     get:
       tags: [健康检查]
       operationId: getHealth
       summary: 检查服务状态
+      security: []
       responses:
         '200':
           description: 服务正常运行，返回状态值 ok。
@@ -200,6 +367,8 @@ paths:
                   status:
                     type: string
                     example: ok
+        '500':
+          $ref: '#/components/responses/InternalError'
 
   /user/register:
     post:
@@ -207,6 +376,7 @@ paths:
       operationId: registerUser
       summary: 注册用户
       description: 使用邮箱和密码创建账户。密码长度为 8 至 72 个字符；可选提供昵称和头像地址。注册成功后会立即创建会话并返回用户资料及 access_token、refresh_token。
+      security: []
       requestBody:
         required: true
         content:
@@ -233,10 +403,11 @@ paths:
 
   /auth/register:
     post:
-      tags: [用户认证]
+      tags: [兼容接口]
       operationId: registerUserCompatibilityAlias
       summary: 注册用户（兼容路径）
       description: 与 POST /user/register 功能相同，为仍在使用旧版路径的客户端保留。请求字段、校验规则和响应结构均一致。
+      security: []
       requestBody:
         required: true
         content:
@@ -267,6 +438,7 @@ paths:
       operationId: loginUser
       summary: 用户登录
       description: 使用已注册邮箱和密码登录。邮箱会去除首尾空白并按小写形式匹配；成功后返回用户资料及新的令牌对。
+      security: []
       requestBody:
         required: true
         content:
@@ -293,10 +465,11 @@ paths:
 
   /auth/login:
     post:
-      tags: [用户认证]
+      tags: [兼容接口]
       operationId: loginUserCompatibilityAlias
       summary: 用户登录（兼容路径）
       description: 与 POST /user/login 功能相同，为仍在使用旧版路径的客户端保留。请求字段、校验规则和响应结构均一致。
+      security: []
       requestBody:
         required: true
         content:
@@ -341,7 +514,7 @@ paths:
 
   /auth/refresh:
     get:
-      tags: [用户认证]
+      tags: [兼容接口]
       operationId: refreshUserTokensCompatibilityGet
       summary: 刷新访问令牌（GET 兼容路径）
       description: 与 GET /user/refresh 功能相同，为仍在使用旧版路径的客户端保留。refresh_token 通过 Authorization Bearer 传递。
@@ -357,7 +530,7 @@ paths:
         '401':
           $ref: '#/components/responses/Unauthorized'
     post:
-      tags: [用户认证]
+      tags: [兼容接口]
       operationId: refreshUserTokensCompatibilityPost
       summary: 刷新访问令牌（POST 兼容路径）
       description: >-
@@ -407,6 +580,8 @@ paths:
                     $ref: '#/components/schemas/User'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/InternalError'
     put:
       tags: [用户资料]
       operationId: updateUserInfo
@@ -435,10 +610,12 @@ paths:
           $ref: '#/components/responses/ValidationError'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/InternalError'
 
   /auth/me:
     get:
-      tags: [用户资料]
+      tags: [兼容接口]
       operationId: getCurrentUserCompatibilityAlias
       summary: 获取当前用户资料（兼容路径）
       description: 与 GET /user/userinfo 功能相同，为仍在使用旧版路径的客户端保留；需要有效的 access_token。
@@ -457,6 +634,8 @@ paths:
                     $ref: '#/components/schemas/User'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/InternalError'
 
   /user/logout:
     post:
@@ -552,6 +731,7 @@ paths:
       operationId: getUploadedImage
       summary: 读取已上传图片
       description: 根据上传接口返回的图片 key 读取图片。优先返回历史本地文件；COS 模式下非本地文件返回 302 到有效期 5 分钟的签名 HTTPS 地址。应用图片路径稳定，可长期保存，签名目标不能长期保存。读取允许访客；对象不存在时由本地后端或 COS 返回错误。
+      security: []
       parameters:
         - name: key
           in: path
@@ -630,6 +810,8 @@ paths:
           $ref: '#/components/responses/ValidationError'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/InternalError'
 
   /posts/{id}:
     get:
@@ -662,6 +844,8 @@ paths:
           $ref: '#/components/responses/Unauthorized'
         '404':
           $ref: '#/components/responses/PostNotFound'
+        '500':
+          $ref: '#/components/responses/InternalError'
 
   /posts/{id}/collection:
     put:
@@ -702,6 +886,8 @@ paths:
           $ref: '#/components/responses/Unauthorized'
         '404':
           $ref: '#/components/responses/PostNotFound'
+        '500':
+          $ref: '#/components/responses/InternalError'
 
   /me/collections:
     get:
@@ -736,6 +922,8 @@ paths:
           $ref: '#/components/responses/ValidationError'
         '401':
           $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/InternalError'
 
 components:
   securitySchemes:
@@ -782,7 +970,6 @@ components:
           enum: [unmatched, not_ready, ambiguous]
           description: 未收录、唯一记录尚未核对或发布、全部本地记录中存在重名歧义。
         plant:
-          nullable: true
           enum: [null]
           description: 未关联时始终为 null，不泄露草稿 UUID。
     PlantIdentification:
@@ -805,19 +992,35 @@ components:
       allOf:
         - $ref: '#/components/schemas/PlantCategoryRef'
         - type: object
-          required: [id, plantCount]
+          required: [id, plantCount, coverPlantId, coverImage]
           properties:
             id: { type: string }
             plantCount: { type: integer, minimum: 0 }
+            coverPlantId: { type: string, format: uuid, nullable: true, description: '所属分类中用于展示图的植物 ID。' }
+            coverImage: { $ref: '#/components/schemas/PlantImage' }
+    PlantImage:
+      type: object
+      nullable: true
+      required: [url, altText]
+      description: '展示图；无图为 null。列表仅含 URL 和替代文本，详情还含来源和许可信息。'
+      properties:
+        url: { type: string, example: '/uploads/1842baf0-49b8-4d4c-b5cd-2a7be8ad48c8.webp' }
+        altText: { type: string, nullable: true }
+        sourceName: { type: string }
+        sourceUrl: { type: string, format: uri }
+        license: { type: string }
+        licenseUrl: { type: string, format: uri, nullable: true }
+        attribution: { type: string, nullable: true }
     PlantSummary:
       type: object
-      required: [id, nameZh, nameEn, scientificName, identityStatus, categories]
+      required: [id, nameZh, nameEn, scientificName, identityStatus, categories, coverImage]
       properties:
-        id: { type: string }
+        id: { type: string, format: uuid }
         nameZh: { type: string }
         nameEn: { type: string, nullable: true }
         scientificName: { type: string }
         identityStatus: { type: string, enum: [pending, verified] }
+        coverImage: { $ref: '#/components/schemas/PlantImage' }
         categories:
           type: array
           items: { $ref: '#/components/schemas/PlantCategoryRef' }
@@ -844,6 +1047,19 @@ components:
             wateringRequirement: { type: string, nullable: true }
             repottingRequirement: { type: string, nullable: true }
             pests: { type: string, nullable: true }
+    PlantAdviceRequest:
+      type: object
+      additionalProperties: false
+      required: [plantId, question]
+      properties:
+        plantId: { type: string, format: uuid, description: 本地植物资料 UUID。 }
+        question: { type: string, minLength: 1, maxLength: 500, description: 去除首尾空白后不能为空，最多 500 个字符。 }
+    PlantAdviceResponse:
+      type: object
+      required: [answer, model]
+      properties:
+        answer: { type: string, description: 简体中文养护建议。 }
+        model: { type: string, nullable: true, description: 实际使用的模型名称。 }
     ApiError:
       type: object
       required: [error]
@@ -951,6 +1167,55 @@ components:
           minLength: 8
           maxLength: 72
           description: 对应账户的密码，长度为 8 至 72 个字符。
+    EmailCodeRequest:
+      type: object
+      required: [email, purpose]
+      properties:
+        email:
+          type: string
+          format: email
+          maxLength: 254
+          description: 收件邮箱；服务端会去除首尾空白并转为小写。
+        purpose:
+          type: string
+          enum: [login, password_reset]
+          description: login 用于登录或首次注册；password_reset 用于已有密码账户重设密码。
+    EmailCodeVerifyRequest:
+      type: object
+      required: [email, code]
+      properties:
+        email:
+          type: string
+          format: email
+          maxLength: 254
+          description: 请求验证码时使用的邮箱。
+        code:
+          type: string
+          pattern: '^\d{6}$'
+          description: 邮件收到的 6 位数字验证码。
+        user_name:
+          type: string
+          maxLength: 10
+          description: 新账户的可选昵称；已有账户不会被修改。
+    PasswordResetRequest:
+      type: object
+      required: [email, code, newPassword]
+      properties:
+        email:
+          type: string
+          format: email
+          maxLength: 254
+          description: 请求 password_reset 验证码时使用的邮箱。
+        code:
+          type: string
+          pattern: '^\d{6}$'
+          description: 邮件收到的 6 位数字重设验证码。
+        newPassword:
+          type: string
+          format: password
+          minLength: 8
+          maxLength: 72
+          description: 新密码，长度为 8 至 72 个字符。
     UpdateUserRequest:
       type: object
       minProperties: 1

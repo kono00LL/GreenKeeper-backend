@@ -1,6 +1,7 @@
 const { Router } = require('express');
 const { createImageUpload } = require('./multipart');
 const { createImageService, ImageError } = require('./service');
+const { logRequestError } = require('../diagnostics');
 
 function createImageRouter({ requireAccess, imageStorage, uploadTempDirectory }) {
   const router = Router();
@@ -20,6 +21,7 @@ function createImageRouter({ requireAccess, imageStorage, uploadTempDirectory })
 
   router.use((error, req, res, next) => {
     if (!(error instanceof ImageError)) return next(error);
+    logRequestError(req, error, 'image-upload-error');
     res.status(error.status).json({ error: { code: error.code, message: error.message } });
   });
   return router;
@@ -34,7 +36,8 @@ function createImageReadRouter(imageStorage) {
       if (!url) return next();
       res.set('Cache-Control', 'no-store');
       res.redirect(302, url);
-    } catch {
+    } catch (error) {
+      logRequestError(req, error, 'image-read-error');
       res.status(500).json({ error: { code: 'IMAGE_STORAGE_ERROR', message: '图片读取失败，请稍后重试' } });
     }
   });

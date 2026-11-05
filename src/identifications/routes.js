@@ -4,6 +4,7 @@ const { createImageUpload, removeTemporaryImage } = require('../images/multipart
 const { ImageError } = require('../images/service');
 const { IdentificationError } = require('./errors');
 const { createIdentificationService } = require('./service');
+const { logRequestError } = require('../diagnostics');
 
 function createIdentificationRouter({ requireAccess, uploadTempDirectory, client, plantRepository }) {
   const router = Router();
@@ -16,7 +17,7 @@ function createIdentificationRouter({ requireAccess, uploadTempDirectory, client
       let result;
       try {
         const file = req.file ? { ...req.file, buffer: await fs.readFile(req.file.path) } : null;
-        result = await service.identify(file, controller.signal);
+        result = await service.identify(file, controller.signal, req.requestId);
       } finally {
         await removeTemporaryImage(req.file);
       }
@@ -29,6 +30,7 @@ function createIdentificationRouter({ requireAccess, uploadTempDirectory, client
   });
   router.use((error, req, res, next) => {
     if (!(error instanceof IdentificationError || error instanceof ImageError)) return next(error);
+    if (error instanceof ImageError) logRequestError(req, error, 'plant-identification-error');
     res.status(error.status).json({ error: { code: error.code, message: error.message } });
   });
   return router;

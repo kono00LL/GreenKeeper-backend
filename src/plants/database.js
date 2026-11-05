@@ -70,7 +70,10 @@ function initializePlantDatabase(db) {
       );
       CREATE INDEX IF NOT EXISTS idx_plant_sources_plant
         ON plant_sources(plant_id);
+
     `);
+
+    initializePlantImageDatabase(db);
 
     const insertCategory = db.prepare(`
       INSERT OR IGNORE INTO plant_categories (id, slug, name_zh, name_en, sort_order)
@@ -86,4 +89,36 @@ function initializePlantDatabase(db) {
   })();
 }
 
-module.exports = { initializePlantDatabase };
+function initializePlantImageDatabase(db) {
+  db.exec(`
+      CREATE TABLE IF NOT EXISTS plant_images (
+        id TEXT PRIMARY KEY NOT NULL,
+        plant_id TEXT NOT NULL REFERENCES plants(id) ON DELETE CASCADE,
+        image_type TEXT NOT NULL DEFAULT 'cover' CHECK (image_type IN ('cover', 'gallery')),
+        storage_key TEXT NOT NULL,
+        mime_type TEXT NOT NULL,
+        width INTEGER NOT NULL CHECK (typeof(width) = 'integer' AND width > 0),
+        height INTEGER NOT NULL CHECK (typeof(height) = 'integer' AND height > 0),
+        file_size INTEGER NOT NULL CHECK (typeof(file_size) = 'integer' AND file_size > 0),
+        sha256 TEXT NOT NULL,
+        alt_text TEXT,
+        source_name TEXT NOT NULL,
+        source_url TEXT NOT NULL,
+        license TEXT NOT NULL,
+        license_url TEXT,
+        attribution TEXT,
+        checked_at TEXT NOT NULL,
+        sort_order INTEGER NOT NULL DEFAULT 0 CHECK (sort_order >= 0),
+        created_at TEXT NOT NULL,
+        updated_at TEXT NOT NULL,
+        UNIQUE (plant_id, image_type, sort_order),
+        UNIQUE (plant_id, sha256)
+      );
+      CREATE UNIQUE INDEX IF NOT EXISTS idx_one_cover_image_per_plant
+        ON plant_images(plant_id) WHERE image_type = 'cover';
+      CREATE INDEX IF NOT EXISTS idx_plant_images_plant
+        ON plant_images(plant_id, image_type, sort_order);
+  `);
+}
+
+module.exports = { initializePlantDatabase, initializePlantImageDatabase };

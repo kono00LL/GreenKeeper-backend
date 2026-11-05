@@ -66,12 +66,44 @@ function addColumnIfMissing(db, table, column, definition) {
   if (!columns.some((item) => item.name === column)) db.exec(`ALTER TABLE ${table} ADD COLUMN ${column} ${definition}`);
 }
 
+function allowPasswordlessUsers(db) {
+  const passwordHash = db.prepare('PRAGMA table_info(users)').all().find((column) => column.name === 'password_hash');
+  if (!passwordHash || passwordHash.notnull === 0) return;
+
+  db.pragma('foreign_keys = OFF');
+  try {
+    db.transaction(() => {
+      db.exec(`
+        CREATE TABLE users_passwordless_migration (
+          id TEXT PRIMARY KEY,
+          email TEXT NOT NULL COLLATE NOCASE UNIQUE,
+          password_hash TEXT,
+          user_name TEXT DEFAULT '匿名用户',
+          avatar_url TEXT,
+          gender TEXT NOT NULL DEFAULT 'private' CHECK (gender IN ('male', 'female', 'private')),
+          status INTEGER NOT NULL DEFAULT 1,
+          last_login_at TEXT,
+          created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+        );
+        INSERT INTO users_passwordless_migration (id, email, password_hash, user_name, avatar_url, gender, status, last_login_at, created_at)
+          SELECT id, email, password_hash, user_name, avatar_url, gender, status, last_login_at, created_at FROM users;
+        DROP TABLE users;
+        ALTER TABLE users_passwordless_migration RENAME TO users;
+      `);
+    })();
+  } finally {
+    db.pragma('foreign_keys = ON');
+  }
+  const violations = db.pragma('foreign_key_check');
+  if (violations.length) throw new Error('User password migration left foreign-key violations');
+}
+
 function initializeDatabase(db) {
   db.pragma('foreign_keys = ON');
   db.exec(`
     CREATE TABLE IF NOT EXISTS users (
       id TEXT PRIMARY KEY, email TEXT NOT NULL COLLATE NOCASE UNIQUE,
-      password_hash TEXT NOT NULL,
+      password_hash TEXT,
       user_name TEXT DEFAULT '匿名用户', avatar_url TEXT,
       gender TEXT NOT NULL DEFAULT 'private' CHECK (gender IN ('male', 'female', 'private')),
       status INTEGER NOT NULL DEFAULT 1, last_login_at TEXT,
@@ -107,6 +139,30 @@ function initializeDatabase(db) {
   addColumnIfMissing(db, 'users', 'last_login_at', 'TEXT');
   addColumnIfMissing(db, 'users', 'gender', "TEXT NOT NULL DEFAULT 'private' CHECK (gender IN ('male', 'female', 'private'))");
   db.prepare("UPDATE users SET gender = 'private' WHERE gender IS NULL OR gender NOT IN ('male', 'female', 'private')").run();
+  allowPasswordlessUsers(db);
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS email_verification_codes (
+      id TEXT PRIMARY KEY,
+      email TEXT NOT NULL COLLATE NOCASE,
+      purpose TEXT NOT NULL CHECK (purpose IN ('login', 'password_reset')),
+      code_hash BLOB NOT NULL,
+      created_at TEXT NOT NULL,
+      expires_at TEXT NOT NULL,
+      attempts INTEGER NOT NULL DEFAULT 0 CHECK (attempts >= 0),
+      delivery_status TEXT NOT NULL CHECK (delivery_status IN ('pending', 'sent', 'failed')),
+      sent_at TEXT,
+      used_at TEXT
+    );
+    CREATE TABLE IF NOT EXISTS email_code_requests (
+      id TEXT PRIMARY KEY,
+      email TEXT NOT NULL COLLATE NOCASE,
+      ip_hash TEXT NOT NULL,
+      created_at TEXT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS idx_email_codes_lookup ON email_verification_codes(email, purpose, created_at DESC);
+    CREATE INDEX IF NOT EXISTS idx_email_code_requests_email ON email_code_requests(email, created_at DESC);
+    CREATE INDEX IF NOT EXISTS idx_email_code_requests_ip ON email_code_requests(ip_hash, created_at DESC);
+  `);
   addColumnIfMissing(db, 'posts', 'category', "TEXT NOT NULL DEFAULT 'article' CHECK (category IN ('article', 'encyclopedia'))");
   db.prepare("UPDATE posts SET category = 'article' WHERE category IS NULL OR category NOT IN ('article', 'encyclopedia')").run();
 
