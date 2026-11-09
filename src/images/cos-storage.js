@@ -15,6 +15,12 @@ function createCosImageStorage({ client, bucket, region }) {
       });
       return { key, url: `/uploads/${key}` };
     },
+    async delete(key) {
+      if (!imageKey.test(key)) return;
+      await new Promise((resolve, reject) => {
+        client.deleteObject(objectParams(key), (error) => error ? reject(error) : resolve());
+      });
+    },
     async getReadUrl(key, method = 'GET') {
       if (!imageKey.test(key) || !['GET', 'HEAD'].includes(method)) return null;
       return new Promise((resolve, reject) => {

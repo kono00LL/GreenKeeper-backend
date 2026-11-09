@@ -4,7 +4,8 @@ const Database = require('better-sqlite3');
 const { initializeDatabase } = require('../src/database');
 const { seedStarterPlants } = require('../src/plants/seed-starter');
 const { starterPlants } = require('../src/plants/starter-plants');
-const { catalog } = require('../src/plants/catalog');
+// Keep the original batch's import and migration guarantees covered independently.
+const catalog = require('../src/plants/data/indoor-balcony-v1.json');
 const { preflightCatalog, importCatalog } = require('../src/plants/import-catalog');
 
 function database() { const db = new Database(':memory:'); initializeDatabase(db); return db; }

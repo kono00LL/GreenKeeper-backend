@@ -19,6 +19,11 @@ function createImageStorage(directory) {
       }
       return { key, url: `/uploads/${key}` };
     },
+    async delete(key) {
+      await fs.unlink(path.join(directory, key)).catch((error) => {
+        if (error.code !== 'ENOENT') throw error;
+      });
+    },
   };
 }
 

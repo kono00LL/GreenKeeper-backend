@@ -10,28 +10,51 @@ const { createHash, randomUUID } = require('node:crypto');
 const path = require('node:path');
 const { createImageRouter, createImageReadRouter } = require('./images/routes');
 const { createImageStorage } = require('./images/storage');
+const { createDeepSeekClient } = require('./ai/deepseek-client');
+const { createAiRouter } = require('./ai/routes');
+const { createRequestId, requestPath, errorDetails } = require('./diagnostics');
+const { createEmailAuthRouter } = require('./auth/routes');
+const { createEmailAuthService } = require('./auth/email-code-service');
+const { createTencentSesEmailSender } = require('./auth/tencent-ses');
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-function createApp({ db, identificationClient = createPlantnetClient({ apiKey: process.env.PLANTNET_API_KEY || '' }), uploadDirectory = path.join(process.env.DATA_DIRECTORY || path.join(__dirname, '..', 'data'), 'uploads'), uploadTempDirectory = path.join(path.dirname(uploadDirectory), '.uploads-tmp'), imageStorage = createImageStorage(uploadDirectory), jwtSecret = process.env.JWT_SECRET || 'greenkeeper-local-development-secret', accessTokenTtl = process.env.ACCESS_TOKEN_TTL || '15m', refreshTokenTtl = process.env.REFRESH_TOKEN_TTL || '7d', defaultAvatarUrl = process.env.DEFAULT_AVATAR_URL || null, corsOrigins = (process.env.CORS_ORIGINS || 'http://localhost:8081,http://127.0.0.1:8081').split(',').map(origin => origin.trim()).filter(Boolean) }) {
+function createApp({ db, identificationClient = createPlantnetClient({ apiKey: process.env.PLANTNET_API_KEY || '' }), aiClient = createDeepSeekClient(), emailSender = createTencentSesEmailSender(), emailCodeSecret = process.env.EMAIL_CODE_SECRET, uploadDirectory = path.join(process.env.DATA_DIRECTORY || path.join(__dirname, '..', 'data'), 'uploads'), uploadTempDirectory = path.join(path.dirname(uploadDirectory), '.uploads-tmp'), imageStorage = createImageStorage(uploadDirectory), jwtSecret = process.env.JWT_SECRET || 'greenkeeper-local-development-secret', accessTokenTtl = process.env.ACCESS_TOKEN_TTL || '15m', refreshTokenTtl = process.env.REFRESH_TOKEN_TTL || '7d', defaultAvatarUrl = process.env.DEFAULT_AVATAR_URL || null, corsOrigins = (process.env.CORS_ORIGINS || 'http://localhost:8081,http://127.0.0.1:8081').split(',').map(origin => origin.trim()).filter(Boolean) }) {
   const app = express();
-  const debug = process.env.DEBUG === '1' || process.env.NODE_ENV !== 'production';
-  if (debug) {
-    app.use((req, res, next) => {
-      const startedAt = Date.now();
-      res.on('finish', () => {
-        console.log(`[http] ${req.method} ${req.originalUrl} ${res.statusCode} ${Date.now() - startedAt}ms`);
-      });
-      next();
+  const development = process.env.NODE_ENV !== 'production';
+  const requestLogging = development || process.env.DEBUG === '1';
+  app.use((req, res, next) => {
+    const startedAt = Date.now();
+    req.requestId = createRequestId(req.get('X-Request-ID'));
+    res.set('X-Request-ID', req.requestId);
+    const sendJson = res.json.bind(res);
+    res.json = (body) => {
+      if (body?.error?.code) res.locals.errorCode = body.error.code;
+      return sendJson(body);
+    };
+    res.on('finish', () => {
+      if (!requestLogging) return;
+      const entry = {
+        event: 'http-request',
+        requestId: req.requestId,
+        method: req.method,
+        path: requestPath(req),
+        status: res.statusCode,
+        errorCode: res.locals.errorCode || null,
+        durationMs: Date.now() - startedAt,
+      };
+      (res.statusCode >= 400 ? console.error : console.log)(JSON.stringify(entry));
     });
-  }
+    next();
+  });
   app.use((req, res, next) => {
     const origin = req.get('origin');
     res.vary('Origin');
     if (origin && corsOrigins.includes(origin)) {
       res.set('Access-Control-Allow-Origin', origin);
       res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, OPTIONS');
-      res.set('Access-Control-Allow-Headers', 'Authorization, Content-Type');
+      res.set('Access-Control-Allow-Headers', 'Authorization, Content-Type, X-Request-ID');
+      res.set('Access-Control-Expose-Headers', 'X-Request-ID');
       if (req.method === 'OPTIONS') return res.sendStatus(204);
     } else if (origin && req.method === 'OPTIONS') {
       return res.status(403).json({ error: { code: 'CORS_ORIGIN_DENIED', message: 'Origin is not allowed' } });
@@ -92,7 +115,7 @@ function createApp({ db, identificationClient = createPlantnetClient({ apiKey: p
       const input = validateCredentials(req.body);
       if (input.error) return res.status(400).json({ error: { code: 'VALIDATION_ERROR', message: input.error } });
       const record = db.prepare('SELECT id, email, password_hash, status FROM users WHERE email = ?').get(input.email);
-      if (!record || record.status === 0 || !(await bcrypt.compare(input.password, record.password_hash))) return res.status(401).json({ error: { code: 'INVALID_CREDENTIALS', message: 'Email or password is incorrect' } });
+      if (!record || record.status === 0 || !record.password_hash || !(await bcrypt.compare(input.password, record.password_hash))) return res.status(401).json({ error: { code: 'INVALID_CREDENTIALS', message: 'Email or password is incorrect' } });
       db.prepare('UPDATE users SET last_login_at = ? WHERE id = ?').run(new Date().toISOString(), record.id);
       res.json(authResponse(db.prepare(selectUser).get(record.id)));
     } catch (error) { next(error); }
@@ -146,7 +169,20 @@ function createApp({ db, identificationClient = createPlantnetClient({ apiKey: p
   app.post('/user/logout', logout);
   app.get('/auth/me', requireAccess, (req, res) => res.json({ user: userDto(req.user) }));
 
+  const emailAuthService = createEmailAuthService({ db, emailSender, emailCodeSecret });
+  app.use(createEmailAuthRouter({ service: emailAuthService, createAuthResponse: (user) => authResponse({
+    user_id: user.id,
+    user_email: user.email,
+    user_name: user.user_name,
+    avatar_url: user.avatar_url,
+    gender: user.gender,
+    created_time: user.created_at,
+    status: user.status,
+    last_login_at: user.last_login_at,
+  }) }));
+
   app.use(createIdentificationRouter({ requireAccess, uploadTempDirectory, client: identificationClient, plantRepository: createPlantRepository(db) }));
+  app.use(createAiRouter({ requireAccess, client: aiClient, plantRepository: createPlantRepository(db) }));
   app.use(createImageRouter({ requireAccess, imageStorage, uploadTempDirectory }));
   app.use('/uploads', express.static(uploadDirectory, { index: false, dotfiles: 'deny', setHeaders: (res) => res.set('X-Content-Type-Options', 'nosniff') }));
   app.use(createImageReadRouter(imageStorage));
@@ -155,7 +191,15 @@ function createApp({ db, identificationClient = createPlantnetClient({ apiKey: p
   app.use((req, res) => res.status(404).json({ error: { code: 'NOT_FOUND', message: 'Route not found' } }));
   app.use((error, req, res, next) => {
     if (res.headersSent) return next(error);
-    if (debug) console.error(`[error] ${req.method} ${req.originalUrl}`, error);
+    if (development) {
+      console.error(JSON.stringify({
+        event: 'http-unhandled-error',
+        requestId: req.requestId,
+        method: req.method,
+        path: requestPath(req),
+        error: errorDetails(error),
+      }));
+    }
     res.status(500).json({ error: { code: 'INTERNAL_ERROR', message: 'An unexpected error occurred' } });
   });
   return app;

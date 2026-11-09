@@ -1,0 +1,3130 @@
+[
+  {
+    "id": "1b389f22-b6c8-4b6d-9e08-bd2ba87dc467",
+    "name_zh": "肾蕨",
+    "scientific_name": "Nephrolepis cordifolia",
+    "name_en": "Tuberous sword fern",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "verified",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearance_features": "拱垂的羽状复叶排列紧密，小羽片沿叶轴两侧分布，植株可由匍匐茎扩展。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:13.931Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Nephrolepis%20cordifolia",
+        "checked_at": "2026-11-05T15:38:13.931Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Nephrolepis cordifolia）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/nephrolepis-cordifolia/",
+        "checked_at": "2026-11-05T15:38:59.616808+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Nephrolepis cordifolia",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Nephrolepis cordifolia",
+        "checkedAt": "2026-11-05T15:38:13.931Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Nephrolepis%20cordifolia",
+        "taxa": [
+          {
+            "id": "1356420",
+            "scientificNameWithoutAuthor": "Nephrolepis cordifolia",
+            "scientificNameAuthorship": "(L.) C. Presl",
+            "gbifId": 2650930,
+            "powoId": null
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Nephrolepis cordifolia (Dwarf Whitman Fern, Erect Sword Fern, Fishbone Fern, Herringbone Fern, Ladder Fern, Lemon Button Fern, Narrow Sword Fern, Tuber Ladder Fern, Tuberous Sword Fern) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/nephrolepis-cordifolia/",
+        "checkedAt": "2026-11-05T15:38:59.616808+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "56e147b7-f01e-4859-93cd-4469c9666616",
+    "name_zh": "大叶桫椤",
+    "scientific_name": "Blechnum gibbum",
+    "name_en": "Dwarf tree fern",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "verified",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearance_features": "短直立茎顶端形成冠状叶丛，羽状复叶向四周展开。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:15.224Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Blechnum%20gibbum",
+        "checked_at": "2026-11-05T15:38:15.224Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Blechnum gibbum",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Blechnum gibbum",
+        "checkedAt": "2026-11-05T15:38:15.224Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Blechnum%20gibbum",
+        "taxa": [
+          {
+            "id": "1414452",
+            "scientificNameWithoutAuthor": "Blechnum gibbum",
+            "scientificNameAuthorship": "(Labill.) Mett.",
+            "gbifId": 4079323,
+            "powoId": "17059040-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "Pl@ntNet 名录已确认学名；尚缺物种级园艺页面复核，保留草稿状态。"
+    }
+  },
+  {
+    "id": "14e5da59-4caa-4f29-b6e9-f1ce0862e6da",
+    "name_zh": "剑叶凤尾蕨",
+    "scientific_name": "Pteris ensiformis",
+    "name_en": "Slender brake fern",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "verified",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearance_features": "叶片羽状分裂，小羽片狭长；部分栽培类型具有浅色中脉。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:19.261Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Pteris%20ensiformis",
+        "checked_at": "2026-11-05T15:38:19.261Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Pteris ensiformis",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Pteris ensiformis",
+        "checkedAt": "2026-11-05T15:38:19.261Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Pteris%20ensiformis",
+        "taxa": [
+          {
+            "id": "1407621",
+            "scientificNameWithoutAuthor": "Pteris ensiformis",
+            "scientificNameAuthorship": "Burm.f.",
+            "gbifId": 3914366,
+            "powoId": "17212520-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "Pl@ntNet 名录已确认学名；尚缺物种级园艺页面复核，保留草稿状态。"
+    }
+  },
+  {
+    "id": "0e0f2752-ccd6-4dc8-8bff-b9fdf66fdc41",
+    "name_zh": "美洲耳蕨",
+    "scientific_name": "Polystichum acrostichoides",
+    "name_en": "Christmas fern",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "verified",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearance_features": "深绿色羽状复叶呈莲座状拱展，小羽片边缘具细齿。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:49:10.100Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Polystichum%20acrostichoides",
+        "checked_at": "2026-11-05T15:49:10.100Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Polystichum acrostichoides）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/polystichum-acrostichoides/",
+        "checked_at": "2026-11-05T15:49:43.387038+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Polystichum acrostichoides",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Polystichum acrostichoides",
+        "checkedAt": "2026-11-05T15:49:10.100Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Polystichum%20acrostichoides",
+        "taxa": [
+          {
+            "id": "1413246",
+            "scientificNameWithoutAuthor": "Polystichum acrostichoides",
+            "scientificNameAuthorship": "(Michx.) Schott",
+            "gbifId": 2651098,
+            "powoId": "17205300-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Polystichum acrostichoides (Christmas Dagger, Christmas Dagger Fern, Christmas Fern) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/polystichum-acrostichoides/",
+        "checkedAt": "2026-11-05T15:49:43.387038+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "383b00fe-4372-4f96-8e1c-6df9c7868028",
+    "name_zh": "铁角蕨",
+    "scientific_name": "Asplenium trichomanes",
+    "name_en": "Maidenhair spleenwort",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "verified",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearance_features": "黑褐色细叶轴两侧排列小型圆至椭圆形羽片。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:16.383Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Asplenium%20trichomanes",
+        "checked_at": "2026-11-05T15:38:16.383Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Asplenium trichomanes）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/asplenium-trichomanes/",
+        "checked_at": "2026-11-05T15:39:00.621396+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Asplenium trichomanes",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Asplenium trichomanes",
+        "checkedAt": "2026-11-05T15:38:16.383Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Asplenium%20trichomanes",
+        "taxa": [
+          {
+            "id": "1356361",
+            "scientificNameWithoutAuthor": "Asplenium trichomanes",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 8108066,
+            "powoId": "310197-2"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Asplenium trichomanes (Brightgreen Spleenwort, Dense Spleenwort, Maidenhair Spleenwort, Mountain Spleenwort, Toothed Spleenwort) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/asplenium-trichomanes/",
+        "checkedAt": "2026-11-05T15:39:00.621396+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "818b3040-8b74-4f47-83c7-613785e09d67",
+    "name_zh": "蓝星蕨",
+    "scientific_name": "Phlebodium aureum",
+    "name_en": "Blue star fern",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "verified",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearance_features": "蓝绿色羽状叶从匍匐根茎抽生，叶片边缘略呈波浪状。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:16.086Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Phlebodium%20aureum",
+        "checked_at": "2026-11-05T15:38:16.086Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Phlebodium aureum）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/phlebodium-aureum/",
+        "checked_at": "2026-11-05T15:39:00.711206+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Phlebodium aureum",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Phlebodium aureum",
+        "checkedAt": "2026-11-05T15:38:16.086Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Phlebodium%20aureum",
+        "taxa": [
+          {
+            "id": "1356430",
+            "scientificNameWithoutAuthor": "Phlebodium aureum",
+            "scientificNameAuthorship": "(L.) J. Sm.",
+            "gbifId": 2650479,
+            "powoId": null
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Phlebodium aureum (Blue Star Fern, Cabbage Palm Fern, Golden Polypody, Gold Foot Fern, Hare Foot Fern, Rabbits Foot Fern) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/phlebodium-aureum/",
+        "checkedAt": "2026-11-05T15:39:00.711206+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "041e1b73-2019-4543-9978-ca2329894776",
+    "name_zh": "日本蹄盖蕨",
+    "scientific_name": "Athyrium niponicum",
+    "name_en": "Japanese painted fern",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "verified",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearance_features": "羽状复叶带银绿色斑色，叶轴和叶脉常呈紫红色。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "半阴或散射光",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:16.407Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Athyrium%20niponicum",
+        "checked_at": "2026-11-05T15:38:16.407Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Athyrium niponicum）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/athyrium-niponicum/",
+        "checked_at": "2026-11-05T15:39:02.111525+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Athyrium niponicum",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Athyrium niponicum",
+        "checkedAt": "2026-11-05T15:38:16.407Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Athyrium%20niponicum",
+        "taxa": [
+          {
+            "id": "1390554",
+            "scientificNameWithoutAuthor": "Athyrium niponicum",
+            "scientificNameAuthorship": "(Mett.) Hance",
+            "gbifId": 7125894,
+            "powoId": "17055840-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Athyrium niponicum (Black Lady Fern, Japanese Black Lady Fern, Japanese Painted Fern, Oriental Ladyfern) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/athyrium-niponicum/",
+        "checkedAt": "2026-11-05T15:39:02.111525+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "c47ff82f-4bd0-4ced-ad10-a545593e1ef9",
+    "name_zh": "银毛球",
+    "scientific_name": "Parodia magnifica",
+    "name_en": "Balloon cactus",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "verified",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearance_features": "球形至短柱形茎具规则棱脊，刺座沿棱排列，成熟株开黄色花。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮光照，逐渐适应直射日照",
+    "watering_requirement": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:16.761Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Parodia%20magnifica",
+        "checked_at": "2026-11-05T15:38:16.761Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": "Cactaceae",
+      "originalScientificName": "Parodia magnifica",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Parodia magnifica",
+        "checkedAt": "2026-11-05T15:38:16.761Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Parodia%20magnifica",
+        "taxa": [
+          {
+            "id": "1733035",
+            "scientificNameWithoutAuthor": "Parodia magnifica",
+            "scientificNameAuthorship": "(F.Ritter) F.H.Brandt",
+            "gbifId": 3949270,
+            "powoId": "911036-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "Pl@ntNet 名录已确认学名；尚缺物种级园艺页面复核，保留草稿状态。"
+    }
+  },
+  {
+    "id": "73ebb5c1-89d1-424e-8126-cd16626d7704",
+    "name_zh": "短毛丸",
+    "scientific_name": "Echinopsis oxygona",
+    "name_en": "Easter lily cactus",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "verified",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearance_features": "球形茎具纵棱和短刺，基部常萌生侧芽，花管细长。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:17.602Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Echinopsis%20oxygona",
+        "checked_at": "2026-11-05T15:38:17.602Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Echinopsis oxygona）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/echinopsis-oxygona/",
+        "checked_at": "2026-11-05T15:39:02.130878+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": "Cactaceae",
+      "originalScientificName": "Echinopsis oxygona",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Echinopsis oxygona",
+        "checkedAt": "2026-11-05T15:38:17.602Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Echinopsis%20oxygona",
+        "taxa": [
+          {
+            "id": "1418225",
+            "scientificNameWithoutAuthor": "Echinopsis oxygona",
+            "scientificNameAuthorship": "(Link) Zucc. ex Pfeiff. & Otto",
+            "gbifId": 7281375,
+            "powoId": "132749-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Echinopsis oxygona (Easter Lily Cactus, Night-Blooming Hedge-Hogs, Pink Easter Lily Cactus, Sea-Urchin Cactus) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/echinopsis-oxygona/",
+        "checkedAt": "2026-11-05T15:39:02.130878+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "8a67f32f-09c1-4590-8e97-c6e4ede697a2",
+    "name_zh": "绯牡丹",
+    "scientific_name": "Gymnocalycium mihanovichii",
+    "name_en": "Chin cactus",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "verified",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearance_features": "扁球形茎具明显棱脊和弯曲刺，成熟株可开浅色花。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:17.084Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Gymnocalycium%20mihanovichii",
+        "checked_at": "2026-11-05T15:38:17.084Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Gymnocalycium mihanovichii）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/gymnocalycium-mihanovichii/",
+        "checked_at": "2026-11-05T15:39:03.417451+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": "Cactaceae",
+      "originalScientificName": "Gymnocalycium mihanovichii",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Gymnocalycium mihanovichii",
+        "checkedAt": "2026-11-05T15:38:17.084Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Gymnocalycium%20mihanovichii",
+        "taxa": [
+          {
+            "id": "1841848",
+            "scientificNameWithoutAuthor": "Gymnocalycium mihanovichii",
+            "scientificNameAuthorship": "(Frič & Gürke) Britton & Rose",
+            "gbifId": 7282762,
+            "powoId": "115434-2"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Gymnocalycium mihanovichii (Chin Cactus, Moon cactus, Plaid Cactus) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/gymnocalycium-mihanovichii/",
+        "checkedAt": "2026-11-05T15:39:03.417451+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "a4e9dd33-1db6-47ec-a433-0fa27091c162",
+    "name_zh": "龙骨玉",
+    "scientific_name": "Ferocactus latispinus",
+    "name_en": "Devil’s tongue barrel cactus",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "verified",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearance_features": "球体具宽棱，中央刺粗硬且扁宽，顶部可开紫红色花。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮光照，逐渐适应直射日照",
+    "watering_requirement": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:17.479Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Ferocactus%20latispinus",
+        "checked_at": "2026-11-05T15:38:17.479Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": "Cactaceae",
+      "originalScientificName": "Ferocactus latispinus",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Ferocactus latispinus",
+        "checkedAt": "2026-11-05T15:38:17.479Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Ferocactus%20latispinus",
+        "taxa": [
+          {
+            "id": "1820401",
+            "scientificNameWithoutAuthor": "Ferocactus latispinus",
+            "scientificNameAuthorship": "(Haw.) Britton & Rose",
+            "gbifId": 7284444,
+            "powoId": "103646-2"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "Pl@ntNet 名录已确认学名；尚缺物种级园艺页面复核，保留草稿状态。"
+    }
+  },
+  {
+    "id": "64df9c96-3802-40d7-80a8-5b5b7b849a84",
+    "name_zh": "白星",
+    "scientific_name": "Mammillaria spinosissima",
+    "name_en": "Thorny pincushion cactus",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "verified",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearance_features": "圆柱形茎密布乳突与放射状刺，花常沿茎顶附近形成一圈。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮光照，逐渐适应直射日照",
+    "watering_requirement": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:17.801Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Mammillaria%20spinosissima",
+        "checked_at": "2026-11-05T15:38:17.801Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": "Cactaceae",
+      "originalScientificName": "Mammillaria spinosissima",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Mammillaria spinosissima",
+        "checkedAt": "2026-11-05T15:38:17.801Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Mammillaria%20spinosissima",
+        "taxa": [
+          {
+            "id": "1418286",
+            "scientificNameWithoutAuthor": "Mammillaria spinosissima",
+            "scientificNameAuthorship": "Lem.",
+            "gbifId": 7281203,
+            "powoId": "135156-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "Pl@ntNet 名录已确认学名；尚缺物种级园艺页面复核，保留草稿状态。"
+    }
+  },
+  {
+    "id": "a7e9a7c2-633b-4720-872b-25cd076d05ce",
+    "name_zh": "小町",
+    "scientific_name": "Rebutia minuscula",
+    "name_en": "Crown cactus",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "verified",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearance_features": "球形茎容易从基部形成群生，春季常在茎侧开鲜色漏斗花。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮光照，逐渐适应直射日照",
+    "watering_requirement": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:18.623Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Rebutia%20minuscula",
+        "checked_at": "2026-11-05T15:38:18.623Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": "Cactaceae",
+      "originalScientificName": "Rebutia minuscula",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Rebutia minuscula",
+        "checkedAt": "2026-11-05T15:38:18.623Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Rebutia%20minuscula",
+        "taxa": [
+          {
+            "id": "1488100",
+            "scientificNameWithoutAuthor": "Rebutia minuscula",
+            "scientificNameAuthorship": "K.Schum.",
+            "gbifId": 7282012,
+            "powoId": "218153-2"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "Pl@ntNet 名录已确认学名；尚缺物种级园艺页面复核，保留草稿状态。"
+    }
+  },
+  {
+    "id": "38e689c0-b509-44d0-96c9-4b2af2443bf6",
+    "name_zh": "多棱玉",
+    "scientific_name": "Astrophytum ornatum",
+    "name_en": "Monk’s hood cactus",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "verified",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearance_features": "单生球体具有明显高棱和银白色绒点，老株可逐渐伸长。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮光照，逐渐适应直射日照",
+    "watering_requirement": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:18.115Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Astrophytum%20ornatum",
+        "checked_at": "2026-11-05T15:38:18.115Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": "Cactaceae",
+      "originalScientificName": "Astrophytum ornatum",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Astrophytum ornatum",
+        "checkedAt": "2026-11-05T15:38:18.115Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Astrophytum%20ornatum",
+        "taxa": [
+          {
+            "id": "1418183",
+            "scientificNameWithoutAuthor": "Astrophytum ornatum",
+            "scientificNameAuthorship": "(DC.) Britton & Rose",
+            "gbifId": 7282413,
+            "powoId": "1063691-2"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "Pl@ntNet 名录已确认学名；尚缺物种级园艺页面复核，保留草稿状态。"
+    }
+  },
+  {
+    "id": "d5c3c060-f3d3-45a1-ac3c-505b4cc99414",
+    "name_zh": "芍药",
+    "scientific_name": "Paeonia lactiflora",
+    "name_en": "Chinese peony",
+    "aliases": [],
+    "categories": [
+      "flowers"
+    ],
+    "selection_category": "flowers",
+    "identity_status": "verified",
+    "summary": "常见观花植物，可用于花坛、庭院或阳台容器，开花表现受季节和光照影响。",
+    "appearance_features": "深裂复叶从地下根茎抽生，春末至初夏开大型花，花瓣层数因品种而异。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴，视当地热度调整",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:18.435Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Paeonia%20lactiflora",
+        "checked_at": "2026-11-05T15:38:18.435Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Paeonia lactiflora",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Paeonia lactiflora",
+        "checkedAt": "2026-11-05T15:38:18.435Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Paeonia%20lactiflora",
+        "taxa": [
+          {
+            "id": "1412934",
+            "scientificNameWithoutAuthor": "Paeonia lactiflora",
+            "scientificNameAuthorship": "Pall.",
+            "gbifId": 3083486,
+            "powoId": "711802-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "Pl@ntNet 名录已确认学名；尚缺物种级园艺页面复核，保留草稿状态。"
+    }
+  },
+  {
+    "id": "520f9c5c-73ea-4e44-9136-b70b11d40821",
+    "name_zh": "翠雀",
+    "scientific_name": "Delphinium grandiflorum",
+    "name_en": "Siberian larkspur",
+    "aliases": [],
+    "categories": [
+      "flowers"
+    ],
+    "selection_category": "flowers",
+    "identity_status": "verified",
+    "summary": "常见观花植物，可用于花坛、庭院或阳台容器，开花表现受季节和光照影响。",
+    "appearance_features": "直立花茎着生掌状深裂叶，细长花距花沿总状花序排列。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:18.750Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Delphinium%20grandiflorum",
+        "checked_at": "2026-11-05T15:38:18.750Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Delphinium grandiflorum）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/delphinium-grandiflorum/",
+        "checked_at": "2026-11-05T15:39:06.447337+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Delphinium grandiflorum",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Delphinium grandiflorum",
+        "checkedAt": "2026-11-05T15:38:18.750Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Delphinium%20grandiflorum",
+        "taxa": [
+          {
+            "id": "1420310",
+            "scientificNameWithoutAuthor": "Delphinium grandiflorum",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 3033699,
+            "powoId": "710650-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Delphinium grandiflorum (Dwarf Larkspur, Siberian Larkspur) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/delphinium-grandiflorum/",
+        "checkedAt": "2026-11-05T15:39:06.447337+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "23237803-c115-4290-a6e6-3bbb2e19d464",
+    "name_zh": "金鱼草",
+    "scientific_name": "Antirrhinum majus",
+    "name_en": "Common snapdragon",
+    "aliases": [],
+    "categories": [
+      "flowers"
+    ],
+    "selection_category": "flowers",
+    "identity_status": "verified",
+    "summary": "常见观花植物，可用于花坛、庭院或阳台容器，开花表现受季节和光照影响。",
+    "appearance_features": "直立花茎上排列二唇形花，花冠形似张合的嘴。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:20.223Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Antirrhinum%20majus",
+        "checked_at": "2026-11-05T15:38:20.223Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Antirrhinum majus）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/antirrhinum-majus/",
+        "checked_at": "2026-11-05T15:39:05.532584+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Antirrhinum majus",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Antirrhinum majus",
+        "checkedAt": "2026-11-05T15:38:20.223Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Antirrhinum%20majus",
+        "taxa": [
+          {
+            "id": "1359845",
+            "scientificNameWithoutAuthor": "Antirrhinum majus",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 3172001,
+            "powoId": "799180-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Antirrhinum majus (Common Snapdragon, Garden Snapdragon, Snapdragon) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/antirrhinum-majus/",
+        "checkedAt": "2026-11-05T15:39:05.532584+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "25007869-c53a-4735-9ed6-45ad3e1f1972",
+    "name_zh": "青葙",
+    "scientific_name": "Celosia argentea",
+    "name_en": "Plumed cockscomb",
+    "aliases": [],
+    "categories": [
+      "flowers"
+    ],
+    "selection_category": "flowers",
+    "identity_status": "verified",
+    "summary": "常见观花植物，可用于花坛、庭院或阳台容器，开花表现受季节和光照影响。",
+    "appearance_features": "直立茎着生卵形至披针形叶，枝端花序可呈羽状或穗状。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:19.714Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Celosia%20argentea",
+        "checked_at": "2026-11-05T15:38:19.714Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Celosia argentea）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/celosia-argentea/",
+        "checked_at": "2026-11-05T15:39:05.440736+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Celosia argentea",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Celosia argentea",
+        "checkedAt": "2026-11-05T15:38:19.714Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Celosia%20argentea",
+        "taxa": [
+          {
+            "id": "1363271",
+            "scientificNameWithoutAuthor": "Celosia argentea",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 3085191,
+            "powoId": "316350-2"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Celosia argentea (Celosia Plumosa, Cockscomb, Cockscomb Celosia, Fairy Fountain, Feather Celosia, Feather Cockscomb, Feathered Amaranth, Lagos Spinach, Plumed cockscomb, Plumeflower, Prince of Wales Feather, Quail grass, Red Fox, Red Spinach, Silver Cockscomb, Woolflower) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/celosia-argentea/",
+        "checkedAt": "2026-11-05T15:39:05.440736+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "61343da8-fef5-4d94-809a-bd69b63daa8f",
+    "name_zh": "太阳花",
+    "scientific_name": "Portulaca grandiflora",
+    "name_en": "Moss rose",
+    "aliases": [],
+    "categories": [
+      "flowers"
+    ],
+    "selection_category": "flowers",
+    "identity_status": "verified",
+    "summary": "常见观花植物，可用于花坛、庭院或阳台容器，开花表现受季节和光照影响。",
+    "appearance_features": "匍匐或斜生的肉质茎着生细长肉质叶，花色丰富且多在日间开放。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:19.575Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Portulaca%20grandiflora",
+        "checked_at": "2026-11-05T15:38:19.575Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Portulaca grandiflora）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/portulaca-grandiflora/",
+        "checked_at": "2026-11-05T15:39:06.777423+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Portulaca grandiflora",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Portulaca grandiflora",
+        "checkedAt": "2026-11-05T15:38:19.575Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Portulaca%20grandiflora",
+        "taxa": [
+          {
+            "id": "1383052",
+            "scientificNameWithoutAuthor": "Portulaca grandiflora",
+            "scientificNameAuthorship": "Hook.",
+            "gbifId": 3084700,
+            "powoId": "208592-2"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Portulaca grandiflora (Moss Rose, Portulaca, Purslane, Rose Moss, Sun Plant) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/portulaca-grandiflora/",
+        "checkedAt": "2026-11-05T15:39:06.777423+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "6305750d-b11d-4155-87d9-6319822ac119",
+    "name_zh": "非洲凤仙",
+    "scientific_name": "Impatiens walleriana",
+    "name_en": "Busy Lizzie",
+    "aliases": [],
+    "categories": [
+      "flowers"
+    ],
+    "selection_category": "flowers",
+    "identity_status": "verified",
+    "summary": "常见观花植物，可用于花坛、庭院或阳台容器，开花表现受季节和光照影响。",
+    "appearance_features": "多汁茎着生有细齿的卵形叶，花具有距，颜色多样。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:19.881Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Impatiens%20walleriana",
+        "checked_at": "2026-11-05T15:38:19.881Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Impatiens walleriana）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/impatiens-walleriana/",
+        "checked_at": "2026-11-05T15:39:06.904836+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Impatiens walleriana",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Impatiens walleriana",
+        "checkedAt": "2026-11-05T15:38:19.881Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Impatiens%20walleriana",
+        "taxa": [
+          {
+            "id": "1397707",
+            "scientificNameWithoutAuthor": "Impatiens walleriana",
+            "scientificNameAuthorship": "Hook.f.",
+            "gbifId": 2891772,
+            "powoId": "374419-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Impatiens walleriana (Bizzy Lizzy, Busy Lizzy, Common Impatiens, Garden Impatiens, Impatiens, Patience Plant, Patient Lucy, Sultana, Sultan&#x27;s Flower) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/impatiens-walleriana/",
+        "checkedAt": "2026-11-05T15:39:06.904836+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "1cea95d5-7150-4664-871f-64aad9dd1f12",
+    "name_zh": "白菜",
+    "scientific_name": "Brassica rapa",
+    "name_en": "Field mustard",
+    "aliases": [],
+    "categories": [
+      "vegetables-fruits"
+    ],
+    "selection_category": "vegetables-fruits",
+    "identity_status": "verified",
+    "summary": "常见食用作物，适合按其温度、日照和生长空间选择菜畦或容器栽培。",
+    "appearance_features": "基生叶逐渐形成紧实叶球，种级记录不限定具体白菜栽培类型。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴，视当地热度调整",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:20.735Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Brassica%20rapa",
+        "checked_at": "2026-11-05T15:38:20.735Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Brassica rapa",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Brassica rapa",
+        "checkedAt": "2026-11-05T15:38:20.735Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Brassica%20rapa",
+        "taxa": [
+          {
+            "id": "1363906",
+            "scientificNameWithoutAuthor": "Brassica rapa",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 7903057,
+            "powoId": "279485-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "Pl@ntNet 名录已确认学名；尚缺物种级园艺页面复核，保留草稿状态。"
+    }
+  },
+  {
+    "id": "0beb0e27-7039-4b2f-85e2-8825eb97de57",
+    "name_zh": "玉米",
+    "scientific_name": "Zea mays",
+    "name_en": "Maize",
+    "aliases": [],
+    "categories": [
+      "vegetables-fruits"
+    ],
+    "selection_category": "vegetables-fruits",
+    "identity_status": "verified",
+    "summary": "常见食用作物，适合按其温度、日照和生长空间选择菜畦或容器栽培。",
+    "appearance_features": "高大直立茎具宽长叶，顶部形成雄花序，雌花序发育为玉米穗。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:20.798Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Zea%20mays",
+        "checked_at": "2026-11-05T15:38:20.798Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Zea mays）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/zea-mays/",
+        "checked_at": "2026-11-05T15:39:07.972029+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Zea mays",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Zea mays",
+        "checkedAt": "2026-11-05T15:38:20.798Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Zea%20mays",
+        "taxa": [
+          {
+            "id": "1363500",
+            "scientificNameWithoutAuthor": "Zea mays",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 5290052,
+            "powoId": "426810-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Zea mays (Corn, Indian corn, Maize) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/zea-mays/",
+        "checkedAt": "2026-11-05T15:39:07.972029+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "72529fcc-ef96-4923-a39e-475a4f307a41",
+    "name_zh": "菜豆",
+    "scientific_name": "Phaseolus vulgaris",
+    "name_en": "Common bean",
+    "aliases": [],
+    "categories": [
+      "vegetables-fruits"
+    ],
+    "selection_category": "vegetables-fruits",
+    "identity_status": "verified",
+    "summary": "常见食用作物，适合按其温度、日照和生长空间选择菜畦或容器栽培。",
+    "appearance_features": "三出复叶，蝶形花后形成荚果，荚形与种子颜色随栽培类型变化。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:20.537Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Phaseolus%20vulgaris",
+        "checked_at": "2026-11-05T15:38:20.537Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Phaseolus vulgaris）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/phaseolus-vulgaris/",
+        "checked_at": "2026-11-05T15:39:08.199701+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Phaseolus vulgaris",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Phaseolus vulgaris",
+        "checkedAt": "2026-11-05T15:38:20.537Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Phaseolus%20vulgaris",
+        "taxa": [
+          {
+            "id": "1394501",
+            "scientificNameWithoutAuthor": "Phaseolus vulgaris",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 5350452,
+            "powoId": "514191-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Phaseolus vulgaris (Bean, Beans, Bush Bean, Green Bean, Green Beans, Pole Bean, Snap Bean, String Bean) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/phaseolus-vulgaris/",
+        "checkedAt": "2026-11-05T15:39:08.199701+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "a7a48822-56f5-42e9-b9f6-18a955221f8e",
+    "name_zh": "甘蓝",
+    "scientific_name": "Brassica oleracea",
+    "name_en": "Wild cabbage",
+    "aliases": [],
+    "categories": [
+      "vegetables-fruits"
+    ],
+    "selection_category": "vegetables-fruits",
+    "identity_status": "verified",
+    "summary": "常见食用作物，适合按其温度、日照和生长空间选择菜畦或容器栽培。",
+    "appearance_features": "宽大叶片层层抱合形成叶球，记录按甘蓝种级而不限定单一商品型。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:20.879Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Brassica%20oleracea",
+        "checked_at": "2026-11-05T15:38:20.879Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Brassica oleracea）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/brassica-oleracea/",
+        "checked_at": "2026-11-05T15:39:08.449060+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Brassica oleracea",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Brassica oleracea",
+        "checkedAt": "2026-11-05T15:38:20.879Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Brassica%20oleracea",
+        "taxa": [
+          {
+            "id": "1363909",
+            "scientificNameWithoutAuthor": "Brassica oleracea",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 3042845,
+            "powoId": "279435-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Brassica oleracea (Bresych Gwyllt, Wild Cabbage, Wild Mustard) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/brassica-oleracea/",
+        "checkedAt": "2026-11-05T15:39:08.449060+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "e02f9b67-7840-4f53-ae4c-c94499ce3272",
+    "name_zh": "笋瓜",
+    "scientific_name": "Cucurbita maxima",
+    "name_en": "Winter squash",
+    "aliases": [],
+    "categories": [
+      "vegetables-fruits"
+    ],
+    "selection_category": "vegetables-fruits",
+    "identity_status": "verified",
+    "summary": "常见食用作物，适合按其温度、日照和生长空间选择菜畦或容器栽培。",
+    "appearance_features": "蔓生茎具卷须和大型掌状裂叶，开黄色单性花并结大型果实。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:21.055Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Cucurbita%20maxima",
+        "checked_at": "2026-11-05T15:38:21.055Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Cucurbita maxima）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/cucurbita-maxima/",
+        "checked_at": "2026-11-05T15:39:09.643635+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Cucurbita maxima",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Cucurbita maxima",
+        "checkedAt": "2026-11-05T15:38:21.055Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Cucurbita%20maxima",
+        "taxa": [
+          {
+            "id": "1391483",
+            "scientificNameWithoutAuthor": "Cucurbita maxima",
+            "scientificNameAuthorship": "Duchesne",
+            "gbifId": 2874515,
+            "powoId": "30006538-2"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Cucurbita maxima (Autumn Squash, Buttercup Squash, Hubbard Squash, Marrow, Pumpkin, Squash, Turban Gourd, Winter Squash) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/cucurbita-maxima/",
+        "checkedAt": "2026-11-05T15:39:09.643635+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "62cc5a98-900f-447c-afe2-c5571d83d190",
+    "name_zh": "甘薯",
+    "scientific_name": "Ipomoea batatas",
+    "name_en": "Sweet potato",
+    "aliases": [],
+    "categories": [
+      "vegetables-fruits"
+    ],
+    "selection_category": "vegetables-fruits",
+    "identity_status": "verified",
+    "summary": "常见食用作物，适合按其温度、日照和生长空间选择菜畦或容器栽培。",
+    "appearance_features": "匍匐茎节处易生根，叶形多变，地下形成膨大的贮藏根。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:21.112Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Ipomoea%20batatas",
+        "checked_at": "2026-11-05T15:38:21.112Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Ipomoea batatas）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/ipomoea-batatas/",
+        "checked_at": "2026-11-05T15:39:09.620850+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Ipomoea batatas",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Ipomoea batatas",
+        "checkedAt": "2026-11-05T15:38:21.112Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Ipomoea%20batatas",
+        "taxa": [
+          {
+            "id": "1364028",
+            "scientificNameWithoutAuthor": "Ipomoea batatas",
+            "scientificNameAuthorship": "(L.) Lam.",
+            "gbifId": 2928551,
+            "powoId": "1101088-2"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Ipomoea batatas (Edible Sweetpotato, Ornamental Sweetpotato, Sweetpotato, Sweet Potato Vine, Sweetpotato Vine) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/ipomoea-batatas/",
+        "checkedAt": "2026-11-05T15:39:09.620850+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "10ad66ce-78d2-4414-baaf-8362e411093c",
+    "name_zh": "文竹",
+    "scientific_name": "Asparagus setaceus",
+    "name_en": "Asparagus fern",
+    "aliases": [],
+    "categories": [
+      "herbs"
+    ],
+    "selection_category": "herbs",
+    "identity_status": "verified",
+    "summary": "观叶草本植物，适合室内盆栽或温暖地区庭院栽培。",
+    "appearance_features": "细枝上密生针状叶状枝，植株轻盈并可攀附支撑物。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:21.882Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Asparagus%20setaceus",
+        "checked_at": "2026-11-05T15:38:21.882Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Asparagus setaceus）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/asparagus-setaceus/",
+        "checked_at": "2026-11-05T15:39:09.659216+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Asparagus setaceus",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Asparagus setaceus",
+        "checkedAt": "2026-11-05T15:38:21.882Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Asparagus%20setaceus",
+        "taxa": [
+          {
+            "id": "1363267",
+            "scientificNameWithoutAuthor": "Asparagus setaceus",
+            "scientificNameAuthorship": "(Kunth) Jessop",
+            "gbifId": 2768686,
+            "powoId": "531312-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Asparagus setaceus (Asparagus Fern, Climbing Asparagus, Common Asparagus Fern, Feathered Asparagus Fern, Ferny Asparagus, Lace Fern, Plumosa Fern) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/asparagus-setaceus/",
+        "checkedAt": "2026-11-05T15:39:09.659216+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "470fb83c-810a-4e98-8f32-05bae6df7e97",
+    "name_zh": "佛甲草",
+    "scientific_name": "Soleirolia soleirolii",
+    "name_en": "Baby’s tears",
+    "aliases": [],
+    "categories": [
+      "herbs"
+    ],
+    "selection_category": "herbs",
+    "identity_status": "verified",
+    "summary": "观叶草本植物，适合室内盆栽或温暖地区庭院栽培。",
+    "appearance_features": "匍匐茎密生细小圆形叶，沿土面扩展形成紧密绿毯。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:21.369Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Soleirolia%20soleirolii",
+        "checked_at": "2026-11-05T15:38:21.369Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Soleirolia soleirolii）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/soleirolia-soleirolii/",
+        "checked_at": "2026-11-05T15:39:10.806043+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Soleirolia soleirolii",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Soleirolia soleirolii",
+        "checkedAt": "2026-11-05T15:38:21.369Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Soleirolia%20soleirolii",
+        "taxa": [
+          {
+            "id": "1360828",
+            "scientificNameWithoutAuthor": "Soleirolia soleirolii",
+            "scientificNameAuthorship": "(Req.) Dandy",
+            "gbifId": 2984366,
+            "powoId": "856545-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Soleirolia soleirolii (Angel&#x27;s Tears, Baby&#x27;s Tears, Corsican Carpet, Irish Moss, Japanese Moss, Mind-Your-Own-Business, Paddys Wig, Peace-in-the-Home, Pollyanna Vine) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/soleirolia-soleirolii/",
+        "checkedAt": "2026-11-05T15:39:10.806043+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "c9841d62-e1d1-4aed-8814-c8d2d76b9a38",
+    "name_zh": "斑叶竹节秋海棠",
+    "scientific_name": "Begonia maculata",
+    "name_en": "Polka dot begonia",
+    "aliases": [],
+    "categories": [
+      "herbs"
+    ],
+    "selection_category": "herbs",
+    "identity_status": "verified",
+    "summary": "观叶草本植物，适合室内盆栽或温暖地区庭院栽培。",
+    "appearance_features": "直立竹节状茎上着生不对称长叶，叶面散布银白色圆点。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴，视当地热度调整",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:21.433Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Begonia%20maculata",
+        "checked_at": "2026-11-05T15:38:21.433Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Begonia maculata",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Begonia maculata",
+        "checkedAt": "2026-11-05T15:38:21.433Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Begonia%20maculata",
+        "taxa": [
+          {
+            "id": "1409393",
+            "scientificNameWithoutAuthor": "Begonia maculata",
+            "scientificNameAuthorship": "Raddi",
+            "gbifId": 7303475,
+            "powoId": "105130-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "Pl@ntNet 名录已确认学名；尚缺物种级园艺页面复核，保留草稿状态。"
+    }
+  },
+  {
+    "id": "22eb4112-d162-4ac7-9279-5e3379028c2d",
+    "name_zh": "斑叶竹芋",
+    "scientific_name": "Goeppertia zebrina",
+    "name_en": "Zebra plant",
+    "aliases": [],
+    "categories": [
+      "herbs"
+    ],
+    "selection_category": "herbs",
+    "identity_status": "verified",
+    "summary": "观叶草本植物，适合室内盆栽或温暖地区庭院栽培。",
+    "appearance_features": "椭圆形叶片具有深浅相间的羽状斑纹，叶柄从根部抽出。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:21.880Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Goeppertia%20zebrina",
+        "checked_at": "2026-11-05T15:38:21.880Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Goeppertia zebrina）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/goeppertia-zebrina/",
+        "checked_at": "2026-11-05T15:39:12.618807+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Goeppertia zebrina",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Goeppertia zebrina",
+        "checkedAt": "2026-11-05T15:38:21.880Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Goeppertia%20zebrina",
+        "taxa": [
+          {
+            "id": "1730334",
+            "scientificNameWithoutAuthor": "Goeppertia zebrina",
+            "scientificNameAuthorship": "(Sims) Nees",
+            "gbifId": 5302914,
+            "powoId": "796810-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Goeppertia zebrina (Peacock Plant, Zebra Plant, Zebra Prayer Plant) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/goeppertia-zebrina/",
+        "checkedAt": "2026-11-05T15:39:12.618807+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "6b5bd9e8-a33d-46ea-9ba2-5c0c1fd99776",
+    "name_zh": "圆叶竹芋",
+    "scientific_name": "Goeppertia orbifolia",
+    "name_en": "Orbifolia prayer plant",
+    "aliases": [],
+    "categories": [
+      "herbs"
+    ],
+    "selection_category": "herbs",
+    "identity_status": "verified",
+    "summary": "观叶草本植物，适合室内盆栽或温暖地区庭院栽培。",
+    "appearance_features": "宽圆叶片带银绿色与深绿色相间的环状条纹。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:22.398Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Goeppertia%20orbifolia",
+        "checked_at": "2026-11-05T15:38:22.398Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Goeppertia orbifolia）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/goeppertia-orbifolia/",
+        "checked_at": "2026-11-05T15:39:11.614921+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Goeppertia orbifolia",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Goeppertia orbifolia",
+        "checkedAt": "2026-11-05T15:38:22.398Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Goeppertia%20orbifolia",
+        "taxa": [
+          {
+            "id": "1731474",
+            "scientificNameWithoutAuthor": "Goeppertia orbifolia",
+            "scientificNameAuthorship": "(Linden) Borchs. & S.Suárez",
+            "gbifId": 7476815,
+            "powoId": "60461168-2"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Goeppertia orbifolia | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/goeppertia-orbifolia/",
+        "checkedAt": "2026-11-05T15:39:11.614921+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "8ab1b048-6e7c-45b3-967f-85fba1fdab20",
+    "name_zh": "斑马海芋",
+    "scientific_name": "Alocasia zebrina",
+    "name_en": "Zebra alocasia",
+    "aliases": [],
+    "categories": [
+      "herbs"
+    ],
+    "selection_category": "herbs",
+    "identity_status": "verified",
+    "summary": "观叶草本植物，适合室内盆栽或温暖地区庭院栽培。",
+    "appearance_features": "箭形叶片挺立，叶柄具有鲜明的深浅相间斑纹。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴，视当地热度调整",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:22.200Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Alocasia%20zebrina",
+        "checked_at": "2026-11-05T15:38:22.200Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Alocasia zebrina",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Alocasia zebrina",
+        "checkedAt": "2026-11-05T15:38:22.200Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Alocasia%20zebrina",
+        "taxa": [
+          {
+            "id": "1856623",
+            "scientificNameWithoutAuthor": "Alocasia zebrina",
+            "scientificNameAuthorship": "G.W.Johnson & R.Hogg",
+            "gbifId": 12293197,
+            "powoId": "77177187-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "Pl@ntNet 名录已确认学名；尚缺物种级园艺页面复核，保留草稿状态。"
+    }
+  },
+  {
+    "id": "f12bde3c-ce95-45bc-a5b5-df33e39286cb",
+    "name_zh": "大花六道木",
+    "scientific_name": "Abelia × grandiflora",
+    "name_en": "Glossy abelia",
+    "aliases": [],
+    "categories": [
+      "shrubs"
+    ],
+    "selection_category": "shrubs",
+    "identity_status": "verified",
+    "summary": "庭院常见木本观赏植物，可用于花境、绿篱或大型容器。",
+    "appearance_features": "枝条拱垂且叶片小而有光泽，枝端形成钟状至管状花。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:22.196Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Abelia%20%C3%97%20grandiflora",
+        "checked_at": "2026-11-05T15:38:22.196Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Abelia × grandiflora）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/abelia-x-grandiflora/",
+        "checked_at": "2026-11-05T15:39:13.280660+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Abelia × grandiflora",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Abelia × grandiflora",
+        "checkedAt": "2026-11-05T15:38:22.196Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Abelia%20%C3%97%20grandiflora",
+        "taxa": [
+          {
+            "id": "1423427",
+            "scientificNameWithoutAuthor": "Abelia × grandiflora",
+            "scientificNameAuthorship": "(Rovelli ex André) Rehder",
+            "gbifId": 5334278,
+            "powoId": "148201-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Abelia x grandiflora (Glossy Abelia) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/abelia-x-grandiflora/",
+        "checkedAt": "2026-11-05T15:39:13.280660+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "d354a25c-d701-4637-99c8-3cc55bd45164",
+    "name_zh": "锦带花",
+    "scientific_name": "Weigela florida",
+    "name_en": "Old-fashioned weigela",
+    "aliases": [],
+    "categories": [
+      "shrubs"
+    ],
+    "selection_category": "shrubs",
+    "identity_status": "verified",
+    "summary": "庭院常见木本观赏植物，可用于花境、绿篱或大型容器。",
+    "appearance_features": "落叶灌木具拱形枝条，春末至初夏枝上着生漏斗状花。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:22.491Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Weigela%20florida",
+        "checked_at": "2026-11-05T15:38:22.491Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Weigela florida）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/weigela-florida/",
+        "checked_at": "2026-11-05T15:39:13.219621+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Weigela florida",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Weigela florida",
+        "checkedAt": "2026-11-05T15:38:22.491Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Weigela%20florida",
+        "taxa": [
+          {
+            "id": "1418395",
+            "scientificNameWithoutAuthor": "Weigela florida",
+            "scientificNameAuthorship": "(Bunge) A. DC.",
+            "gbifId": 2888730,
+            "powoId": null
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Weigela florida (Old Fashioned Weiglea, Weigela) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/weigela-florida/",
+        "checkedAt": "2026-11-05T15:39:13.219621+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "175f1aa3-215d-4b9e-b3c3-dcd97eab8c5b",
+    "name_zh": "日本绣线菊",
+    "scientific_name": "Spiraea japonica",
+    "name_en": "Japanese spirea",
+    "aliases": [],
+    "categories": [
+      "shrubs"
+    ],
+    "selection_category": "shrubs",
+    "identity_status": "verified",
+    "summary": "庭院常见木本观赏植物，可用于花境、绿篱或大型容器。",
+    "appearance_features": "枝叶密集，叶缘有锯齿，枝端形成粉色或白色小花簇。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:22.513Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Spiraea%20japonica",
+        "checked_at": "2026-11-05T15:38:22.513Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Spiraea japonica）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/spiraea-japonica/",
+        "checked_at": "2026-11-05T15:39:14.064367+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Spiraea japonica",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Spiraea japonica",
+        "checkedAt": "2026-11-05T15:38:22.513Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Spiraea%20japonica",
+        "taxa": [
+          {
+            "id": "1877605",
+            "scientificNameWithoutAuthor": "Spiraea japonica",
+            "scientificNameAuthorship": "Cambess.",
+            "gbifId": 7677654,
+            "powoId": "2993235-4"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Spiraea japonica (Bumald Spiraea, Japanese Meadowsweet, Japanese Spiraea) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/spiraea-japonica/",
+        "checkedAt": "2026-11-05T15:39:14.064367+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "19cfbe62-acb7-44ec-9ccb-e834b4f67ca7",
+    "name_zh": "圆锥绣球",
+    "scientific_name": "Hydrangea paniculata",
+    "name_en": "Panicle hydrangea",
+    "aliases": [],
+    "categories": [
+      "shrubs"
+    ],
+    "selection_category": "shrubs",
+    "identity_status": "verified",
+    "summary": "庭院常见木本观赏植物，可用于花境、绿篱或大型容器。",
+    "appearance_features": "卵形叶对生或近对生，枝端形成明显圆锥形花序。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:22.718Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Hydrangea%20paniculata",
+        "checked_at": "2026-11-05T15:38:22.718Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Hydrangea paniculata）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/hydrangea-paniculata/",
+        "checked_at": "2026-11-05T15:39:14.540334+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Hydrangea paniculata",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Hydrangea paniculata",
+        "checkedAt": "2026-11-05T15:38:22.718Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Hydrangea%20paniculata",
+        "taxa": [
+          {
+            "id": "1393223",
+            "scientificNameWithoutAuthor": "Hydrangea paniculata",
+            "scientificNameAuthorship": "Siebold",
+            "gbifId": 2985995,
+            "powoId": "791653-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Hydrangea paniculata (Panicle Hydrangea, Peegee Hydrangea) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/hydrangea-paniculata/",
+        "checkedAt": "2026-11-05T15:39:14.540334+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "bfa6acdf-2a2d-432b-af80-47427ce48895",
+    "name_zh": "紫薇",
+    "scientific_name": "Lagerstroemia indica",
+    "name_en": "Crape myrtle",
+    "aliases": [],
+    "categories": [
+      "shrubs"
+    ],
+    "selection_category": "shrubs",
+    "identity_status": "verified",
+    "summary": "庭院常见木本观赏植物，可用于花境、绿篱或大型容器。",
+    "appearance_features": "树皮平滑并逐年脱落，夏季枝端形成皱褶状花簇。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:22.797Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Lagerstroemia%20indica",
+        "checked_at": "2026-11-05T15:38:22.797Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Lagerstroemia indica）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/lagerstroemia-indica/",
+        "checked_at": "2026-11-05T15:39:15.260659+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Lagerstroemia indica",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Lagerstroemia indica",
+        "checkedAt": "2026-11-05T15:38:22.797Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Lagerstroemia%20indica",
+        "taxa": [
+          {
+            "id": "1376509",
+            "scientificNameWithoutAuthor": "Lagerstroemia indica",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 3188725,
+            "powoId": "553576-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Lagerstroemia indica (Common Crape Myrtle, Crape Flower, Crape Myrtle, Crepe Myrtle, Indian Crape Myrtle, Lilac of the South) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/lagerstroemia-indica/",
+        "checkedAt": "2026-11-05T15:39:15.260659+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "b39e2217-fe64-406b-9522-87a0cc893303",
+    "name_zh": "红叶石楠",
+    "scientific_name": "Photinia × fraseri",
+    "name_en": "Red tip photinia",
+    "aliases": [],
+    "categories": [
+      "shrubs"
+    ],
+    "selection_category": "shrubs",
+    "identity_status": "verified",
+    "summary": "庭院常见木本观赏植物，可用于花境、绿篱或大型容器。",
+    "appearance_features": "新叶常呈红色后转绿，枝端可形成白色小花簇。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:24.000Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Photinia%20%C3%97%20fraseri",
+        "checked_at": "2026-11-05T15:38:24.000Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Photinia × fraseri）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/photinia-x-fraseri/",
+        "checked_at": "2026-11-05T15:39:15.290687+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Photinia × fraseri",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Photinia × fraseri",
+        "checkedAt": "2026-11-05T15:38:24.000Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Photinia%20%C3%97%20fraseri",
+        "taxa": [
+          {
+            "id": "1780757",
+            "scientificNameWithoutAuthor": "Photinia × fraseri",
+            "scientificNameAuthorship": "Dress",
+            "gbifId": 5363854,
+            "powoId": "727384-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Photinia x fraseri (Fraser Photinia, Fraser&#x27;s Photinia, Red-Tip Photinia, Red Top) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/photinia-x-fraseri/",
+        "checkedAt": "2026-11-05T15:39:15.290687+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "3f2b2364-de73-4605-b5c9-0d6290ef6264",
+    "name_zh": "富贵草",
+    "scientific_name": "Pachysandra terminalis",
+    "name_en": "Japanese pachysandra",
+    "aliases": [],
+    "categories": [
+      "groundcover"
+    ],
+    "selection_category": "groundcover",
+    "identity_status": "verified",
+    "summary": "低矮或匍匐生长植物，可用于花境边缘、地表覆盖或容器垂吊。",
+    "appearance_features": "地下根茎横向扩展成片，叶片聚生于茎端，春季开小型白花。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:23.032Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Pachysandra%20terminalis",
+        "checked_at": "2026-11-05T15:38:23.032Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Pachysandra terminalis）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/pachysandra-terminalis/",
+        "checked_at": "2026-11-05T15:39:16.074433+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Pachysandra terminalis",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Pachysandra terminalis",
+        "checkedAt": "2026-11-05T15:38:23.032Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Pachysandra%20terminalis",
+        "taxa": [
+          {
+            "id": "1398597",
+            "scientificNameWithoutAuthor": "Pachysandra terminalis",
+            "scientificNameAuthorship": "Siebold & Zucc.",
+            "gbifId": 2984676,
+            "powoId": "353208-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Pachysandra terminalis (Carpet Box, Japanese Pachysandra, Japanese Spurge, Pachysandra) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/pachysandra-terminalis/",
+        "checkedAt": "2026-11-05T15:39:16.074433+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "1600fb8f-bc86-408d-9dca-d020a26bb64d",
+    "name_zh": "小叶筋骨草",
+    "scientific_name": "Mazus miquelii",
+    "name_en": "Japanese mazus",
+    "aliases": [],
+    "categories": [
+      "groundcover"
+    ],
+    "selection_category": "groundcover",
+    "identity_status": "verified",
+    "summary": "低矮或匍匐生长植物，可用于花境边缘、地表覆盖或容器垂吊。",
+    "appearance_features": "低矮匍匐茎节处生根，叶片小，花冠呈淡紫色并有黄色斑纹。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:23.145Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Mazus%20miquelii",
+        "checked_at": "2026-11-05T15:38:23.145Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Mazus miquelii）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/mazus-miquelii/",
+        "checked_at": "2026-11-05T15:39:16.424830+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Mazus miquelii",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Mazus miquelii",
+        "checkedAt": "2026-11-05T15:38:23.145Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Mazus%20miquelii",
+        "taxa": [
+          {
+            "id": "1434583",
+            "scientificNameWithoutAuthor": "Mazus miquelii",
+            "scientificNameAuthorship": "Makino",
+            "gbifId": 3171302,
+            "powoId": "805560-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Mazus miquelii (Creeping Mazus, Mazus, Miquel&#x27;s Mazus) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/mazus-miquelii/",
+        "checkedAt": "2026-11-05T15:39:16.424830+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "d819c9ee-07cf-481c-a173-59d332939252",
+    "name_zh": "无毛草",
+    "scientific_name": "Sagina subulata",
+    "name_en": "Irish moss",
+    "aliases": [],
+    "categories": [
+      "groundcover"
+    ],
+    "selection_category": "groundcover",
+    "identity_status": "verified",
+    "summary": "低矮或匍匐生长植物，可用于花境边缘、地表覆盖或容器垂吊。",
+    "appearance_features": "细密针状叶形成低矮垫层，春夏可开小型白花。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:23.338Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Sagina%20subulata",
+        "checked_at": "2026-11-05T15:38:23.338Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Sagina subulata）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/sagina-subulata/",
+        "checked_at": "2026-11-05T15:39:16.664481+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Sagina subulata",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Sagina subulata",
+        "checkedAt": "2026-11-05T15:38:23.338Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Sagina%20subulata",
+        "taxa": [
+          {
+            "id": "1395719",
+            "scientificNameWithoutAuthor": "Sagina subulata",
+            "scientificNameAuthorship": "(Sw.) C.Presl",
+            "gbifId": 3085400,
+            "powoId": null
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Sagina subulata (Heath Pearlwort, Irish Moss, Lawn Pearlwort, Lawn Spurrey, Scottish Moss) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/sagina-subulata/",
+        "checkedAt": "2026-11-05T15:39:16.664481+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "3f626c09-4254-4b8f-942b-2cc5b1a4ab71",
+    "name_zh": "金钱草",
+    "scientific_name": "Lysimachia nummularia",
+    "name_en": "Creeping Jenny",
+    "aliases": [],
+    "categories": [
+      "groundcover"
+    ],
+    "selection_category": "groundcover",
+    "identity_status": "verified",
+    "summary": "低矮或匍匐生长植物，可用于花境边缘、地表覆盖或容器垂吊。",
+    "appearance_features": "匍匐茎节处生根，圆形对生叶间开黄色五瓣花。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:23.458Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Lysimachia%20nummularia",
+        "checked_at": "2026-11-05T15:38:23.458Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Lysimachia nummularia）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/lysimachia-nummularia/",
+        "checked_at": "2026-11-05T15:39:17.237776+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Lysimachia nummularia",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Lysimachia nummularia",
+        "checkedAt": "2026-11-05T15:38:23.458Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Lysimachia%20nummularia",
+        "taxa": [
+          {
+            "id": "1393708",
+            "scientificNameWithoutAuthor": "Lysimachia nummularia",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 3169379,
+            "powoId": "701260-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Lysimachia nummularia (Creeping Charlie, Creeping Jenny, Creeping Joan, Creeping Yellow Loosestrife, Moneywort, Running Jenny, Wandering Jenny, Wandering Sailor) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/lysimachia-nummularia/",
+        "checkedAt": "2026-11-05T15:39:17.237776+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "e6c57079-1bb4-4dbb-968e-7e7815b74b4f",
+    "name_zh": "扶芳藤",
+    "scientific_name": "Euonymus fortunei",
+    "name_en": "Wintercreeper",
+    "aliases": [],
+    "categories": [
+      "groundcover"
+    ],
+    "selection_category": "groundcover",
+    "identity_status": "verified",
+    "summary": "低矮或匍匐生长植物，可用于花境边缘、地表覆盖或容器垂吊。",
+    "appearance_features": "茎匍匐或攀援生长，叶片对生，部分园艺类型具有斑叶。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:23.659Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Euonymus%20fortunei",
+        "checked_at": "2026-11-05T15:38:23.659Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Euonymus fortunei）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/euonymus-fortunei/",
+        "checked_at": "2026-11-05T15:39:18.001501+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Euonymus fortunei",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Euonymus fortunei",
+        "checkedAt": "2026-11-05T15:38:23.659Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Euonymus%20fortunei",
+        "taxa": [
+          {
+            "id": "1392235",
+            "scientificNameWithoutAuthor": "Euonymus fortunei",
+            "scientificNameAuthorship": "(Turcz.) Hand.-Mazz.",
+            "gbifId": 3169137,
+            "powoId": "160893-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Euonymus fortunei (Climbing Euonymus, Japanese Euonymus, Spreading Euonymus, Wintercreeper, Winter Creeper, Wintercreeper Euonymus) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/euonymus-fortunei/",
+        "checkedAt": "2026-11-05T15:39:18.001501+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "8f974aa3-90b2-469b-83b2-782ecb2bf177",
+    "name_zh": "白车轴草",
+    "scientific_name": "Trifolium repens",
+    "name_en": "White clover",
+    "aliases": [],
+    "categories": [
+      "groundcover"
+    ],
+    "selection_category": "groundcover",
+    "identity_status": "verified",
+    "summary": "低矮或匍匐生长植物，可用于花境边缘、地表覆盖或容器垂吊。",
+    "appearance_features": "匍匐茎节处生根，三出复叶中央常见浅色斑，花为白色球状花序。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:24.319Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Trifolium%20repens",
+        "checked_at": "2026-11-05T15:38:24.319Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Trifolium repens）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/trifolium-repens/",
+        "checked_at": "2026-11-05T15:39:18.353715+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Trifolium repens",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Trifolium repens",
+        "checkedAt": "2026-11-05T15:38:24.319Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Trifolium%20repens",
+        "taxa": [
+          {
+            "id": "1363740",
+            "scientificNameWithoutAuthor": "Trifolium repens",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 5358748,
+            "powoId": "523626-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Trifolium repens (Clover, Dutch Clover, Ladino Clover, Purple Dutch Clover, Shamrock, White Clover, White Sweet Clover) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/trifolium-repens/",
+        "checkedAt": "2026-11-05T15:39:18.353715+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "de87f114-f494-4be6-83d3-a7e102921a47",
+    "name_zh": "姜",
+    "scientific_name": "Zingiber officinale",
+    "name_en": "Garden ginger",
+    "aliases": [],
+    "categories": [
+      "edible-plants"
+    ],
+    "selection_category": "edible-plants",
+    "identity_status": "verified",
+    "summary": "芳香或食用草本，可用于家庭菜园、阳台容器或香草种植。",
+    "appearance_features": "直立假茎着生披针形叶，地下根茎芳香且可作香料。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:23.971Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Zingiber%20officinale",
+        "checked_at": "2026-11-05T15:38:23.971Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Zingiber officinale）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/zingiber-officinale/",
+        "checked_at": "2026-11-05T15:39:18.884099+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Zingiber officinale",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Zingiber officinale",
+        "checkedAt": "2026-11-05T15:38:23.971Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Zingiber%20officinale",
+        "taxa": [
+          {
+            "id": "1383765",
+            "scientificNameWithoutAuthor": "Zingiber officinale",
+            "scientificNameAuthorship": "Roscoe",
+            "gbifId": 2757280,
+            "powoId": "798372-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Zingiber officinale (Canton, Canton Ginger, Common Ginger, Cooking Ginger, Ginger, Stem Ginger, True Ginger) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/zingiber-officinale/",
+        "checkedAt": "2026-11-05T15:39:18.884099+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "c27906bc-8064-4029-aff2-204ae1eefdc8",
+    "name_zh": "姜黄",
+    "scientific_name": "Curcuma longa",
+    "name_en": "Turmeric",
+    "aliases": [],
+    "categories": [
+      "edible-plants"
+    ],
+    "selection_category": "edible-plants",
+    "identity_status": "verified",
+    "summary": "芳香或食用草本，可用于家庭菜园、阳台容器或香草种植。",
+    "appearance_features": "宽披针形叶从地下根茎抽生，根茎内部呈黄色至橙黄色。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:24.271Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Curcuma%20longa",
+        "checked_at": "2026-11-05T15:38:24.271Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Curcuma longa）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/curcuma-longa/",
+        "checked_at": "2026-11-05T15:39:19.124619+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Curcuma longa",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Curcuma longa",
+        "checkedAt": "2026-11-05T15:38:24.271Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Curcuma%20longa",
+        "taxa": [
+          {
+            "id": "1383769",
+            "scientificNameWithoutAuthor": "Curcuma longa",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 2757624,
+            "powoId": "796451-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Curcuma longa (Common Turmeric, Turmeric) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/curcuma-longa/",
+        "checkedAt": "2026-11-05T15:39:19.124619+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "73efa74d-75af-4ef0-80b7-1bdab13d2415",
+    "name_zh": "大葱",
+    "scientific_name": "Allium fistulosum",
+    "name_en": "Welsh onion",
+    "aliases": [],
+    "categories": [
+      "edible-plants"
+    ],
+    "selection_category": "edible-plants",
+    "identity_status": "verified",
+    "summary": "芳香或食用草本，可用于家庭菜园、阳台容器或香草种植。",
+    "appearance_features": "叶片中空细长，基部形成白色假茎，成熟后抽出球形花序。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴，视当地热度调整",
+    "watering_requirement": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:24.293Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Allium%20fistulosum",
+        "checked_at": "2026-11-05T15:38:24.293Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Allium fistulosum",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Allium fistulosum",
+        "checkedAt": "2026-11-05T15:38:24.293Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Allium%20fistulosum",
+        "taxa": [
+          {
+            "id": "1382101",
+            "scientificNameWithoutAuthor": "Allium fistulosum",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 2856504,
+            "powoId": "528046-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "Pl@ntNet 名录已确认学名；尚缺物种级园艺页面复核，保留草稿状态。"
+    }
+  },
+  {
+    "id": "a10ea06f-0aed-41a3-93ba-2b65542bb220",
+    "name_zh": "芥菜",
+    "scientific_name": "Brassica juncea",
+    "name_en": "Brown mustard",
+    "aliases": [],
+    "categories": [
+      "edible-plants"
+    ],
+    "selection_category": "edible-plants",
+    "identity_status": "verified",
+    "summary": "芳香或食用草本，可用于家庭菜园、阳台容器或香草种植。",
+    "appearance_features": "叶形可宽大、皱褶或具裂片，形态随叶用或茎用栽培类型变化。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:25.771Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Brassica%20juncea",
+        "checked_at": "2026-11-05T15:38:25.771Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Brassica juncea）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/brassica-juncea/",
+        "checked_at": "2026-11-05T15:39:20.229883+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Brassica juncea",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Brassica juncea",
+        "checkedAt": "2026-11-05T15:38:25.771Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Brassica%20juncea",
+        "taxa": [
+          {
+            "id": "1363904",
+            "scientificNameWithoutAuthor": "Brassica juncea",
+            "scientificNameAuthorship": "(L.) Czern.",
+            "gbifId": 3042751,
+            "powoId": "60442520-2"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Brassica juncea (Brown Mustard, Brown Mustards, Chinese Mustard, Chinese Mustards, Giant Red Mustard, Indian Mustard, Indian Mustards, Leaf Mustard, Leaf Mustards, Mustard Greens, Oriental Mustard, Oriental Mustards, Vegetable Mustard, Vegetable Mustards) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/brassica-juncea/",
+        "checkedAt": "2026-11-05T15:39:20.229883+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "63f28697-adef-496e-b038-8cd26d7395ba",
+    "name_zh": "胡椒薄荷",
+    "scientific_name": "Mentha × piperita",
+    "name_en": "Peppermint",
+    "aliases": [],
+    "categories": [
+      "edible-plants"
+    ],
+    "selection_category": "edible-plants",
+    "identity_status": "verified",
+    "summary": "芳香或食用草本，可用于家庭菜园、阳台容器或香草种植。",
+    "appearance_features": "方形茎上对生锯齿叶，揉搓后具有明显薄荷香气。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴或散射光",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:24.647Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Mentha%20%C3%97%20piperita",
+        "checked_at": "2026-11-05T15:38:24.647Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Mentha × piperita）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/mentha-x-piperita/",
+        "checked_at": "2026-11-05T15:39:20.518633+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Mentha × piperita",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Mentha × piperita",
+        "checkedAt": "2026-11-05T15:38:24.647Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Mentha%20%C3%97%20piperita",
+        "taxa": [
+          {
+            "id": "1560691",
+            "scientificNameWithoutAuthor": "Mentha × piperita",
+            "scientificNameAuthorship": "L.",
+            "gbifId": 8707933,
+            "powoId": "450969-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Mentha x piperita (Peppermint, Peppermints) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/mentha-x-piperita/",
+        "checkedAt": "2026-11-05T15:39:20.518633+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  },
+  {
+    "id": "e394e4ff-2414-4ced-a87d-c88df045aea8",
+    "name_zh": "茴香",
+    "scientific_name": "Foeniculum vulgare",
+    "name_en": "Fennel",
+    "aliases": [],
+    "categories": [
+      "edible-plants"
+    ],
+    "selection_category": "edible-plants",
+    "identity_status": "verified",
+    "summary": "芳香或食用草本，可用于家庭菜园、阳台容器或香草种植。",
+    "appearance_features": "叶片细裂如丝，茎端形成黄色复伞形花序，果实具香气。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照",
+    "watering_requirement": "依来源所述保持土壤湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "published",
+    "content_version": 1,
+    "updated_at": "2026-11-05T15:38:24.649Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（名称核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Foeniculum%20vulgare",
+        "checked_at": "2026-11-05T15:38:24.649Z",
+        "review_status": "approved"
+      },
+      {
+        "source_name": "NC State Extension Plant Toolbox（Foeniculum vulgare）",
+        "source_url": "https://plants.ces.ncsu.edu/plants/foeniculum-vulgare/",
+        "checked_at": "2026-11-05T15:39:21.376673+00:00",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Foeniculum vulgare",
+      "plantnet": {
+        "status": "confirmed",
+        "scientificName": "Foeniculum vulgare",
+        "checkedAt": "2026-11-05T15:38:24.649Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Foeniculum%20vulgare",
+        "taxa": [
+          {
+            "id": "1360739",
+            "scientificNameWithoutAuthor": "Foeniculum vulgare",
+            "scientificNameAuthorship": "Mill.",
+            "gbifId": 3034922,
+            "powoId": "842680-1"
+          }
+        ]
+      },
+      "horticulture": {
+        "status": "approved",
+        "sourceTitle": "Foeniculum vulgare (Bronze Fennel, Fennel, Finocchio, Florence Fennel, Sweet Fennel) | North Carolina Extension Gardener Plant Toolbox",
+        "sourceUrl": "https://plants.ces.ncsu.edu/plants/foeniculum-vulgare/",
+        "checkedAt": "2026-11-05T15:39:21.376673+00:00"
+      },
+      "note": "依据 Pl@ntNet 精确学名及物种级园艺资料整理；缺乏依据的温度、换盆和病虫害字段留空。"
+    }
+  }
+]

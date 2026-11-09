@@ -23,6 +23,53 @@ test('registers email account with profile defaults and hashed password', async 
   assert.notEqual(db.prepare('SELECT password_hash FROM users').get().password_hash, 'password123');
 });
 
+test('echoes a validated request id and includes it in development request logs', async () => {
+  const previousNodeEnv = process.env.NODE_ENV;
+  const previousDebug = process.env.DEBUG;
+  delete process.env.NODE_ENV;
+  delete process.env.DEBUG;
+  const log = console.log;
+  const records = [];
+  console.log = (...args) => records.push(args.join(' '));
+  try {
+    const response = await request(app).get('/health').set('X-Request-ID', 'frontend-request-123');
+    assert.equal(response.headers['x-request-id'], 'frontend-request-123');
+    assert.equal(response.status, 200);
+    assert.ok(records.some((record) => record.includes('frontend-request-123') && record.includes('/health')));
+  } finally {
+    console.log = log;
+    if (previousNodeEnv === undefined) delete process.env.NODE_ENV;
+    else process.env.NODE_ENV = previousNodeEnv;
+    if (previousDebug === undefined) delete process.env.DEBUG;
+    else process.env.DEBUG = previousDebug;
+  }
+});
+
+test('does not emit internal request diagnostics in production', async () => {
+  const previousNodeEnv = process.env.NODE_ENV;
+  const previousDebug = process.env.DEBUG;
+  process.env.NODE_ENV = 'production';
+  delete process.env.DEBUG;
+  const log = console.log;
+  const error = console.error;
+  const records = [];
+  console.log = (...args) => records.push(args.join(' '));
+  console.error = (...args) => records.push(args.join(' '));
+  try {
+    app = createApp({ db, jwtSecret: 'test-secret' });
+    const response = await request(app).get('/health');
+    assert.equal(response.status, 200);
+    assert.deepEqual(records, []);
+  } finally {
+    console.log = log;
+    console.error = error;
+    if (previousNodeEnv === undefined) delete process.env.NODE_ENV;
+    else process.env.NODE_ENV = previousNodeEnv;
+    if (previousDebug === undefined) delete process.env.DEBUG;
+    else process.env.DEBUG = previousDebug;
+  }
+});
+
 test('migrates legacy users tables with a constrained default gender', () => {
   const legacyDb = new Database(':memory:');
   legacyDb.exec(`
@@ -155,6 +202,7 @@ test('serves plant categories, category lists, and detail as read-only public da
     scientificName: 'Adiantum capillus-veneris',
     identityStatus: 'pending',
     categories: [{ slug: 'ferns', nameZh: '蕨类', nameEn: 'Ferns' }],
+    coverImage: null,
   });
 
   const detail = await request(app).get(`/plants/${fern.id}`);
@@ -164,6 +212,46 @@ test('serves plant categories, category lists, and detail as read-only public da
   assert.equal(detail.body.plant.categories[0].nameZh, '蕨类');
   assert.equal((await request(app).get('/plants/not-a-plant')).status, 404);
   assert.equal((await request(app).get('/plants?category=not-a-category')).status, 400);
+});
+
+test('plant APIs include cover image metadata when a cover is stored', async () => {
+  seedStarterPlants(db);
+  const plant = db.prepare('SELECT id, name_zh, scientific_name FROM plants WHERE name_zh = ?').get('朱槿');
+  db.prepare(`INSERT INTO plant_images
+    (id, plant_id, storage_key, mime_type, width, height, file_size, sha256, alt_text,
+     source_name, source_url, license, license_url, attribution, checked_at, created_at, updated_at)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`)
+    .run('image-1', plant.id, 'image-1.webp', 'image/webp', 1200, 800, 12345, 'abc123', '朱槿花朵',
+      'Wikimedia Commons', 'https://commons.wikimedia.org/wiki/File:Example.jpg', 'CC BY-SA 4.0',
+      'https://creativecommons.org/licenses/by-sa/4.0/', '作者，Wikimedia Commons', '2026-11-03T00:00:00.000Z',
+      '2026-11-03T00:00:00.000Z', '2026-11-03T00:00:00.000Z');
+
+  const list = await request(app).get('/plants?category=flowers');
+  const summary = list.body.items.find((item) => item.id === plant.id);
+  assert.deepEqual(summary.coverImage, { url: '/uploads/image-1.webp', altText: '朱槿花朵' });
+
+  const detail = await request(app).get(`/plants/${plant.id}`);
+  assert.deepEqual(detail.body.plant.coverImage, {
+    url: '/uploads/image-1.webp',
+    altText: '朱槿花朵',
+    sourceName: 'Wikimedia Commons',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Example.jpg',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    attribution: '作者，Wikimedia Commons',
+  });
+  const categories = (await request(app).get('/plants/categories')).body.categories;
+  for (const slug of ['flowers', 'shrubs']) {
+    const category = categories.find((item) => item.slug === slug);
+    assert.equal(category.coverPlantId, plant.id);
+    assert.deepEqual(category.coverImage, detail.body.plant.coverImage);
+  }
+  const ferns = categories.find((item) => item.slug === 'ferns');
+  assert.equal(ferns.coverImage, null);
+  assert.equal(ferns.coverPlantId, null);
+  db.prepare('DELETE FROM plants WHERE id = ?').run(plant.id);
+  const afterDelete = (await request(app).get('/plants/categories')).body.categories;
+  assert.equal(afterDelete.find((item) => item.slug === 'flowers').coverImage, null);
 });
 
 test('plant lists preserve multiple categories and reject malformed category filters', async () => {

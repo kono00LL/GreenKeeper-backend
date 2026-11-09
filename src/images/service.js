@@ -8,8 +8,9 @@ const formats = {
 };
 
 class ImageError extends Error {
-  constructor(status, code, message) {
-    super(message);
+  constructor(status, code, message, options) {
+    super(message, options);
+    this.name = 'ImageError';
     this.status = status;
     this.code = code;
   }
@@ -27,8 +28,8 @@ async function validateImage(file, allowedTypes = Object.values(formats).map((fo
     metadata = await decoder.metadata();
     // Metadata alone can accept a valid header followed by truncated image data.
     await decoder.stats();
-  } catch {
-    throw new ImageError(400, 'IMAGE_INVALID', '图片内容无效或已损坏');
+  } catch (error) {
+    throw new ImageError(400, 'IMAGE_INVALID', '图片内容无效或已损坏', { cause: error });
   }
   const format = formats[metadata.format];
   if (!format || format.mimeType !== file.mimetype) {
@@ -44,8 +45,8 @@ function createImageService(storage) {
       let saved;
       try {
         saved = await storage.save(file.buffer, format.extension);
-      } catch {
-        throw new ImageError(500, 'IMAGE_STORAGE_ERROR', '图片保存失败，请稍后重试');
+      } catch (error) {
+        throw new ImageError(500, 'IMAGE_STORAGE_ERROR', '图片保存失败，请稍后重试', { cause: error });
       }
       return { ...saved, mimeType: format.mimeType, size: file.size, width: format.width, height: format.height };
     },

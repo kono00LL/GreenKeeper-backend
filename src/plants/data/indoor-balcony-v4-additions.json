@@ -1,0 +1,2502 @@
+[
+  {
+    "id": "f4f7e741-7129-48c6-89d5-2cd3718c57e4",
+    "name_zh": "长叶铁角蕨",
+    "scientific_name": "Asplenium scolopendrium",
+    "name_en": "Hart's-tongue fern",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "pending",
+    "summary": "多年生观赏蕨类，适合室内盆栽或庭院阴湿处栽培。",
+    "appearance_features": "蕨类植物通常以羽状或带状叶片形成观赏叶丛。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Asplenium%20scolopendrium",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Asplenium scolopendrium",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Asplenium scolopendrium",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Asplenium%20scolopendrium",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "36d265ab-7af3-49f5-831f-dafc6810515b",
+    "name_zh": "雌性鳞毛蕨",
+    "scientific_name": "Athyrium filix-femina",
+    "name_en": "Lady fern",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "pending",
+    "summary": "多年生观赏蕨类，适合室内盆栽或庭院阴湿处栽培。",
+    "appearance_features": "蕨类植物通常以羽状或带状叶片形成观赏叶丛。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Athyrium%20filix-femina",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Athyrium filix-femina",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Athyrium filix-femina",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Athyrium%20filix-femina",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "9a206ba1-3f39-4f3c-a665-ff4db205d7f9",
+    "name_zh": "雄性鳞毛蕨",
+    "scientific_name": "Dryopteris filix-mas",
+    "name_en": "Male fern",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "pending",
+    "summary": "多年生观赏蕨类，适合室内盆栽或庭院阴湿处栽培。",
+    "appearance_features": "蕨类植物通常以羽状或带状叶片形成观赏叶丛。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Dryopteris%20filix-mas",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Dryopteris filix-mas",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Dryopteris filix-mas",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Dryopteris%20filix-mas",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "7515d49d-df69-4c98-ac46-a22dbdbac791",
+    "name_zh": "圆叶剑蕨",
+    "scientific_name": "Microsorum punctatum",
+    "name_en": "Kangaroo fern",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "pending",
+    "summary": "多年生观赏蕨类，适合室内盆栽或庭院阴湿处栽培。",
+    "appearance_features": "蕨类植物通常以羽状或带状叶片形成观赏叶丛。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Microsorum%20punctatum",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Microsorum punctatum",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Microsorum punctatum",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Microsorum%20punctatum",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "b5e6fc7f-ca8a-4f89-a34f-728aa40698de",
+    "name_zh": "纽西兰肋毛蕨",
+    "scientific_name": "Pellaea rotundifolia",
+    "name_en": "Button fern",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "pending",
+    "summary": "多年生观赏蕨类，适合室内盆栽或庭院阴湿处栽培。",
+    "appearance_features": "蕨类植物通常以羽状或带状叶片形成观赏叶丛。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Pellaea%20rotundifolia",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Pellaea rotundifolia",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Pellaea rotundifolia",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Pellaea%20rotundifolia",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "df8ee7ae-5ad8-4545-915e-a9c6344009f8",
+    "name_zh": "岩生铁线蕨",
+    "scientific_name": "Pteris vittata",
+    "name_en": "Ladder fern",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "pending",
+    "summary": "多年生观赏蕨类，适合室内盆栽或庭院阴湿处栽培。",
+    "appearance_features": "蕨类植物通常以羽状或带状叶片形成观赏叶丛。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Pteris%20vittata",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Pteris vittata",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Pteris vittata",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Pteris%20vittata",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "1eb44ae5-598b-4f9d-b988-7eccc92a600b",
+    "name_zh": "普通蕨",
+    "scientific_name": "Polypodium vulgare",
+    "name_en": "Common polypody",
+    "aliases": [],
+    "categories": [
+      "ferns"
+    ],
+    "selection_category": "ferns",
+    "identity_status": "pending",
+    "summary": "多年生观赏蕨类，适合室内盆栽或庭院阴湿处栽培。",
+    "appearance_features": "蕨类植物通常以羽状或带状叶片形成观赏叶丛。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质湿润并确保排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Polypodium%20vulgare",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Polypodium vulgare",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Polypodium vulgare",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Polypodium%20vulgare",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "8f149496-7611-4620-9894-cc39b6459968",
+    "name_zh": "透明球",
+    "scientific_name": "Mammillaria gracilis",
+    "name_en": "Thimble cactus",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "pending",
+    "summary": "多肉类观赏植物，适合阳台或窗边容器种植。",
+    "appearance_features": "茎体肥厚，常具有刺座、棱脊或节状分枝等特征。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "充足光照或明亮散射光",
+    "watering_requirement": "盆土大部干燥后再浇透，避免积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Mammillaria%20gracilis",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Mammillaria gracilis",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Mammillaria gracilis",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Mammillaria%20gracilis",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "17044148-77cd-4ab2-8da2-18daba1bc892",
+    "name_zh": "羽毛球",
+    "scientific_name": "Mammillaria plumosa",
+    "name_en": "Feather cactus",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "pending",
+    "summary": "多肉类观赏植物，适合阳台或窗边容器种植。",
+    "appearance_features": "茎体肥厚，常具有刺座、棱脊或节状分枝等特征。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "充足光照或明亮散射光",
+    "watering_requirement": "盆土大部干燥后再浇透，避免积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Mammillaria%20plumosa",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Mammillaria plumosa",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Mammillaria plumosa",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Mammillaria%20plumosa",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "43ec3607-e8e6-40e4-ac3e-b87ced3d989a",
+    "name_zh": "白星球",
+    "scientific_name": "Echinopsis subdenudata",
+    "name_en": "Domino cactus",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "pending",
+    "summary": "多肉类观赏植物，适合阳台或窗边容器种植。",
+    "appearance_features": "茎体肥厚，常具有刺座、棱脊或节状分枝等特征。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "充足光照或明亮散射光",
+    "watering_requirement": "盆土大部干燥后再浇透，避免积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Echinopsis%20subdenudata",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Echinopsis subdenudata",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Echinopsis subdenudata",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Echinopsis%20subdenudata",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "f93cab55-fb86-4dd5-b0ba-a401992966ca",
+    "name_zh": "龙角牡丹",
+    "scientific_name": "Astrophytum capricorne",
+    "name_en": "Goat's horn cactus",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "pending",
+    "summary": "多肉类观赏植物，适合阳台或窗边容器种植。",
+    "appearance_features": "茎体肥厚，常具有刺座、棱脊或节状分枝等特征。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "充足光照或明亮散射光",
+    "watering_requirement": "盆土大部干燥后再浇透，避免积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Astrophytum%20capricorne",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Astrophytum capricorne",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Astrophytum capricorne",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Astrophytum%20capricorne",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "47f6c187-0e2d-434b-91c1-e2b3fb960f94",
+    "name_zh": "秘鲁苹果",
+    "scientific_name": "Cereus repandus",
+    "name_en": "Peruvian apple cactus",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "pending",
+    "summary": "多肉类观赏植物，适合阳台或窗边容器种植。",
+    "appearance_features": "茎体肥厚，常具有刺座、棱脊或节状分枝等特征。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "充足光照或明亮散射光",
+    "watering_requirement": "盆土大部干燥后再浇透，避免积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Cereus%20repandus",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Cereus repandus",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Cereus repandus",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Cereus%20repandus",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "7694e25f-e5c4-4bce-9a0c-e9d2ecb48780",
+    "name_zh": "单刺仙人掌",
+    "scientific_name": "Opuntia monacantha",
+    "name_en": "Drooping prickly pear",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "pending",
+    "summary": "多肉类观赏植物，适合阳台或窗边容器种植。",
+    "appearance_features": "茎体肥厚，常具有刺座、棱脊或节状分枝等特征。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "充足光照或明亮散射光",
+    "watering_requirement": "盆土大部干燥后再浇透，避免积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Opuntia%20monacantha",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Opuntia monacantha",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Opuntia monacantha",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Opuntia%20monacantha",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "be9fc32f-ef42-4f64-b049-9878b62f54b8",
+    "name_zh": "青龙柱",
+    "scientific_name": "Rhipsalis cereuscula",
+    "name_en": "Rice cactus",
+    "aliases": [],
+    "categories": [
+      "cacti"
+    ],
+    "selection_category": "cacti",
+    "identity_status": "pending",
+    "summary": "多肉类观赏植物，适合阳台或窗边容器种植。",
+    "appearance_features": "茎体肥厚，常具有刺座、棱脊或节状分枝等特征。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "充足光照或明亮散射光",
+    "watering_requirement": "盆土大部干燥后再浇透，避免积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Rhipsalis%20cereuscula",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Rhipsalis cereuscula",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Rhipsalis cereuscula",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Rhipsalis%20cereuscula",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "77e25391-4b0b-476e-b7e1-74ef7ec9042a",
+    "name_zh": "郁金香",
+    "scientific_name": "Tulipa gesneriana",
+    "name_en": "Garden tulip",
+    "aliases": [],
+    "categories": [
+      "flowers"
+    ],
+    "selection_category": "flowers",
+    "identity_status": "pending",
+    "summary": "常见观花植物，可用于阳台、庭院或容器栽培。",
+    "appearance_features": "以显著的花朵、花序或花色作为主要观赏特征。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮光照或全日照",
+    "watering_requirement": "表土干燥后浇水，开花期根据温度和盆土调整。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Tulipa%20gesneriana",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Tulipa gesneriana",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Tulipa gesneriana",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Tulipa%20gesneriana",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "913efbec-3a79-4572-9fd8-d25bc4fde720",
+    "name_zh": "黄水仙",
+    "scientific_name": "Narcissus pseudonarcissus",
+    "name_en": "Daffodil",
+    "aliases": [],
+    "categories": [
+      "flowers"
+    ],
+    "selection_category": "flowers",
+    "identity_status": "pending",
+    "summary": "常见观花植物，可用于阳台、庭院或容器栽培。",
+    "appearance_features": "以显著的花朵、花序或花色作为主要观赏特征。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮光照或全日照",
+    "watering_requirement": "表土干燥后浇水，开花期根据温度和盆土调整。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Narcissus%20pseudonarcissus",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Narcissus pseudonarcissus",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Narcissus pseudonarcissus",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Narcissus%20pseudonarcissus",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "93e995a6-33d0-4755-b2e7-14c0146ba29e",
+    "name_zh": "三色堇",
+    "scientific_name": "Viola × wittrockiana",
+    "name_en": "Garden pansy",
+    "aliases": [],
+    "categories": [
+      "flowers"
+    ],
+    "selection_category": "flowers",
+    "identity_status": "pending",
+    "summary": "常见观花植物，可用于阳台、庭院或容器栽培。",
+    "appearance_features": "以显著的花朵、花序或花色作为主要观赏特征。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮光照或全日照",
+    "watering_requirement": "表土干燥后浇水，开花期根据温度和盆土调整。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Viola%20%C3%97%20wittrockiana",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Viola × wittrockiana",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Viola × wittrockiana",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Viola%20%C3%97%20wittrockiana",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "817feab5-5fec-4c2e-8b71-282e0dee003b",
+    "name_zh": "大丽花",
+    "scientific_name": "Dahlia pinnata",
+    "name_en": "Dahlia",
+    "aliases": [],
+    "categories": [
+      "flowers"
+    ],
+    "selection_category": "flowers",
+    "identity_status": "pending",
+    "summary": "常见观花植物，可用于阳台、庭院或容器栽培。",
+    "appearance_features": "以显著的花朵、花序或花色作为主要观赏特征。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮光照或全日照",
+    "watering_requirement": "表土干燥后浇水，开花期根据温度和盆土调整。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Dahlia%20pinnata",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Dahlia pinnata",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Dahlia pinnata",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Dahlia%20pinnata",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "afcf0389-7058-4a7a-aabf-0848fa7d2d25",
+    "name_zh": "唐菖蒲",
+    "scientific_name": "Gladiolus × hortulanus",
+    "name_en": "Garden gladiolus",
+    "aliases": [],
+    "categories": [
+      "flowers"
+    ],
+    "selection_category": "flowers",
+    "identity_status": "pending",
+    "summary": "常见观花植物，可用于阳台、庭院或容器栽培。",
+    "appearance_features": "以显著的花朵、花序或花色作为主要观赏特征。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮光照或全日照",
+    "watering_requirement": "表土干燥后浇水，开花期根据温度和盆土调整。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Gladiolus%20%C3%97%20hortulanus",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Gladiolus × hortulanus",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Gladiolus × hortulanus",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Gladiolus%20%C3%97%20hortulanus",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "f565ec8d-3dc8-45d3-8de6-f034623bea04",
+    "name_zh": "石竹",
+    "scientific_name": "Dianthus chinensis",
+    "name_en": "China pink",
+    "aliases": [],
+    "categories": [
+      "flowers"
+    ],
+    "selection_category": "flowers",
+    "identity_status": "pending",
+    "summary": "常见观花植物，可用于阳台、庭院或容器栽培。",
+    "appearance_features": "以显著的花朵、花序或花色作为主要观赏特征。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮光照或全日照",
+    "watering_requirement": "表土干燥后浇水，开花期根据温度和盆土调整。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Dianthus%20chinensis",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Dianthus chinensis",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Dianthus chinensis",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Dianthus%20chinensis",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "14a8b033-7b70-467d-b94e-61794c588864",
+    "name_zh": "洋葱",
+    "scientific_name": "Allium cepa",
+    "name_en": "Onion",
+    "aliases": [],
+    "categories": [
+      "vegetables-fruits"
+    ],
+    "selection_category": "vegetables-fruits",
+    "identity_status": "pending",
+    "summary": "适合家庭菜园或阳台容器种植的蔬菜和果实类植物。",
+    "appearance_features": "通常具有可食用的叶、根、果实或块茎，生长季节性明显。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至明亮光照",
+    "watering_requirement": "生长期保持土壤均匀湿润并避免长期积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Allium%20cepa",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Allium cepa",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Allium cepa",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Allium%20cepa",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "3c753024-7993-4b5d-9337-ee149828d3f2",
+    "name_zh": "胡萝卜",
+    "scientific_name": "Daucus carota",
+    "name_en": "Carrot",
+    "aliases": [],
+    "categories": [
+      "vegetables-fruits"
+    ],
+    "selection_category": "vegetables-fruits",
+    "identity_status": "pending",
+    "summary": "适合家庭菜园或阳台容器种植的蔬菜和果实类植物。",
+    "appearance_features": "通常具有可食用的叶、根、果实或块茎，生长季节性明显。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至明亮光照",
+    "watering_requirement": "生长期保持土壤均匀湿润并避免长期积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Daucus%20carota",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Daucus carota",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Daucus carota",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Daucus%20carota",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "80f2292e-89ea-4ead-ac10-1ac390401bcc",
+    "name_zh": "甜瓜",
+    "scientific_name": "Cucumis melo",
+    "name_en": "Melon",
+    "aliases": [],
+    "categories": [
+      "vegetables-fruits"
+    ],
+    "selection_category": "vegetables-fruits",
+    "identity_status": "pending",
+    "summary": "适合家庭菜园或阳台容器种植的蔬菜和果实类植物。",
+    "appearance_features": "通常具有可食用的叶、根、果实或块茎，生长季节性明显。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至明亮光照",
+    "watering_requirement": "生长期保持土壤均匀湿润并避免长期积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Cucumis%20melo",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Cucumis melo",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Cucumis melo",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Cucumis%20melo",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "10aba1d8-6e9e-40d7-9990-4d7c806f351f",
+    "name_zh": "西瓜",
+    "scientific_name": "Citrullus lanatus",
+    "name_en": "Watermelon",
+    "aliases": [],
+    "categories": [
+      "vegetables-fruits"
+    ],
+    "selection_category": "vegetables-fruits",
+    "identity_status": "pending",
+    "summary": "适合家庭菜园或阳台容器种植的蔬菜和果实类植物。",
+    "appearance_features": "通常具有可食用的叶、根、果实或块茎，生长季节性明显。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至明亮光照",
+    "watering_requirement": "生长期保持土壤均匀湿润并避免长期积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Citrullus%20lanatus",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Citrullus lanatus",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Citrullus lanatus",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Citrullus%20lanatus",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "36b2c8cf-1432-4924-948c-f97517cd0b7c",
+    "name_zh": "马铃薯",
+    "scientific_name": "Solanum tuberosum",
+    "name_en": "Potato",
+    "aliases": [],
+    "categories": [
+      "vegetables-fruits"
+    ],
+    "selection_category": "vegetables-fruits",
+    "identity_status": "pending",
+    "summary": "适合家庭菜园或阳台容器种植的蔬菜和果实类植物。",
+    "appearance_features": "通常具有可食用的叶、根、果实或块茎，生长季节性明显。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至明亮光照",
+    "watering_requirement": "生长期保持土壤均匀湿润并避免长期积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Solanum%20tuberosum",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Solanum tuberosum",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Solanum tuberosum",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Solanum%20tuberosum",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "07bfee44-e20d-4414-90a8-88eba27aaa3d",
+    "name_zh": "秋葵",
+    "scientific_name": "Abelmoschus esculentus",
+    "name_en": "Okra",
+    "aliases": [],
+    "categories": [
+      "vegetables-fruits"
+    ],
+    "selection_category": "vegetables-fruits",
+    "identity_status": "pending",
+    "summary": "适合家庭菜园或阳台容器种植的蔬菜和果实类植物。",
+    "appearance_features": "通常具有可食用的叶、根、果实或块茎，生长季节性明显。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至明亮光照",
+    "watering_requirement": "生长期保持土壤均匀湿润并避免长期积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Abelmoschus%20esculentus",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Abelmoschus esculentus",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Abelmoschus esculentus",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Abelmoschus%20esculentus",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "c13b0c83-a1ae-48de-8ed8-5a07a9ff7038",
+    "name_zh": "彩叶芋",
+    "scientific_name": "Caladium bicolor",
+    "name_en": "Fancy-leaved caladium",
+    "aliases": [],
+    "categories": [
+      "herbs"
+    ],
+    "selection_category": "herbs",
+    "identity_status": "pending",
+    "summary": "适合室内观叶或阳台容器栽培的草本植物。",
+    "appearance_features": "植株多为柔软草本，叶形、叶色或香气具有观赏价值。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质微湿，浇水后让多余水分排出。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Caladium%20bicolor",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Caladium bicolor",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Caladium bicolor",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Caladium%20bicolor",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "1f2a6f1d-6b2e-4589-815b-8a5994d8f47d",
+    "name_zh": "竹芋草",
+    "scientific_name": "Ctenanthe burle-marxii",
+    "name_en": "Fishbone prayer plant",
+    "aliases": [],
+    "categories": [
+      "herbs"
+    ],
+    "selection_category": "herbs",
+    "identity_status": "pending",
+    "summary": "适合室内观叶或阳台容器栽培的草本植物。",
+    "appearance_features": "植株多为柔软草本，叶形、叶色或香气具有观赏价值。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质微湿，浇水后让多余水分排出。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Ctenanthe%20burle-marxii",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Ctenanthe burle-marxii",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Ctenanthe burle-marxii",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Ctenanthe%20burle-marxii",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "3e0f5c3f-e7f7-48e2-9414-6651f5d28ff3",
+    "name_zh": "雷克斯秋海棠",
+    "scientific_name": "Begonia rex-cultorum",
+    "name_en": "Rex begonia",
+    "aliases": [],
+    "categories": [
+      "herbs"
+    ],
+    "selection_category": "herbs",
+    "identity_status": "pending",
+    "summary": "适合室内观叶或阳台容器栽培的草本植物。",
+    "appearance_features": "植株多为柔软草本，叶形、叶色或香气具有观赏价值。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质微湿，浇水后让多余水分排出。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Begonia%20rex-cultorum",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Begonia rex-cultorum",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Begonia rex-cultorum",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Begonia%20rex-cultorum",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "83e00bb3-eb74-454b-bb4b-a76fad37fda2",
+    "name_zh": "到手香",
+    "scientific_name": "Plectranthus amboinicus",
+    "name_en": "Cuban oregano",
+    "aliases": [],
+    "categories": [
+      "herbs"
+    ],
+    "selection_category": "herbs",
+    "identity_status": "pending",
+    "summary": "适合室内观叶或阳台容器栽培的草本植物。",
+    "appearance_features": "植株多为柔软草本，叶形、叶色或香气具有观赏价值。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质微湿，浇水后让多余水分排出。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Plectranthus%20amboinicus",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Plectranthus amboinicus",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Plectranthus amboinicus",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Plectranthus%20amboinicus",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "c8726606-38e1-4314-920e-4b04a84a0e10",
+    "name_zh": "藤叶椒草",
+    "scientific_name": "Peperomia scandens",
+    "name_en": "Cupid peperomia",
+    "aliases": [],
+    "categories": [
+      "herbs"
+    ],
+    "selection_category": "herbs",
+    "identity_status": "pending",
+    "summary": "适合室内观叶或阳台容器栽培的草本植物。",
+    "appearance_features": "植株多为柔软草本，叶形、叶色或香气具有观赏价值。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质微湿，浇水后让多余水分排出。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Peperomia%20scandens",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Peperomia scandens",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Peperomia scandens",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Peperomia%20scandens",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "ebbefd41-73d7-49cf-b0a6-1f89f30859f5",
+    "name_zh": "白花吊竹梅",
+    "scientific_name": "Tradescantia fluminensis",
+    "name_en": "Small-leaf spiderwort",
+    "aliases": [],
+    "categories": [
+      "herbs"
+    ],
+    "selection_category": "herbs",
+    "identity_status": "pending",
+    "summary": "适合室内观叶或阳台容器栽培的草本植物。",
+    "appearance_features": "植株多为柔软草本，叶形、叶色或香气具有观赏价值。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "明亮散射光至半阴",
+    "watering_requirement": "保持基质微湿，浇水后让多余水分排出。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Tradescantia%20fluminensis",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Tradescantia fluminensis",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Tradescantia fluminensis",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Tradescantia%20fluminensis",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "46e28eae-3be7-4288-bee5-4205163556c6",
+    "name_zh": "夹竹桃",
+    "scientific_name": "Nerium oleander",
+    "name_en": "Oleander",
+    "aliases": [],
+    "categories": [
+      "shrubs"
+    ],
+    "selection_category": "shrubs",
+    "identity_status": "pending",
+    "summary": "常见庭院或阳台木本植物，适合盆栽或地栽。",
+    "appearance_features": "具木质化枝条，株形、叶色或花果具有观赏价值。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴",
+    "watering_requirement": "表层土干燥后浇透，雨季注意通风和排水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Nerium%20oleander",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Nerium oleander",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Nerium oleander",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Nerium%20oleander",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "467414a9-d2cb-4891-9da5-056ae7c8b428",
+    "name_zh": "连翘",
+    "scientific_name": "Forsythia suspensa",
+    "name_en": "Weeping forsythia",
+    "aliases": [],
+    "categories": [
+      "shrubs"
+    ],
+    "selection_category": "shrubs",
+    "identity_status": "pending",
+    "summary": "常见庭院或阳台木本植物，适合盆栽或地栽。",
+    "appearance_features": "具木质化枝条，株形、叶色或花果具有观赏价值。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴",
+    "watering_requirement": "表层土干燥后浇透，雨季注意通风和排水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Forsythia%20suspensa",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Forsythia suspensa",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Forsythia suspensa",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Forsythia%20suspensa",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "d47782c4-d131-49de-b920-5e23ee7259fe",
+    "name_zh": "珊瑚树",
+    "scientific_name": "Viburnum odoratissimum",
+    "name_en": "Sweet viburnum",
+    "aliases": [],
+    "categories": [
+      "shrubs"
+    ],
+    "selection_category": "shrubs",
+    "identity_status": "pending",
+    "summary": "常见庭院或阳台木本植物，适合盆栽或地栽。",
+    "appearance_features": "具木质化枝条，株形、叶色或花果具有观赏价值。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴",
+    "watering_requirement": "表层土干燥后浇透，雨季注意通风和排水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Viburnum%20odoratissimum",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Viburnum odoratissimum",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Viburnum odoratissimum",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Viburnum%20odoratissimum",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "c84102b3-76df-4c34-8714-435735b3a9bc",
+    "name_zh": "日本黄杨",
+    "scientific_name": "Ilex crenata",
+    "name_en": "Japanese holly",
+    "aliases": [],
+    "categories": [
+      "shrubs"
+    ],
+    "selection_category": "shrubs",
+    "identity_status": "pending",
+    "summary": "常见庭院或阳台木本植物，适合盆栽或地栽。",
+    "appearance_features": "具木质化枝条，株形、叶色或花果具有观赏价值。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴",
+    "watering_requirement": "表层土干燥后浇透，雨季注意通风和排水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Ilex%20crenata",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Ilex crenata",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Ilex crenata",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Ilex%20crenata",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "03e1262a-169f-4e05-bdc6-796899a18aba",
+    "name_zh": "女贞",
+    "scientific_name": "Ligustrum lucidum",
+    "name_en": "Glossy privet",
+    "aliases": [],
+    "categories": [
+      "shrubs"
+    ],
+    "selection_category": "shrubs",
+    "identity_status": "pending",
+    "summary": "常见庭院或阳台木本植物，适合盆栽或地栽。",
+    "appearance_features": "具木质化枝条，株形、叶色或花果具有观赏价值。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴",
+    "watering_requirement": "表层土干燥后浇透，雨季注意通风和排水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Ligustrum%20lucidum",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Ligustrum lucidum",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Ligustrum lucidum",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Ligustrum%20lucidum",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "006b7228-2287-41f4-8f22-496067550073",
+    "name_zh": "日本卫矛",
+    "scientific_name": "Euonymus japonicus",
+    "name_en": "Japanese spindle",
+    "aliases": [],
+    "categories": [
+      "shrubs"
+    ],
+    "selection_category": "shrubs",
+    "identity_status": "pending",
+    "summary": "常见庭院或阳台木本植物，适合盆栽或地栽。",
+    "appearance_features": "具木质化枝条，株形、叶色或花果具有观赏价值。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴",
+    "watering_requirement": "表层土干燥后浇透，雨季注意通风和排水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Euonymus%20japonicus",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Euonymus japonicus",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Euonymus japonicus",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Euonymus%20japonicus",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "0eb34944-8dff-4c15-a23f-83772c59f579",
+    "name_zh": "铺地百里香",
+    "scientific_name": "Thymus serpyllum",
+    "name_en": "Creeping thyme",
+    "aliases": [],
+    "categories": [
+      "groundcover"
+    ],
+    "selection_category": "groundcover",
+    "identity_status": "pending",
+    "summary": "低矮或匍匐生长的植物，可用于花坛边缘、容器或地面覆盖。",
+    "appearance_features": "茎叶贴近地面扩展，常形成连续的叶毯或小型群落。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴",
+    "watering_requirement": "保持土壤不过度干燥，避免长期积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Thymus%20serpyllum",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Thymus serpyllum",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Thymus serpyllum",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Thymus%20serpyllum",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "a83cae8c-4ee1-4a99-90b0-7488d4825856",
+    "name_zh": "匍匐荨麻草",
+    "scientific_name": "Glechoma hederacea",
+    "name_en": "Ground ivy",
+    "aliases": [],
+    "categories": [
+      "groundcover"
+    ],
+    "selection_category": "groundcover",
+    "identity_status": "pending",
+    "summary": "低矮或匍匐生长的植物，可用于花坛边缘、容器或地面覆盖。",
+    "appearance_features": "茎叶贴近地面扩展，常形成连续的叶毯或小型群落。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴",
+    "watering_requirement": "保持土壤不过度干燥，避免长期积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Glechoma%20hederacea",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Glechoma hederacea",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Glechoma hederacea",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Glechoma%20hederacea",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "37b16ae2-8558-4851-8056-36688b195979",
+    "name_zh": "银米草",
+    "scientific_name": "Herniaria glabra",
+    "name_en": "Green carpet",
+    "aliases": [],
+    "categories": [
+      "groundcover"
+    ],
+    "selection_category": "groundcover",
+    "identity_status": "pending",
+    "summary": "低矮或匍匐生长的植物，可用于花坛边缘、容器或地面覆盖。",
+    "appearance_features": "茎叶贴近地面扩展，常形成连续的叶毯或小型群落。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴",
+    "watering_requirement": "保持土壤不过度干燥，避免长期积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Herniaria%20glabra",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Herniaria glabra",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Herniaria glabra",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Herniaria%20glabra",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "66e4e057-5577-4644-8d83-890c97f80110",
+    "name_zh": "雪叶莲",
+    "scientific_name": "Cerastium tomentosum",
+    "name_en": "Snow-in-summer",
+    "aliases": [],
+    "categories": [
+      "groundcover"
+    ],
+    "selection_category": "groundcover",
+    "identity_status": "pending",
+    "summary": "低矮或匍匐生长的植物，可用于花坛边缘、容器或地面覆盖。",
+    "appearance_features": "茎叶贴近地面扩展，常形成连续的叶毯或小型群落。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴",
+    "watering_requirement": "保持土壤不过度干燥，避免长期积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Cerastium%20tomentosum",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Cerastium tomentosum",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Cerastium tomentosum",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Cerastium%20tomentosum",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "9bc21b38-5728-45c5-aa61-d1f348f541e8",
+    "name_zh": "鱼腥草",
+    "scientific_name": "Houttuynia cordata",
+    "name_en": "Chameleon plant",
+    "aliases": [],
+    "categories": [
+      "groundcover"
+    ],
+    "selection_category": "groundcover",
+    "identity_status": "pending",
+    "summary": "低矮或匍匐生长的植物，可用于花坛边缘、容器或地面覆盖。",
+    "appearance_features": "茎叶贴近地面扩展，常形成连续的叶毯或小型群落。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴",
+    "watering_requirement": "保持土壤不过度干燥，避免长期积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Houttuynia%20cordata",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Houttuynia cordata",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Houttuynia cordata",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Houttuynia%20cordata",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "82d3d8f9-c565-4d91-9575-97afd8daf15b",
+    "name_zh": "蔓长春花",
+    "scientific_name": "Ajuga genevensis",
+    "name_en": "Geneva bugleweed",
+    "aliases": [],
+    "categories": [
+      "groundcover"
+    ],
+    "selection_category": "groundcover",
+    "identity_status": "pending",
+    "summary": "低矮或匍匐生长的植物，可用于花坛边缘、容器或地面覆盖。",
+    "appearance_features": "茎叶贴近地面扩展，常形成连续的叶毯或小型群落。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "全日照至半阴",
+    "watering_requirement": "保持土壤不过度干燥，避免长期积水。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Ajuga%20genevensis",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Ajuga genevensis",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Ajuga genevensis",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Ajuga%20genevensis",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "c99d5a01-062a-4bf7-9c2a-ec048f2f85f4",
+    "name_zh": "香蕉",
+    "scientific_name": "Musa acuminata",
+    "name_en": "Banana",
+    "aliases": [],
+    "categories": [
+      "edible-plants"
+    ],
+    "selection_category": "edible-plants",
+    "identity_status": "pending",
+    "summary": "可用于家庭菜园、阳台或果树容器栽培的食用植物。",
+    "appearance_features": "可食用部分可能为果实、根、茎或叶，具体用途以物种资料为准。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "充足光照或全日照",
+    "watering_requirement": "生长期按盆土干湿浇水，确保容器排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Musa%20acuminata",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Musa acuminata",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Musa acuminata",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Musa%20acuminata",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "dbeb0fee-e755-4435-a597-4ac0d50ce762",
+    "name_zh": "牛油果",
+    "scientific_name": "Persea americana",
+    "name_en": "Avocado",
+    "aliases": [],
+    "categories": [
+      "edible-plants"
+    ],
+    "selection_category": "edible-plants",
+    "identity_status": "pending",
+    "summary": "可用于家庭菜园、阳台或果树容器栽培的食用植物。",
+    "appearance_features": "可食用部分可能为果实、根、茎或叶，具体用途以物种资料为准。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "充足光照或全日照",
+    "watering_requirement": "生长期按盆土干湿浇水，确保容器排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Persea%20americana",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Persea americana",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Persea americana",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Persea%20americana",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "2d5cf8b4-e59c-4fd1-ae13-edf2c121de2c",
+    "name_zh": "芒果",
+    "scientific_name": "Mangifera indica",
+    "name_en": "Mango",
+    "aliases": [],
+    "categories": [
+      "edible-plants"
+    ],
+    "selection_category": "edible-plants",
+    "identity_status": "pending",
+    "summary": "可用于家庭菜园、阳台或果树容器栽培的食用植物。",
+    "appearance_features": "可食用部分可能为果实、根、茎或叶，具体用途以物种资料为准。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "充足光照或全日照",
+    "watering_requirement": "生长期按盆土干湿浇水，确保容器排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Mangifera%20indica",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Mangifera indica",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Mangifera indica",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Mangifera%20indica",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "984f1f20-1c80-4305-a1cb-647a669f4565",
+    "name_zh": "柑橘",
+    "scientific_name": "Citrus reticulata",
+    "name_en": "Mandarin orange",
+    "aliases": [],
+    "categories": [
+      "edible-plants"
+    ],
+    "selection_category": "edible-plants",
+    "identity_status": "pending",
+    "summary": "可用于家庭菜园、阳台或果树容器栽培的食用植物。",
+    "appearance_features": "可食用部分可能为果实、根、茎或叶，具体用途以物种资料为准。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "充足光照或全日照",
+    "watering_requirement": "生长期按盆土干湿浇水，确保容器排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Citrus%20reticulata",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Citrus reticulata",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Citrus reticulata",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Citrus%20reticulata",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "e04b65ac-2c2c-497f-b068-0c6b0546e658",
+    "name_zh": "山药",
+    "scientific_name": "Dioscorea opposita",
+    "name_en": "Chinese yam",
+    "aliases": [],
+    "categories": [
+      "edible-plants"
+    ],
+    "selection_category": "edible-plants",
+    "identity_status": "pending",
+    "summary": "可用于家庭菜园、阳台或果树容器栽培的食用植物。",
+    "appearance_features": "可食用部分可能为果实、根、茎或叶，具体用途以物种资料为准。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "充足光照或全日照",
+    "watering_requirement": "生长期按盆土干湿浇水，确保容器排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Dioscorea%20opposita",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Dioscorea opposita",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Dioscorea opposita",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Dioscorea%20opposita",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  },
+  {
+    "id": "4544a3d1-b5b2-455d-a6b6-a58f2eb33938",
+    "name_zh": "空心菜",
+    "scientific_name": "Ipomoea aquatica",
+    "name_en": "Water spinach",
+    "aliases": [],
+    "categories": [
+      "edible-plants"
+    ],
+    "selection_category": "edible-plants",
+    "identity_status": "pending",
+    "summary": "可用于家庭菜园、阳台或果树容器栽培的食用植物。",
+    "appearance_features": "可食用部分可能为果实、根、茎或叶，具体用途以物种资料为准。 本批资料先以物种名录为身份候选，待逐株核对。",
+    "temperature_min_c": null,
+    "temperature_max_c": null,
+    "temperature_notes": null,
+    "sunlight_requirement": "充足光照或全日照",
+    "watering_requirement": "生长期按盆土干湿浇水，确保容器排水良好。",
+    "repotting_requirement": null,
+    "pests": null,
+    "publication_status": "draft",
+    "content_version": 1,
+    "updated_at": "2026-11-06T02:58:20.550Z",
+    "sources": [
+      {
+        "source_name": "Pl@ntNet 可识别物种名录（待核对）",
+        "source_url": "https://my-api.plantnet.org/v2/species?prefix=Ipomoea%20aquatica",
+        "checked_at": "2026-11-06T02:58:20.550Z",
+        "review_status": "approved"
+      }
+    ],
+    "review": {
+      "family": null,
+      "originalScientificName": "Ipomoea aquatica",
+      "plantnet": {
+        "status": "pending",
+        "scientificName": "Ipomoea aquatica",
+        "checkedAt": "2026-11-06T02:58:20.550Z",
+        "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Ipomoea%20aquatica",
+        "taxa": []
+      },
+      "horticulture": {
+        "status": "pending",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "checkedAt": null
+      },
+      "note": "第 4 批候选，身份和物种级养护资料待人工核对；暂不发布。"
+    }
+  }
+]

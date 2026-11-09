@@ -4,6 +4,20 @@ const { createCosImageStorage } = require('../src/images/cos-storage');
 
 const options = { bucket: 'greenkeeper-1385540619', region: 'ap-shanghai' };
 
+test('deletes a stored COS image and propagates deletion failures', async () => {
+  const calls = [];
+  const key = '1842baf0-49b8-4d4c-b5cd-2a7be8ad48c8.webp';
+  const storage = createCosImageStorage({ ...options, client: {
+    deleteObject(params, callback) { calls.push(params); callback(null, {}); },
+  } });
+  await storage.delete(key);
+  assert.deepEqual(calls, [{ Bucket: options.bucket, Region: options.region, Key: `uploads/${key}` }]);
+  const failure = createCosImageStorage({ ...options, client: {
+    deleteObject(_params, callback) { callback(new Error('COS delete failed')); },
+  } });
+  await assert.rejects(failure.delete(key), /COS delete failed/);
+});
+
 test('uploads bytes with their actual image type to the configured COS bucket', async () => {
   const calls = [];
   const client = { putObject(params, callback) { calls.push(params); callback(null, {}); } };

@@ -5,6 +5,11 @@ function createPlantRepository(db) {
     'GROUP BY c.id ORDER BY c.sort_order, c.id',
   );
   const findCategory = db.prepare('SELECT id FROM plant_categories WHERE slug = ?');
+  const categoryCover = db.prepare(
+    "SELECT p.id AS plantId FROM plants p JOIN plant_category_relations r ON r.plant_id = p.id " +
+    "JOIN plant_images i ON i.plant_id = p.id AND i.image_type = 'cover' " +
+    "WHERE r.category_id = ? ORDER BY p.name_zh COLLATE NOCASE, p.id LIMIT 1",
+  );
   const categoryRefs = db.prepare(
     'SELECT c.slug, c.name_zh AS nameZh, c.name_en AS nameEn FROM plant_categories c ' +
     'JOIN plant_category_relations r ON r.category_id = c.id ' +
@@ -26,18 +31,39 @@ function createPlantRepository(db) {
     'watering_requirement AS wateringRequirement, repotting_requirement AS repottingRequirement, pests ' +
     'FROM plants WHERE id = ?',
   );
+  const coverImage = db.prepare(
+    "SELECT storage_key AS storageKey, alt_text AS altText, source_name AS sourceName, source_url AS sourceUrl, " +
+    "license, license_url AS licenseUrl, attribution FROM plant_images WHERE plant_id = ? AND image_type = 'cover' ORDER BY sort_order LIMIT 1",
+  );
   const aliases = db.prepare('SELECT alias AS name, language FROM plant_aliases WHERE plant_id = ? ORDER BY alias');
   const identificationRecords = db.prepare('SELECT id, name_zh AS nameZh, scientific_name AS scientificName, identity_status AS identityStatus, publication_status AS publicationStatus FROM plants');
-  const withCategories = (plant) => ({ ...plant, categories: categoryRefs.all(plant.id) });
+  function imageForPlant(id, includeSource = false) {
+    const image = coverImage.get(id);
+    return image ? {
+        url: `/uploads/${image.storageKey}`,
+        altText: image.altText,
+        ...(includeSource ? { sourceName: image.sourceName, sourceUrl: image.sourceUrl, license: image.license, licenseUrl: image.licenseUrl, attribution: image.attribution } : {}),
+      } : null;
+  }
+  const withCategories = (plant, includeSource = false) => {
+    return {
+      ...plant,
+      categories: categoryRefs.all(plant.id),
+      coverImage: imageForPlant(plant.id, includeSource),
+    };
+  };
 
   return {
     identificationRecords: () => identificationRecords.all(),
-    categories: () => categories.all(),
+    categories: () => categories.all().map((category) => {
+      const cover = categoryCover.get(category.id);
+      return { ...category, coverPlantId: cover?.plantId ?? null, coverImage: cover ? imageForPlant(cover.plantId, true) : null };
+    }),
     hasCategory: (slug) => Boolean(findCategory.get(slug)),
-    list: (slug) => (slug === undefined ? allPlants.all() : plantsForCategory.all(slug)).map(withCategories),
+    list: (slug) => (slug === undefined ? allPlants.all() : plantsForCategory.all(slug)).map((plant) => withCategories(plant)),
     detail(id) {
       const plant = plantById.get(id);
-      return plant ? { ...withCategories(plant), aliases: aliases.all(id) } : null;
+      return plant ? { ...withCategories(plant, true), aliases: aliases.all(id) } : null;
     },
   };
 }

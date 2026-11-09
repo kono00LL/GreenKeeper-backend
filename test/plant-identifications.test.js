@@ -185,6 +185,7 @@ test('maps upstream failures without leaking keys, bodies or retrying', async ()
     await assertNoFiles();
   }
   assert.equal(logs.length, 5);
+  assert.match(logs[0].requestId, /^[A-Za-z0-9-]{8,80}$/);
   assert.equal(logs[0].upstreamStatus, 401);
   assert.equal(typeof logs[0].durationMs, 'number');
   assert.equal(JSON.stringify(logs).includes('private-test-key'), false);
