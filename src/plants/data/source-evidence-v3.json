@@ -1,0 +1,1854 @@
+[
+  {
+    "plantId": "1b389f22-b6c8-4b6d-9e08-bd2ba87dc467",
+    "scientificName": "Nephrolepis cordifolia",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Nephrolepis cordifolia",
+      "checkedAt": "2026-11-05T15:38:13.931Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Nephrolepis%20cordifolia",
+      "taxa": [
+        {
+          "id": "1356420",
+          "scientificNameWithoutAuthor": "Nephrolepis cordifolia",
+          "scientificNameAuthorship": "(L.) C. Presl",
+          "gbifId": 2650930,
+          "powoId": null
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Nephrolepis cordifolia (Dwarf Whitman Fern, Erect Sword Fern, Fishbone Fern, Herringbone Fern, Ladder Fern, Lemon Button Fern, Narrow Sword Fern, Tuber Ladder Fern, Tuberous Sword Fern) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/nephrolepis-cordifolia/",
+      "checkedAt": "2026-11-05T15:38:59.616808+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearanceFeatures": "拱垂的羽状复叶排列紧密，小羽片沿叶轴两侧分布，植株可由匍匐茎扩展。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Nephrolepis cordifolia (Dwarf Whitman Fern, Erect Sword Fern, Fishbone Fern, Herringbone Fern, Ladder Fern, Lemon Button Fern, Narrow Sword Fern, Tuber Ladder Fern, Tuberous Sword Fern) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/nephrolepis-cordifolia/",
+      "checkedAt": "2026-11-05T15:38:59.616808+00:00",
+      "pageSha256": "883c604f27f241ca1401d6e177611d2298d5d8084d3d64094ff4eacf987cba90",
+      "sourceExcerpt": "The tuberous sword fern is a semi-evergreen fern in the sword fern family (Nephrolepidaceae) native to northern Australia and Asia. In its native habitat, they are found in swamps and along ditches but also grow as epiphytes. The genus name is Greek for kidney and scale referring to the thin membrane covering the spores (indusia). The specific epithet is Latin for heart and leaf. The sword-shaped, erect fronds are 3 feet long but are 7 feet in their native habitat. Stagger them about 18 inches a"
+    }
+  },
+  {
+    "plantId": "56e147b7-f01e-4859-93cd-4469c9666616",
+    "scientificName": "Blechnum gibbum",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Blechnum gibbum",
+      "checkedAt": "2026-11-05T15:38:15.224Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Blechnum%20gibbum",
+      "taxa": [
+        {
+          "id": "1414452",
+          "scientificNameWithoutAuthor": "Blechnum gibbum",
+          "scientificNameAuthorship": "(Labill.) Mett.",
+          "gbifId": 4079323,
+          "powoId": "17059040-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "pending",
+      "sourceTitle": null,
+      "sourceUrl": null,
+      "checkedAt": null
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearanceFeatures": "短直立茎顶端形成冠状叶丛，羽状复叶向四周展开。",
+    "light": "明亮散射光至半阴",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "status": "not verified",
+      "note": "未找到可用的物种级园艺来源，资料保留草稿，待后续补证。"
+    }
+  },
+  {
+    "plantId": "14e5da59-4caa-4f29-b6e9-f1ce0862e6da",
+    "scientificName": "Pteris ensiformis",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Pteris ensiformis",
+      "checkedAt": "2026-11-05T15:38:19.261Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Pteris%20ensiformis",
+      "taxa": [
+        {
+          "id": "1407621",
+          "scientificNameWithoutAuthor": "Pteris ensiformis",
+          "scientificNameAuthorship": "Burm.f.",
+          "gbifId": 3914366,
+          "powoId": "17212520-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "pending",
+      "sourceTitle": null,
+      "sourceUrl": null,
+      "checkedAt": null
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearanceFeatures": "叶片羽状分裂，小羽片狭长；部分栽培类型具有浅色中脉。",
+    "light": "明亮散射光至半阴",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "status": "not verified",
+      "note": "未找到可用的物种级园艺来源，资料保留草稿，待后续补证。"
+    }
+  },
+  {
+    "plantId": "0e0f2752-ccd6-4dc8-8bff-b9fdf66fdc41",
+    "scientificName": "Polystichum acrostichoides",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Polystichum acrostichoides",
+      "checkedAt": "2026-11-05T15:49:10.100Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Polystichum%20acrostichoides",
+      "taxa": [
+        {
+          "id": "1413246",
+          "scientificNameWithoutAuthor": "Polystichum acrostichoides",
+          "scientificNameAuthorship": "(Michx.) Schott",
+          "gbifId": 2651098,
+          "powoId": "17205300-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Polystichum acrostichoides (Christmas Dagger, Christmas Dagger Fern, Christmas Fern) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/polystichum-acrostichoides/",
+      "checkedAt": "2026-11-05T15:49:43.387038+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearanceFeatures": "深绿色羽状复叶呈莲座状拱展，小羽片边缘具细齿。",
+    "light": "半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Polystichum acrostichoides (Christmas Dagger, Christmas Dagger Fern, Christmas Fern) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/polystichum-acrostichoides/",
+      "checkedAt": "2026-11-05T15:49:43.387038+00:00",
+      "pageSha256": "47a445c9c4ba4b68067895807d179dd8ed3d688f1977f583c5b698b3eb55dad7",
+      "sourceExcerpt": "Christmas fern is a rhizomatous, densely scaly-scruffy, evergreen herbaceous perennial in the polypody family (Polypodiaceae). It is native to a wide area of eastern North America, from Canada to northeastern Mexico. The species epithet is Latin for like Acrostichum , which is a genus of tropical ferns in the ribbon-fern family (Pteridaceae). It is best grown in organically rich, dry to medium moisture, well-drained soils in part shade to full shade. This fern spreads very slowly, and its clumps"
+    }
+  },
+  {
+    "plantId": "383b00fe-4372-4f96-8e1c-6df9c7868028",
+    "scientificName": "Asplenium trichomanes",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Asplenium trichomanes",
+      "checkedAt": "2026-11-05T15:38:16.383Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Asplenium%20trichomanes",
+      "taxa": [
+        {
+          "id": "1356361",
+          "scientificNameWithoutAuthor": "Asplenium trichomanes",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 8108066,
+          "powoId": "310197-2"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Asplenium trichomanes (Brightgreen Spleenwort, Dense Spleenwort, Maidenhair Spleenwort, Mountain Spleenwort, Toothed Spleenwort) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/asplenium-trichomanes/",
+      "checkedAt": "2026-11-05T15:39:00.621396+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearanceFeatures": "黑褐色细叶轴两侧排列小型圆至椭圆形羽片。",
+    "light": "半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Asplenium trichomanes (Brightgreen Spleenwort, Dense Spleenwort, Maidenhair Spleenwort, Mountain Spleenwort, Toothed Spleenwort) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/asplenium-trichomanes/",
+      "checkedAt": "2026-11-05T15:39:00.621396+00:00",
+      "pageSha256": "3b1fda97d08da7e0a00f831e7ea62f207bbfbb1f61f08a6c501b9b49f1d0e2dd",
+      "sourceExcerpt": "Maidenhair spleenwort is a small, evergreen herbaceous perennial in the Spleenwort family (Aspleniaceae). It is cosmopolitan in its distribution and includes most of the U.S. in its native range. It naturally occurs in shady rock crevices. Several subspecies are recognized, but our plants belong to Asplenium trichomanes subsp. trichomanes . The species epithet is an ancient Greek name for a fern. The optimum setting is moist humus among limestone rocks. It performs best in a humid climate. It is"
+    }
+  },
+  {
+    "plantId": "818b3040-8b74-4f47-83c7-613785e09d67",
+    "scientificName": "Phlebodium aureum",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Phlebodium aureum",
+      "checkedAt": "2026-11-05T15:38:16.086Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Phlebodium%20aureum",
+      "taxa": [
+        {
+          "id": "1356430",
+          "scientificNameWithoutAuthor": "Phlebodium aureum",
+          "scientificNameAuthorship": "(L.) J. Sm.",
+          "gbifId": 2650479,
+          "powoId": null
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Phlebodium aureum (Blue Star Fern, Cabbage Palm Fern, Golden Polypody, Gold Foot Fern, Hare Foot Fern, Rabbits Foot Fern) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/phlebodium-aureum/",
+      "checkedAt": "2026-11-05T15:39:00.711206+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearanceFeatures": "蓝绿色羽状叶从匍匐根茎抽生，叶片边缘略呈波浪状。",
+    "light": "半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Phlebodium aureum (Blue Star Fern, Cabbage Palm Fern, Golden Polypody, Gold Foot Fern, Hare Foot Fern, Rabbits Foot Fern) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/phlebodium-aureum/",
+      "checkedAt": "2026-11-05T15:39:00.711206+00:00",
+      "pageSha256": "5839a338e5ca569d0f6d0a34b0876f5093bb30707da63102f9a0a120d4326509",
+      "sourceExcerpt": "The blue star fern is in the polypody family (Polypodiaceae), native to the American tropics and is commonly grown as a houseplant. It is an herbaceous perennial, rhizomatous epiphyte, spreading by its creeping rhizomes that are densely covered in golden scales. The species epithet is Latin for golden and references the color of the scales on the rhizome. Cultural conditions should mimic the natural conditions this plant experiences in the wild. Ideal growing conditions include partial sun, medi"
+    }
+  },
+  {
+    "plantId": "041e1b73-2019-4543-9978-ca2329894776",
+    "scientificName": "Athyrium niponicum",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Athyrium niponicum",
+      "checkedAt": "2026-11-05T15:38:16.407Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Athyrium%20niponicum",
+      "taxa": [
+        {
+          "id": "1390554",
+          "scientificNameWithoutAuthor": "Athyrium niponicum",
+          "scientificNameAuthorship": "(Mett.) Hance",
+          "gbifId": 7125894,
+          "powoId": "17055840-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Athyrium niponicum (Black Lady Fern, Japanese Black Lady Fern, Japanese Painted Fern, Oriental Ladyfern) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/athyrium-niponicum/",
+      "checkedAt": "2026-11-05T15:39:02.111525+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "多年生观赏蕨类，适合依其耐阴、湿度和生长习性用于室内盆栽或庭院栽培。",
+    "appearanceFeatures": "羽状复叶带银绿色斑色，叶轴和叶脉常呈紫红色。",
+    "light": "半阴或散射光",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Athyrium niponicum (Black Lady Fern, Japanese Black Lady Fern, Japanese Painted Fern, Oriental Ladyfern) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/athyrium-niponicum/",
+      "checkedAt": "2026-11-05T15:39:02.111525+00:00",
+      "pageSha256": "1919d458167225ec30bcfb41aa32fb63155f976ea57af60dbf3d81bb13f02fd3",
+      "sourceExcerpt": "The Japanese painted fern is a herbaceous perennial in the Spleenwort family (Aspleniaceae). Its origin is East Asia, where it grows in rich woodlands. This plant prefers partial to full shade and moist, rich soil, with high organic content. When grown in light shade, the Japanese painted fern has its best color. Excess sunlight washes out the color. The best cultivars have striking silver, green, purple, or red fronds. It grows about 2 feet high by 2 feet wide and adds growth slowly over time. "
+    }
+  },
+  {
+    "plantId": "c47ff82f-4bd0-4ced-ad10-a545593e1ef9",
+    "scientificName": "Parodia magnifica",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Parodia magnifica",
+      "checkedAt": "2026-11-05T15:38:16.761Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Parodia%20magnifica",
+      "taxa": [
+        {
+          "id": "1733035",
+          "scientificNameWithoutAuthor": "Parodia magnifica",
+          "scientificNameAuthorship": "(F.Ritter) F.H.Brandt",
+          "gbifId": 3949270,
+          "powoId": "911036-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "pending",
+      "sourceTitle": null,
+      "sourceUrl": null,
+      "checkedAt": null
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearanceFeatures": "球形至短柱形茎具规则棱脊，刺座沿棱排列，成熟株开黄色花。",
+    "light": "明亮光照，逐渐适应直射日照",
+    "watering": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "horticultureSource": {
+      "status": "not verified",
+      "note": "未找到可用的物种级园艺来源，资料保留草稿，待后续补证。"
+    }
+  },
+  {
+    "plantId": "73ebb5c1-89d1-424e-8126-cd16626d7704",
+    "scientificName": "Echinopsis oxygona",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Echinopsis oxygona",
+      "checkedAt": "2026-11-05T15:38:17.602Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Echinopsis%20oxygona",
+      "taxa": [
+        {
+          "id": "1418225",
+          "scientificNameWithoutAuthor": "Echinopsis oxygona",
+          "scientificNameAuthorship": "(Link) Zucc. ex Pfeiff. & Otto",
+          "gbifId": 7281375,
+          "powoId": "132749-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Echinopsis oxygona (Easter Lily Cactus, Night-Blooming Hedge-Hogs, Pink Easter Lily Cactus, Sea-Urchin Cactus) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/echinopsis-oxygona/",
+      "checkedAt": "2026-11-05T15:39:02.130878+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearanceFeatures": "球形茎具纵棱和短刺，基部常萌生侧芽，花管细长。",
+    "light": "全日照至半阴或散射光",
+    "watering": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Echinopsis oxygona (Easter Lily Cactus, Night-Blooming Hedge-Hogs, Pink Easter Lily Cactus, Sea-Urchin Cactus) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/echinopsis-oxygona/",
+      "checkedAt": "2026-11-05T15:39:02.130878+00:00",
+      "pageSha256": "1b00570462585a97d5ee3e3b00df3085518e6d528939aecb44cace01e325509a",
+      "sourceExcerpt": "Easter lily cactus is native to Brazil and Argentina and is a member of the cactus family (Cactaceae). It may be found growing on walls and rocky areas in grasslands and forests of its native habitat. This plant has a clumping or mat-forming habit, and its stems are short, rounded to cylinder-like and ribbed with black spines. It is fast-growing and measures up to 12 inches tall and 24 inches wide. The epithet is Latin for sharp angle and refers to the angular ridges on the stem. Easter lily cac"
+    }
+  },
+  {
+    "plantId": "8a67f32f-09c1-4590-8e97-c6e4ede697a2",
+    "scientificName": "Gymnocalycium mihanovichii",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Gymnocalycium mihanovichii",
+      "checkedAt": "2026-11-05T15:38:17.084Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Gymnocalycium%20mihanovichii",
+      "taxa": [
+        {
+          "id": "1841848",
+          "scientificNameWithoutAuthor": "Gymnocalycium mihanovichii",
+          "scientificNameAuthorship": "(Frič & Gürke) Britton & Rose",
+          "gbifId": 7282762,
+          "powoId": "115434-2"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Gymnocalycium mihanovichii (Chin Cactus, Moon cactus, Plaid Cactus) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/gymnocalycium-mihanovichii/",
+      "checkedAt": "2026-11-05T15:39:03.417451+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearanceFeatures": "扁球形茎具明显棱脊和弯曲刺，成熟株可开浅色花。",
+    "light": "全日照至半阴或散射光",
+    "watering": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Gymnocalycium mihanovichii (Chin Cactus, Moon cactus, Plaid Cactus) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/gymnocalycium-mihanovichii/",
+      "checkedAt": "2026-11-05T15:39:03.417451+00:00",
+      "pageSha256": "f0faf140c4c06ec22a02e18de8fa09139770f1d72297d6d19eed56302f79864b",
+      "sourceExcerpt": "The species, Gymnocalycium mihanovichii or chin cactus , is a dwarf cactus that is native to Paraguay and Northeast Argentina and is found in rocky areas. It is a member of the cactus family (Cactaceae). It is a slow-growing, globular dark green cactus, 2-3 inches tall, and equally as wide. The genus name, Gymnocalycium, is Greek, meaning naked calyx. This refers to the flower buds that have no spines or hairs. The species name, mihanovichii , honors Nicolas Mihanovich, a Croatian Argentine busi"
+    }
+  },
+  {
+    "plantId": "a4e9dd33-1db6-47ec-a433-0fa27091c162",
+    "scientificName": "Ferocactus latispinus",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Ferocactus latispinus",
+      "checkedAt": "2026-11-05T15:38:17.479Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Ferocactus%20latispinus",
+      "taxa": [
+        {
+          "id": "1820401",
+          "scientificNameWithoutAuthor": "Ferocactus latispinus",
+          "scientificNameAuthorship": "(Haw.) Britton & Rose",
+          "gbifId": 7284444,
+          "powoId": "103646-2"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "pending",
+      "sourceTitle": null,
+      "sourceUrl": null,
+      "checkedAt": null
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearanceFeatures": "球体具宽棱，中央刺粗硬且扁宽，顶部可开紫红色花。",
+    "light": "明亮光照，逐渐适应直射日照",
+    "watering": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "horticultureSource": {
+      "status": "not verified",
+      "note": "未找到可用的物种级园艺来源，资料保留草稿，待后续补证。"
+    }
+  },
+  {
+    "plantId": "64df9c96-3802-40d7-80a8-5b5b7b849a84",
+    "scientificName": "Mammillaria spinosissima",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Mammillaria spinosissima",
+      "checkedAt": "2026-11-05T15:38:17.801Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Mammillaria%20spinosissima",
+      "taxa": [
+        {
+          "id": "1418286",
+          "scientificNameWithoutAuthor": "Mammillaria spinosissima",
+          "scientificNameAuthorship": "Lem.",
+          "gbifId": 7281203,
+          "powoId": "135156-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "pending",
+      "sourceTitle": null,
+      "sourceUrl": null,
+      "checkedAt": null
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearanceFeatures": "圆柱形茎密布乳突与放射状刺，花常沿茎顶附近形成一圈。",
+    "light": "明亮光照，逐渐适应直射日照",
+    "watering": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "horticultureSource": {
+      "status": "not verified",
+      "note": "未找到可用的物种级园艺来源，资料保留草稿，待后续补证。"
+    }
+  },
+  {
+    "plantId": "a7e9a7c2-633b-4720-872b-25cd076d05ce",
+    "scientificName": "Rebutia minuscula",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Rebutia minuscula",
+      "checkedAt": "2026-11-05T15:38:18.623Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Rebutia%20minuscula",
+      "taxa": [
+        {
+          "id": "1488100",
+          "scientificNameWithoutAuthor": "Rebutia minuscula",
+          "scientificNameAuthorship": "K.Schum.",
+          "gbifId": 7282012,
+          "powoId": "218153-2"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "pending",
+      "sourceTitle": null,
+      "sourceUrl": null,
+      "checkedAt": null
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearanceFeatures": "球形茎容易从基部形成群生，春季常在茎侧开鲜色漏斗花。",
+    "light": "明亮光照，逐渐适应直射日照",
+    "watering": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "horticultureSource": {
+      "status": "not verified",
+      "note": "未找到可用的物种级园艺来源，资料保留草稿，待后续补证。"
+    }
+  },
+  {
+    "plantId": "38e689c0-b509-44d0-96c9-4b2af2443bf6",
+    "scientificName": "Astrophytum ornatum",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Astrophytum ornatum",
+      "checkedAt": "2026-11-05T15:38:18.115Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Astrophytum%20ornatum",
+      "taxa": [
+        {
+          "id": "1418183",
+          "scientificNameWithoutAuthor": "Astrophytum ornatum",
+          "scientificNameAuthorship": "(DC.) Britton & Rose",
+          "gbifId": 7282413,
+          "powoId": "1063691-2"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "pending",
+      "sourceTitle": null,
+      "sourceUrl": null,
+      "checkedAt": null
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "观赏仙人掌，适合明亮、通风且排水迅速的容器环境。",
+    "appearanceFeatures": "单生球体具有明显高棱和银白色绒点，老株可逐渐伸长。",
+    "light": "明亮光照，逐渐适应直射日照",
+    "watering": "介质干后再浇并及时排水；冬季或休眠期减少供水。",
+    "horticultureSource": {
+      "status": "not verified",
+      "note": "未找到可用的物种级园艺来源，资料保留草稿，待后续补证。"
+    }
+  },
+  {
+    "plantId": "d5c3c060-f3d3-45a1-ac3c-505b4cc99414",
+    "scientificName": "Paeonia lactiflora",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Paeonia lactiflora",
+      "checkedAt": "2026-11-05T15:38:18.435Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Paeonia%20lactiflora",
+      "taxa": [
+        {
+          "id": "1412934",
+          "scientificNameWithoutAuthor": "Paeonia lactiflora",
+          "scientificNameAuthorship": "Pall.",
+          "gbifId": 3083486,
+          "powoId": "711802-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "pending",
+      "sourceTitle": null,
+      "sourceUrl": null,
+      "checkedAt": null
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "常见观花植物，可用于花坛、庭院或阳台容器，开花表现受季节和光照影响。",
+    "appearanceFeatures": "深裂复叶从地下根茎抽生，春末至初夏开大型花，花瓣层数因品种而异。",
+    "light": "全日照至半阴，视当地热度调整",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "status": "not verified",
+      "note": "未找到可用的物种级园艺来源，资料保留草稿，待后续补证。"
+    }
+  },
+  {
+    "plantId": "520f9c5c-73ea-4e44-9136-b70b11d40821",
+    "scientificName": "Delphinium grandiflorum",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Delphinium grandiflorum",
+      "checkedAt": "2026-11-05T15:38:18.750Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Delphinium%20grandiflorum",
+      "taxa": [
+        {
+          "id": "1420310",
+          "scientificNameWithoutAuthor": "Delphinium grandiflorum",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 3033699,
+          "powoId": "710650-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Delphinium grandiflorum (Dwarf Larkspur, Siberian Larkspur) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/delphinium-grandiflorum/",
+      "checkedAt": "2026-11-05T15:39:06.447337+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "常见观花植物，可用于花坛、庭院或阳台容器，开花表现受季节和光照影响。",
+    "appearanceFeatures": "直立花茎着生掌状深裂叶，细长花距花沿总状花序排列。",
+    "light": "全日照",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Delphinium grandiflorum (Dwarf Larkspur, Siberian Larkspur) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/delphinium-grandiflorum/",
+      "checkedAt": "2026-11-05T15:39:06.447337+00:00",
+      "pageSha256": "14323be235184b7b3432054ba9f1fbd66f5e8beb06c56d4c8933e60bdd7d5653",
+      "sourceExcerpt": "Dwarf larkspur is a cultivar with a compact habit and many branches that reaches up to 15 in height. It was bred to be more heat-tolerant than other delphiniums. It has an abundance of showy ultramarine blue flowers that appear in the spring. Plant it in small groups or mass it in the middle or back of a border. Fertilize often for optimum performance. Continued blooming or a second bloom is often achieved by removing its spent flowers. It will grow in full sun, but provide some shade in the aft"
+    }
+  },
+  {
+    "plantId": "23237803-c115-4290-a6e6-3bbb2e19d464",
+    "scientificName": "Antirrhinum majus",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Antirrhinum majus",
+      "checkedAt": "2026-11-05T15:38:20.223Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Antirrhinum%20majus",
+      "taxa": [
+        {
+          "id": "1359845",
+          "scientificNameWithoutAuthor": "Antirrhinum majus",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 3172001,
+          "powoId": "799180-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Antirrhinum majus (Common Snapdragon, Garden Snapdragon, Snapdragon) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/antirrhinum-majus/",
+      "checkedAt": "2026-11-05T15:39:05.532584+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "常见观花植物，可用于花坛、庭院或阳台容器，开花表现受季节和光照影响。",
+    "appearanceFeatures": "直立花茎上排列二唇形花，花冠形似张合的嘴。",
+    "light": "全日照至半阴或散射光",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Antirrhinum majus (Common Snapdragon, Garden Snapdragon, Snapdragon) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/antirrhinum-majus/",
+      "checkedAt": "2026-11-05T15:39:05.532584+00:00",
+      "pageSha256": "9840e44f826fb2090c48d661f6dd9016e95dcc8a68dc5d354ebcc089c56e04e8",
+      "sourceExcerpt": "A well-known garden favorite. Genus name comes from the Greek words anti meaning like and rhis meaning a nose or snout in allusion to the appearance of the flower which looks like a dragon s snout. Short-lived tender perennial, grown as annual. Moist, rich, well-drained soil in full to part sun. Avoid overhead watering. Low drought tolerance, languishes in the summer heat. Many color combinations, good in mass plantings; both tall and shorter cultivars available. Makes a good container plant and"
+    }
+  },
+  {
+    "plantId": "25007869-c53a-4735-9ed6-45ad3e1f1972",
+    "scientificName": "Celosia argentea",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Celosia argentea",
+      "checkedAt": "2026-11-05T15:38:19.714Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Celosia%20argentea",
+      "taxa": [
+        {
+          "id": "1363271",
+          "scientificNameWithoutAuthor": "Celosia argentea",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 3085191,
+          "powoId": "316350-2"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Celosia argentea (Celosia Plumosa, Cockscomb, Cockscomb Celosia, Fairy Fountain, Feather Celosia, Feather Cockscomb, Feathered Amaranth, Lagos Spinach, Plumed cockscomb, Plumeflower, Prince of Wales Feather, Quail grass, Red Fox, Red Spinach, Silver Cockscomb, Woolflower) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/celosia-argentea/",
+      "checkedAt": "2026-11-05T15:39:05.440736+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "常见观花植物，可用于花坛、庭院或阳台容器，开花表现受季节和光照影响。",
+    "appearanceFeatures": "直立茎着生卵形至披针形叶，枝端花序可呈羽状或穗状。",
+    "light": "全日照",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Celosia argentea (Celosia Plumosa, Cockscomb, Cockscomb Celosia, Fairy Fountain, Feather Celosia, Feather Cockscomb, Feathered Amaranth, Lagos Spinach, Plumed cockscomb, Plumeflower, Prince of Wales Feather, Quail grass, Red Fox, Red Spinach, Silver Cockscomb, Woolflower) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/celosia-argentea/",
+      "checkedAt": "2026-11-05T15:39:05.440736+00:00",
+      "pageSha256": "53478ecd550fe3f86bc2b9037964c14f32a4118a5575421abea4f068037bab78",
+      "sourceExcerpt": "Plummed cockscomb is a tropical herbaceous annual herb in the amaranth family (Amaranthaceae) native to Africa and is considered a weed in India. The genus name comes from the Greek word for burning and refers to the colorful flame-shaped blooms. The species name means silvery , regarding the shiny, white bracts and tepals. It prefers full sun and amended well-drained soil, but tolerates dry porous soils and thrives in heat and humidity. Deadhead flowers if unwanted reseeding is undesirable. See"
+    }
+  },
+  {
+    "plantId": "61343da8-fef5-4d94-809a-bd69b63daa8f",
+    "scientificName": "Portulaca grandiflora",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Portulaca grandiflora",
+      "checkedAt": "2026-11-05T15:38:19.575Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Portulaca%20grandiflora",
+      "taxa": [
+        {
+          "id": "1383052",
+          "scientificNameWithoutAuthor": "Portulaca grandiflora",
+          "scientificNameAuthorship": "Hook.",
+          "gbifId": 3084700,
+          "powoId": "208592-2"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Portulaca grandiflora (Moss Rose, Portulaca, Purslane, Rose Moss, Sun Plant) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/portulaca-grandiflora/",
+      "checkedAt": "2026-11-05T15:39:06.777423+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "常见观花植物，可用于花坛、庭院或阳台容器，开花表现受季节和光照影响。",
+    "appearanceFeatures": "匍匐或斜生的肉质茎着生细长肉质叶，花色丰富且多在日间开放。",
+    "light": "全日照",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Portulaca grandiflora (Moss Rose, Portulaca, Purslane, Rose Moss, Sun Plant) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/portulaca-grandiflora/",
+      "checkedAt": "2026-11-05T15:39:06.777423+00:00",
+      "pageSha256": "3033a1e5f26aaf979b74337d2690cb510690f7323e62f8eeb4bc192c0d8a847f",
+      "sourceExcerpt": "Moss rose is a low-growing annual native to South America. The plant has succulent leaves that are fleshy and narrow and grows 8 inches tall and 1 foot wide forming a matt. The flowers are red, orange, yellow, white and other pastel colors that come in single, semi-double and double forms. The flowers do not open on cloudy or rainy days and close up from sundown to sun up. This plant has a high drought and heat tolerance and needs to be planted in well-drained sandy or rocky soils in full sun. U"
+    }
+  },
+  {
+    "plantId": "6305750d-b11d-4155-87d9-6319822ac119",
+    "scientificName": "Impatiens walleriana",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Impatiens walleriana",
+      "checkedAt": "2026-11-05T15:38:19.881Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Impatiens%20walleriana",
+      "taxa": [
+        {
+          "id": "1397707",
+          "scientificNameWithoutAuthor": "Impatiens walleriana",
+          "scientificNameAuthorship": "Hook.f.",
+          "gbifId": 2891772,
+          "powoId": "374419-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Impatiens walleriana (Bizzy Lizzy, Busy Lizzy, Common Impatiens, Garden Impatiens, Impatiens, Patience Plant, Patient Lucy, Sultana, Sultan&#x27;s Flower) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/impatiens-walleriana/",
+      "checkedAt": "2026-11-05T15:39:06.904836+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "常见观花植物，可用于花坛、庭院或阳台容器，开花表现受季节和光照影响。",
+    "appearanceFeatures": "多汁茎着生有细齿的卵形叶，花具有距，颜色多样。",
+    "light": "半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Impatiens walleriana (Bizzy Lizzy, Busy Lizzy, Common Impatiens, Garden Impatiens, Impatiens, Patience Plant, Patient Lucy, Sultana, Sultan&#x27;s Flower) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/impatiens-walleriana/",
+      "checkedAt": "2026-11-05T15:39:06.904836+00:00",
+      "pageSha256": "08364ee51ccb25fb3461511e2563a99e068f2f787edfffcfdb8da26aa83fba9a",
+      "sourceExcerpt": "Impatiens are one of the most popular bedding plants and one of the most common shade flowering plants in the United States. Their bright and prolific blooms of white, peach, apricot, pink, and red are present from late spring until the first frost of fall. They are technically herbaceous perennial plants in tropical zones, but they are frequently grown as annuals. They are fast-growing, dense, mounding, or clumping in habit and grow 0.5 to 2 feet tall and equally as wide. Flowers may be bicolor"
+    }
+  },
+  {
+    "plantId": "1cea95d5-7150-4664-871f-64aad9dd1f12",
+    "scientificName": "Brassica rapa",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Brassica rapa",
+      "checkedAt": "2026-11-05T15:38:20.735Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Brassica%20rapa",
+      "taxa": [
+        {
+          "id": "1363906",
+          "scientificNameWithoutAuthor": "Brassica rapa",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 7903057,
+          "powoId": "279485-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "pending",
+      "sourceTitle": null,
+      "sourceUrl": null,
+      "checkedAt": null
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "常见食用作物，适合按其温度、日照和生长空间选择菜畦或容器栽培。",
+    "appearanceFeatures": "基生叶逐渐形成紧实叶球，种级记录不限定具体白菜栽培类型。",
+    "light": "全日照至半阴，视当地热度调整",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "status": "not verified",
+      "note": "未找到可用的物种级园艺来源，资料保留草稿，待后续补证。"
+    }
+  },
+  {
+    "plantId": "0beb0e27-7039-4b2f-85e2-8825eb97de57",
+    "scientificName": "Zea mays",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Zea mays",
+      "checkedAt": "2026-11-05T15:38:20.798Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Zea%20mays",
+      "taxa": [
+        {
+          "id": "1363500",
+          "scientificNameWithoutAuthor": "Zea mays",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 5290052,
+          "powoId": "426810-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Zea mays (Corn, Indian corn, Maize) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/zea-mays/",
+      "checkedAt": "2026-11-05T15:39:07.972029+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "常见食用作物，适合按其温度、日照和生长空间选择菜畦或容器栽培。",
+    "appearanceFeatures": "高大直立茎具宽长叶，顶部形成雄花序，雌花序发育为玉米穗。",
+    "light": "全日照",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Zea mays (Corn, Indian corn, Maize) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/zea-mays/",
+      "checkedAt": "2026-11-05T15:39:07.972029+00:00",
+      "pageSha256": "0fba64ff98aaaf45618596910de1471ce8bf4d57ab6b0ee75b5db5b2593aad02",
+      "sourceExcerpt": "Corn is a warm weather crop and should not be planted until the soil warms up to 60 F. It is one of the taller home garden crops, so locate it where it will not shade out other crops. Plant in full sun, in fertile, well-drained soil. Several rules apply to insure an adequate corn crop: Corn is wind pollinated, and to ensure adequate pollination, sow seeds in several rows to form a square, or on hills with several plants in a circle. A minimum of 12 or more plants is usually necessary. Do not pla"
+    }
+  },
+  {
+    "plantId": "72529fcc-ef96-4923-a39e-475a4f307a41",
+    "scientificName": "Phaseolus vulgaris",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Phaseolus vulgaris",
+      "checkedAt": "2026-11-05T15:38:20.537Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Phaseolus%20vulgaris",
+      "taxa": [
+        {
+          "id": "1394501",
+          "scientificNameWithoutAuthor": "Phaseolus vulgaris",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 5350452,
+          "powoId": "514191-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Phaseolus vulgaris (Bean, Beans, Bush Bean, Green Bean, Green Beans, Pole Bean, Snap Bean, String Bean) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/phaseolus-vulgaris/",
+      "checkedAt": "2026-11-05T15:39:08.199701+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "常见食用作物，适合按其温度、日照和生长空间选择菜畦或容器栽培。",
+    "appearanceFeatures": "三出复叶，蝶形花后形成荚果，荚形与种子颜色随栽培类型变化。",
+    "light": "全日照",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Phaseolus vulgaris (Bean, Beans, Bush Bean, Green Bean, Green Beans, Pole Bean, Snap Bean, String Bean) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/phaseolus-vulgaris/",
+      "checkedAt": "2026-11-05T15:39:08.199701+00:00",
+      "pageSha256": "b7df8e054d818e8912ad2d6cc2d97da3a7b62deba4bec1f4bc9a8866a9e15a90",
+      "sourceExcerpt": "Beans are a warm-season vegetable in the bean family (Fabaceae). They are native to the tropical regions of the Americas. They were domesticated in pre-Columbian times, and hundreds of cultivars have been selected and bred over the years. Some cultivars are adapted to small geographic areas. The epithet, vulgaris , is Latin for common. Beans prefer full sun and fertile, well-drained soils. They may take a climbing, trailing, or bush-like form. Depending on the variety, they will require 6 to 12 "
+    }
+  },
+  {
+    "plantId": "a7a48822-56f5-42e9-b9f6-18a955221f8e",
+    "scientificName": "Brassica oleracea",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Brassica oleracea",
+      "checkedAt": "2026-11-05T15:38:20.879Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Brassica%20oleracea",
+      "taxa": [
+        {
+          "id": "1363909",
+          "scientificNameWithoutAuthor": "Brassica oleracea",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 3042845,
+          "powoId": "279435-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Brassica oleracea (Bresych Gwyllt, Wild Cabbage, Wild Mustard) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/brassica-oleracea/",
+      "checkedAt": "2026-11-05T15:39:08.449060+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "常见食用作物，适合按其温度、日照和生长空间选择菜畦或容器栽培。",
+    "appearanceFeatures": "宽大叶片层层抱合形成叶球，记录按甘蓝种级而不限定单一商品型。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Brassica oleracea (Bresych Gwyllt, Wild Cabbage, Wild Mustard) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/brassica-oleracea/",
+      "checkedAt": "2026-11-05T15:39:08.449060+00:00",
+      "pageSha256": "569552fe685ada25a7bcc805b11b5d34ecccdb3778dd89818a5456d63a495948",
+      "sourceExcerpt": "Wild cabbage is an uncultivated species used to hybridize many cool-weather crops we grow today. It originated in western Europe, and it (along with several close relatives) has been used for hybridization for many centuries. Today the group includes kale, broccoli, cauliflower, collard greens, cabbage and kohlrabi. These crops are referred to as Cole Crops. Wild cabbage is in the mustard family (Brassicaceae). The genus name is Latin for cabbage, while the specific epithet means vegetable/herb."
+    }
+  },
+  {
+    "plantId": "e02f9b67-7840-4f53-ae4c-c94499ce3272",
+    "scientificName": "Cucurbita maxima",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Cucurbita maxima",
+      "checkedAt": "2026-11-05T15:38:21.055Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Cucurbita%20maxima",
+      "taxa": [
+        {
+          "id": "1391483",
+          "scientificNameWithoutAuthor": "Cucurbita maxima",
+          "scientificNameAuthorship": "Duchesne",
+          "gbifId": 2874515,
+          "powoId": "30006538-2"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Cucurbita maxima (Autumn Squash, Buttercup Squash, Hubbard Squash, Marrow, Pumpkin, Squash, Turban Gourd, Winter Squash) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/cucurbita-maxima/",
+      "checkedAt": "2026-11-05T15:39:09.643635+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "常见食用作物，适合按其温度、日照和生长空间选择菜畦或容器栽培。",
+    "appearanceFeatures": "蔓生茎具卷须和大型掌状裂叶，开黄色单性花并结大型果实。",
+    "light": "全日照",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Cucurbita maxima (Autumn Squash, Buttercup Squash, Hubbard Squash, Marrow, Pumpkin, Squash, Turban Gourd, Winter Squash) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/cucurbita-maxima/",
+      "checkedAt": "2026-11-05T15:39:09.643635+00:00",
+      "pageSha256": "efaf47cc3589beaf13b7fd09945a2e5c22209f5239c4f47a793a432d22f199df",
+      "sourceExcerpt": "Winter squash or pumpkin is a warm-season annual vine in the Cucurbitaceae (cucumber) family native to South America. Cucurbita is Latin for gourd and maxima is Latin for largest, because these plants can produce fruits that are very, very large. This large vine trails along the ground or climbs up structures using tendrils. It has yellow fruit-bearing flowers that are produced in the fall. The fruits have a mild flavor and can be fried, baked, added to pasta, used in soups, and more. Winter squ"
+    }
+  },
+  {
+    "plantId": "62cc5a98-900f-447c-afe2-c5571d83d190",
+    "scientificName": "Ipomoea batatas",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Ipomoea batatas",
+      "checkedAt": "2026-11-05T15:38:21.112Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Ipomoea%20batatas",
+      "taxa": [
+        {
+          "id": "1364028",
+          "scientificNameWithoutAuthor": "Ipomoea batatas",
+          "scientificNameAuthorship": "(L.) Lam.",
+          "gbifId": 2928551,
+          "powoId": "1101088-2"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Ipomoea batatas (Edible Sweetpotato, Ornamental Sweetpotato, Sweetpotato, Sweet Potato Vine, Sweetpotato Vine) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/ipomoea-batatas/",
+      "checkedAt": "2026-11-05T15:39:09.620850+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "常见食用作物，适合按其温度、日照和生长空间选择菜畦或容器栽培。",
+    "appearanceFeatures": "匍匐茎节处易生根，叶形多变，地下形成膨大的贮藏根。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Ipomoea batatas (Edible Sweetpotato, Ornamental Sweetpotato, Sweetpotato, Sweet Potato Vine, Sweetpotato Vine) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/ipomoea-batatas/",
+      "checkedAt": "2026-11-05T15:39:09.620850+00:00",
+      "pageSha256": "f6895a5f0e9430e16882b11907f4cd13453e3bd851ba94aba5719e60c708e55a",
+      "sourceExcerpt": "Sweetpotato is a vigorous-growing, annual ground cover or vine in the morning glory family (Convolvulaceae) and is native to Mexico, Central America and northern South America. Its name is often misspelled as Sweet Potato. It is only distantly related to potato ( Solanum tuberosum ), which is in the nightshade family, Solanaceae. Sweetpotato is grown both for ornamental foliage and for edible roots. Cultivars bred for fancy foliage rarely produce good edible roots, and vegetable crop cultivars l"
+    }
+  },
+  {
+    "plantId": "10ad66ce-78d2-4414-baaf-8362e411093c",
+    "scientificName": "Asparagus setaceus",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Asparagus setaceus",
+      "checkedAt": "2026-11-05T15:38:21.882Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Asparagus%20setaceus",
+      "taxa": [
+        {
+          "id": "1363267",
+          "scientificNameWithoutAuthor": "Asparagus setaceus",
+          "scientificNameAuthorship": "(Kunth) Jessop",
+          "gbifId": 2768686,
+          "powoId": "531312-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Asparagus setaceus (Asparagus Fern, Climbing Asparagus, Common Asparagus Fern, Feathered Asparagus Fern, Ferny Asparagus, Lace Fern, Plumosa Fern) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/asparagus-setaceus/",
+      "checkedAt": "2026-11-05T15:39:09.659216+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "观叶草本植物，适合室内盆栽或温暖地区庭院栽培。",
+    "appearanceFeatures": "细枝上密生针状叶状枝，植株轻盈并可攀附支撑物。",
+    "light": "半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Asparagus setaceus (Asparagus Fern, Climbing Asparagus, Common Asparagus Fern, Feathered Asparagus Fern, Ferny Asparagus, Lace Fern, Plumosa Fern) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/asparagus-setaceus/",
+      "checkedAt": "2026-11-05T15:39:09.659216+00:00",
+      "pageSha256": "6b99ba0cac873bb0f72cc73d7827610b45b0ff0052cdb39708e7e7de8c042b62",
+      "sourceExcerpt": "This delicate and elegant plant is commonly known as the asparagus fern, lace fern, or plumosa fern and is native to Central Ethiopia to South Africa. It has been distributed to many parts of the world and is used as an ornamental houseplant, ground cover, or climbing vine. It has a feathery display and fine needle-like leaves. The asparagus ferns are not ferns at all, they actually belong to the asparagus family (Asparagaceae). The common names are derived from their appearance since the plumes"
+    }
+  },
+  {
+    "plantId": "470fb83c-810a-4e98-8f32-05bae6df7e97",
+    "scientificName": "Soleirolia soleirolii",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Soleirolia soleirolii",
+      "checkedAt": "2026-11-05T15:38:21.369Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Soleirolia%20soleirolii",
+      "taxa": [
+        {
+          "id": "1360828",
+          "scientificNameWithoutAuthor": "Soleirolia soleirolii",
+          "scientificNameAuthorship": "(Req.) Dandy",
+          "gbifId": 2984366,
+          "powoId": "856545-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Soleirolia soleirolii (Angel&#x27;s Tears, Baby&#x27;s Tears, Corsican Carpet, Irish Moss, Japanese Moss, Mind-Your-Own-Business, Paddys Wig, Peace-in-the-Home, Pollyanna Vine) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/soleirolia-soleirolii/",
+      "checkedAt": "2026-11-05T15:39:10.806043+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "观叶草本植物，适合室内盆栽或温暖地区庭院栽培。",
+    "appearanceFeatures": "匍匐茎密生细小圆形叶，沿土面扩展形成紧密绿毯。",
+    "light": "半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Soleirolia soleirolii (Angel&#x27;s Tears, Baby&#x27;s Tears, Corsican Carpet, Irish Moss, Japanese Moss, Mind-Your-Own-Business, Paddys Wig, Peace-in-the-Home, Pollyanna Vine) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/soleirolia-soleirolii/",
+      "checkedAt": "2026-11-05T15:39:10.806043+00:00",
+      "pageSha256": "96acd2b3700785146e906ffcd1f1db5ed85ac48b92203220a6c3e9b75e990b53",
+      "sourceExcerpt": "Angel tears or baby tears is a low-growing ground cover resembling moss that honors Joseph Francois Soleirol, who acquired a large collection of specimens of Corsican plants. The common name Baby s Tears is derived from the tiny, rounded leaves. It is in the nettle family. This creeping perennial ground cover is evergreen in zones 10 above and will die back but rejuvenate in zone 9. While it can spread up to 6 wide in the garden, as a houseplant, it won t go far. Not having contact with the soil"
+    }
+  },
+  {
+    "plantId": "c9841d62-e1d1-4aed-8814-c8d2d76b9a38",
+    "scientificName": "Begonia maculata",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Begonia maculata",
+      "checkedAt": "2026-11-05T15:38:21.433Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Begonia%20maculata",
+      "taxa": [
+        {
+          "id": "1409393",
+          "scientificNameWithoutAuthor": "Begonia maculata",
+          "scientificNameAuthorship": "Raddi",
+          "gbifId": 7303475,
+          "powoId": "105130-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "pending",
+      "sourceTitle": null,
+      "sourceUrl": null,
+      "checkedAt": null
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "观叶草本植物，适合室内盆栽或温暖地区庭院栽培。",
+    "appearanceFeatures": "直立竹节状茎上着生不对称长叶，叶面散布银白色圆点。",
+    "light": "全日照至半阴，视当地热度调整",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "status": "not verified",
+      "note": "未找到可用的物种级园艺来源，资料保留草稿，待后续补证。"
+    }
+  },
+  {
+    "plantId": "22eb4112-d162-4ac7-9279-5e3379028c2d",
+    "scientificName": "Goeppertia zebrina",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Goeppertia zebrina",
+      "checkedAt": "2026-11-05T15:38:21.880Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Goeppertia%20zebrina",
+      "taxa": [
+        {
+          "id": "1730334",
+          "scientificNameWithoutAuthor": "Goeppertia zebrina",
+          "scientificNameAuthorship": "(Sims) Nees",
+          "gbifId": 5302914,
+          "powoId": "796810-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Goeppertia zebrina (Peacock Plant, Zebra Plant, Zebra Prayer Plant) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/goeppertia-zebrina/",
+      "checkedAt": "2026-11-05T15:39:12.618807+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "观叶草本植物，适合室内盆栽或温暖地区庭院栽培。",
+    "appearanceFeatures": "椭圆形叶片具有深浅相间的羽状斑纹，叶柄从根部抽出。",
+    "light": "半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Goeppertia zebrina (Peacock Plant, Zebra Plant, Zebra Prayer Plant) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/goeppertia-zebrina/",
+      "checkedAt": "2026-11-05T15:39:12.618807+00:00",
+      "pageSha256": "4fb6ddd2fe1d8d9c340ddd2056df9f6ac170b8a4e01712f7cc3cf946eb546048",
+      "sourceExcerpt": "Zebra plant is an evergreen rhizomatous perennial in the prayer plant family (Marantaceae) that is native to the tropical rainforests of Brazil. It has become popular as a houseplant in temperate areas and won the Garden of Merit Award from the Royal Horticultural Society. In its natural habitat, the plant thrives under the canopy of trees in a warm and humid environment. The plant will grow up to 3 feet tall and wide as a house plant, and it has large velvety leaves that are dark green with lig"
+    }
+  },
+  {
+    "plantId": "6b5bd9e8-a33d-46ea-9ba2-5c0c1fd99776",
+    "scientificName": "Goeppertia orbifolia",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Goeppertia orbifolia",
+      "checkedAt": "2026-11-05T15:38:22.398Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Goeppertia%20orbifolia",
+      "taxa": [
+        {
+          "id": "1731474",
+          "scientificNameWithoutAuthor": "Goeppertia orbifolia",
+          "scientificNameAuthorship": "(Linden) Borchs. & S.Suárez",
+          "gbifId": 7476815,
+          "powoId": "60461168-2"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Goeppertia orbifolia | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/goeppertia-orbifolia/",
+      "checkedAt": "2026-11-05T15:39:11.614921+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "观叶草本植物，适合室内盆栽或温暖地区庭院栽培。",
+    "appearanceFeatures": "宽圆叶片带银绿色与深绿色相间的环状条纹。",
+    "light": "半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Goeppertia orbifolia | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/goeppertia-orbifolia/",
+      "checkedAt": "2026-11-05T15:39:11.614921+00:00",
+      "pageSha256": "880093e511ad7bc7f1c6c5daee52a79b1c1b3e78862a80a14e9d9979e64d7c94",
+      "sourceExcerpt": "Goeppertia orbifolia is herbaceous perennial evergreen that is native to the rainforests of Eastern Brazil and has large glossy green leaves with silver-green striped round leaves. It makes a strikingly beautiful houseplant. This species is a member of the prayer plant family (Marantaceae). The specific epithet, orbifolia , is derived from the Latin word orbis, meaning a circle and folium, meaning leaf. Caring for this plant requires bright, indirect light or partial shade and moist, well-draine"
+    }
+  },
+  {
+    "plantId": "8ab1b048-6e7c-45b3-967f-85fba1fdab20",
+    "scientificName": "Alocasia zebrina",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Alocasia zebrina",
+      "checkedAt": "2026-11-05T15:38:22.200Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Alocasia%20zebrina",
+      "taxa": [
+        {
+          "id": "1856623",
+          "scientificNameWithoutAuthor": "Alocasia zebrina",
+          "scientificNameAuthorship": "G.W.Johnson & R.Hogg",
+          "gbifId": 12293197,
+          "powoId": "77177187-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "pending",
+      "sourceTitle": null,
+      "sourceUrl": null,
+      "checkedAt": null
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "观叶草本植物，适合室内盆栽或温暖地区庭院栽培。",
+    "appearanceFeatures": "箭形叶片挺立，叶柄具有鲜明的深浅相间斑纹。",
+    "light": "全日照至半阴，视当地热度调整",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "status": "not verified",
+      "note": "未找到可用的物种级园艺来源，资料保留草稿，待后续补证。"
+    }
+  },
+  {
+    "plantId": "f12bde3c-ce95-45bc-a5b5-df33e39286cb",
+    "scientificName": "Abelia × grandiflora",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Abelia × grandiflora",
+      "checkedAt": "2026-11-05T15:38:22.196Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Abelia%20%C3%97%20grandiflora",
+      "taxa": [
+        {
+          "id": "1423427",
+          "scientificNameWithoutAuthor": "Abelia × grandiflora",
+          "scientificNameAuthorship": "(Rovelli ex André) Rehder",
+          "gbifId": 5334278,
+          "powoId": "148201-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Abelia x grandiflora (Glossy Abelia) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/abelia-x-grandiflora/",
+      "checkedAt": "2026-11-05T15:39:13.280660+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "庭院常见木本观赏植物，可用于花境、绿篱或大型容器。",
+    "appearanceFeatures": "枝条拱垂且叶片小而有光泽，枝端形成钟状至管状花。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Abelia x grandiflora (Glossy Abelia) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/abelia-x-grandiflora/",
+      "checkedAt": "2026-11-05T15:39:13.280660+00:00",
+      "pageSha256": "05114ced33525a568938d29ae4a3fda2221b63cae45e23a56050e93748dcb91b",
+      "sourceExcerpt": "Glossy abelia is a medium-sized, round, dense, multi-stemmed, hybrid shrub in the honeysuckle family (Caprifoliaceae). It is a cross between Abelia chinensis and Abelia uniflora. This hybrid is believed to have originated in Italy and was officially introduced in 1886. Since the hybridization, over 30 cultivars have been developed. The genus name, Abelia , honors Dr. Clark Abel, an English physician, and naturalist from the 18th century. The specific epithet, grandiflora, means large-flowered. T"
+    }
+  },
+  {
+    "plantId": "d354a25c-d701-4637-99c8-3cc55bd45164",
+    "scientificName": "Weigela florida",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Weigela florida",
+      "checkedAt": "2026-11-05T15:38:22.491Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Weigela%20florida",
+      "taxa": [
+        {
+          "id": "1418395",
+          "scientificNameWithoutAuthor": "Weigela florida",
+          "scientificNameAuthorship": "(Bunge) A. DC.",
+          "gbifId": 2888730,
+          "powoId": null
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Weigela florida (Old Fashioned Weiglea, Weigela) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/weigela-florida/",
+      "checkedAt": "2026-11-05T15:39:13.219621+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "庭院常见木本观赏植物，可用于花境、绿篱或大型容器。",
+    "appearanceFeatures": "落叶灌木具拱形枝条，春末至初夏枝上着生漏斗状花。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Weigela florida (Old Fashioned Weiglea, Weigela) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/weigela-florida/",
+      "checkedAt": "2026-11-05T15:39:13.219621+00:00",
+      "pageSha256": "48fdacc24c4a7fdc88fa43b67c18291be3ccb7b0645b7bc1648542ed5ab9fb04",
+      "sourceExcerpt": "Weigela is in the Caprifoliaceae (honeysuckle) family and is native to North China, Korea, and Japan. The epithet, florida, means floriferous. This plant is a dense, rounded, deciduous shrub with somewhat coarse branches that tend to arch toward the ground as the shrub reaches maturity. For approximately two weeks, in each mid-to late spring, after the leaves emerge, showy, rosy-colored tubular flowers cover the shrub and have a repeat, though sparser, performance in mid to late summer. Plant th"
+    }
+  },
+  {
+    "plantId": "175f1aa3-215d-4b9e-b3c3-dcd97eab8c5b",
+    "scientificName": "Spiraea japonica",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Spiraea japonica",
+      "checkedAt": "2026-11-05T15:38:22.513Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Spiraea%20japonica",
+      "taxa": [
+        {
+          "id": "1877605",
+          "scientificNameWithoutAuthor": "Spiraea japonica",
+          "scientificNameAuthorship": "Cambess.",
+          "gbifId": 7677654,
+          "powoId": "2993235-4"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Spiraea japonica (Bumald Spiraea, Japanese Meadowsweet, Japanese Spiraea) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/spiraea-japonica/",
+      "checkedAt": "2026-11-05T15:39:14.064367+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "庭院常见木本观赏植物，可用于花境、绿篱或大型容器。",
+    "appearanceFeatures": "枝叶密集，叶缘有锯齿，枝端形成粉色或白色小花簇。",
+    "light": "全日照至半阴或散射光",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Spiraea japonica (Bumald Spiraea, Japanese Meadowsweet, Japanese Spiraea) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/spiraea-japonica/",
+      "checkedAt": "2026-11-05T15:39:14.064367+00:00",
+      "pageSha256": "95e824cad3453638d0145cb4fa4f358e2cfd0a7a4f1ef0501254de8dfaaea813",
+      "sourceExcerpt": "This plant is problematic and alternatives should be considered. Japanese spiraea is a deciduous, perennial shrub in the rose family (Rosaceae) that escapes and naturalizes in North Carolina. It is native to Japan and China. It grows in full sun to partial shade and well-drained, alkaline soil, typically reaching 4 to 6 feet high and wide. It is a rapid grower and can be an aggressive self-seeder. It has escaped gardens and naturalized in many areas of the eastern United States. It also reproduc"
+    }
+  },
+  {
+    "plantId": "19cfbe62-acb7-44ec-9ccb-e834b4f67ca7",
+    "scientificName": "Hydrangea paniculata",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Hydrangea paniculata",
+      "checkedAt": "2026-11-05T15:38:22.718Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Hydrangea%20paniculata",
+      "taxa": [
+        {
+          "id": "1393223",
+          "scientificNameWithoutAuthor": "Hydrangea paniculata",
+          "scientificNameAuthorship": "Siebold",
+          "gbifId": 2985995,
+          "powoId": "791653-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Hydrangea paniculata (Panicle Hydrangea, Peegee Hydrangea) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/hydrangea-paniculata/",
+      "checkedAt": "2026-11-05T15:39:14.540334+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "庭院常见木本观赏植物，可用于花境、绿篱或大型容器。",
+    "appearanceFeatures": "卵形叶对生或近对生，枝端形成明显圆锥形花序。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Hydrangea paniculata (Panicle Hydrangea, Peegee Hydrangea) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/hydrangea-paniculata/",
+      "checkedAt": "2026-11-05T15:39:14.540334+00:00",
+      "pageSha256": "08a63e5caada08f6dcf16e672fe261e31c787fcb44321627746646dae603ce86",
+      "sourceExcerpt": "Panicle hydrangea is a woody, perennial shrub or small tree and a member of the hydrangea family (Hydrangeaceae). It is native to eastern and southern China, Japan, Sakhalin, Taiwan and Kuril Island. The specific epithet, paniculata , references the paniculate arrangement of the flowers. The panicle hydrangea is more tolerant of full sun than other hydrangea species. It prefers morning sun and afternoon shade, neutral to acidic soil with good drainage, and is air pollution-tolerant and cold hard"
+    }
+  },
+  {
+    "plantId": "bfa6acdf-2a2d-432b-af80-47427ce48895",
+    "scientificName": "Lagerstroemia indica",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Lagerstroemia indica",
+      "checkedAt": "2026-11-05T15:38:22.797Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Lagerstroemia%20indica",
+      "taxa": [
+        {
+          "id": "1376509",
+          "scientificNameWithoutAuthor": "Lagerstroemia indica",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 3188725,
+          "powoId": "553576-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Lagerstroemia indica (Common Crape Myrtle, Crape Flower, Crape Myrtle, Crepe Myrtle, Indian Crape Myrtle, Lilac of the South) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/lagerstroemia-indica/",
+      "checkedAt": "2026-11-05T15:39:15.260659+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "庭院常见木本观赏植物，可用于花境、绿篱或大型容器。",
+    "appearanceFeatures": "树皮平滑并逐年脱落，夏季枝端形成皱褶状花簇。",
+    "light": "全日照",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Lagerstroemia indica (Common Crape Myrtle, Crape Flower, Crape Myrtle, Crepe Myrtle, Indian Crape Myrtle, Lilac of the South) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/lagerstroemia-indica/",
+      "checkedAt": "2026-11-05T15:39:15.260659+00:00",
+      "pageSha256": "4e305e9e7a1e886684e6f6c0570ec6937c0dfeae3aa1962628b52b007840e785",
+      "sourceExcerpt": "Common crape myrtle is a deciduous, erect, multi-trunked, tree or shrub in the loosestrife family (Lythraceae). It is native to the Philippines, Japan and central Himalayas to southern China and Indochina. The genus name honors Magnus von Lagerstroem, who was a Swedish botanist and director of the Swedish East Indies Company. The species epithet references its native origin in India. The common name is derived from the crepe paper-like petals and the bark and foliage features that are similar to"
+    }
+  },
+  {
+    "plantId": "b39e2217-fe64-406b-9522-87a0cc893303",
+    "scientificName": "Photinia × fraseri",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Photinia × fraseri",
+      "checkedAt": "2026-11-05T15:38:24.000Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Photinia%20%C3%97%20fraseri",
+      "taxa": [
+        {
+          "id": "1780757",
+          "scientificNameWithoutAuthor": "Photinia × fraseri",
+          "scientificNameAuthorship": "Dress",
+          "gbifId": 5363854,
+          "powoId": "727384-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Photinia x fraseri (Fraser Photinia, Fraser&#x27;s Photinia, Red-Tip Photinia, Red Top) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/photinia-x-fraseri/",
+      "checkedAt": "2026-11-05T15:39:15.290687+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "庭院常见木本观赏植物，可用于花境、绿篱或大型容器。",
+    "appearanceFeatures": "新叶常呈红色后转绿，枝端可形成白色小花簇。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Photinia x fraseri (Fraser Photinia, Fraser&#x27;s Photinia, Red-Tip Photinia, Red Top) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/photinia-x-fraseri/",
+      "checkedAt": "2026-11-05T15:39:15.290687+00:00",
+      "pageSha256": "ac1530e5845d660898b06c4a444023ea847bed0d346aaedbc22e0e76bf51e580",
+      "sourceExcerpt": "Fraser s Photinia is a large, broadleaf evergreen shrub or small tree in the rose family that matures up to 20 feet tall with a 15 foot spread. It is a hybrid of P. glabra and P. serratifolia , developed in Birmingham by Fraser Nursery, and popular in the American south. This plant blooms in mid-spring, after P. serratifolia and before P. glabra. This plant is also intermediate in size between the two. Fraser Photinia s fragrant white blooms are offensive to many people. New foliage is a colorfu"
+    }
+  },
+  {
+    "plantId": "3f2b2364-de73-4605-b5c9-0d6290ef6264",
+    "scientificName": "Pachysandra terminalis",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Pachysandra terminalis",
+      "checkedAt": "2026-11-05T15:38:23.032Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Pachysandra%20terminalis",
+      "taxa": [
+        {
+          "id": "1398597",
+          "scientificNameWithoutAuthor": "Pachysandra terminalis",
+          "scientificNameAuthorship": "Siebold & Zucc.",
+          "gbifId": 2984676,
+          "powoId": "353208-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Pachysandra terminalis (Carpet Box, Japanese Pachysandra, Japanese Spurge, Pachysandra) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/pachysandra-terminalis/",
+      "checkedAt": "2026-11-05T15:39:16.074433+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "低矮或匍匐生长植物，可用于花境边缘、地表覆盖或容器垂吊。",
+    "appearanceFeatures": "地下根茎横向扩展成片，叶片聚生于茎端，春季开小型白花。",
+    "light": "半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Pachysandra terminalis (Carpet Box, Japanese Pachysandra, Japanese Spurge, Pachysandra) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/pachysandra-terminalis/",
+      "checkedAt": "2026-11-05T15:39:16.074433+00:00",
+      "pageSha256": "ac5cb390798ecbb41931c0c8f595c9ab6a2ce29bd6673d9dfd2953808f1e1531",
+      "sourceExcerpt": "Japanese spurge or Pachysandra is a broadleaf evergreen, herbaceous perennial or ground cover in the boxwood family (Buxaceae). Native to Japan and northern central China, it grows 6 to 12 inches high and 12 to 18 inches wide. Pachysandra does best in part shade to full shade and is intolerant of full sun as foliage bleaches in full sun or high wind. It thrives in the sun-dappled shade that large trees provide. Even though pachysandra can tolerate drought conditions, it prefers moist, slightly a"
+    }
+  },
+  {
+    "plantId": "1600fb8f-bc86-408d-9dca-d020a26bb64d",
+    "scientificName": "Mazus miquelii",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Mazus miquelii",
+      "checkedAt": "2026-11-05T15:38:23.145Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Mazus%20miquelii",
+      "taxa": [
+        {
+          "id": "1434583",
+          "scientificNameWithoutAuthor": "Mazus miquelii",
+          "scientificNameAuthorship": "Makino",
+          "gbifId": 3171302,
+          "powoId": "805560-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Mazus miquelii (Creeping Mazus, Mazus, Miquel&#x27;s Mazus) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/mazus-miquelii/",
+      "checkedAt": "2026-11-05T15:39:16.424830+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "低矮或匍匐生长植物，可用于花境边缘、地表覆盖或容器垂吊。",
+    "appearanceFeatures": "低矮匍匐茎节处生根，叶片小，花冠呈淡紫色并有黄色斑纹。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Mazus miquelii (Creeping Mazus, Mazus, Miquel&#x27;s Mazus) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/mazus-miquelii/",
+      "checkedAt": "2026-11-05T15:39:16.424830+00:00",
+      "pageSha256": "bf3dd9c4b91c1f02ca6f50fd048b6fcc5728ced4f74d43098433e39f93ebf7d9",
+      "sourceExcerpt": "Mazus is a low-growing, flowering, herbaceous perennial in the Snapdragon family (Scrophulariaceae), native to the Himalayas. The Genus name comes from the Greek for teat. M. miquelii is also known as M. reptans . Mazus is a small plant, reaching a height of 3 inches, but with a spread between 6 and 12 inches. It forms a dense carpet of foliage that remains green into the fall and produces small clusters of purple flowers. The plant produces small lavender blossoms in early summer. Mazus does we"
+    }
+  },
+  {
+    "plantId": "d819c9ee-07cf-481c-a173-59d332939252",
+    "scientificName": "Sagina subulata",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Sagina subulata",
+      "checkedAt": "2026-11-05T15:38:23.338Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Sagina%20subulata",
+      "taxa": [
+        {
+          "id": "1395719",
+          "scientificNameWithoutAuthor": "Sagina subulata",
+          "scientificNameAuthorship": "(Sw.) C.Presl",
+          "gbifId": 3085400,
+          "powoId": null
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Sagina subulata (Heath Pearlwort, Irish Moss, Lawn Pearlwort, Lawn Spurrey, Scottish Moss) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/sagina-subulata/",
+      "checkedAt": "2026-11-05T15:39:16.664481+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "低矮或匍匐生长植物，可用于花境边缘、地表覆盖或容器垂吊。",
+    "appearanceFeatures": "细密针状叶形成低矮垫层，春夏可开小型白花。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Sagina subulata (Heath Pearlwort, Irish Moss, Lawn Pearlwort, Lawn Spurrey, Scottish Moss) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/sagina-subulata/",
+      "checkedAt": "2026-11-05T15:39:16.664481+00:00",
+      "pageSha256": "c156b9bfb13b3bc44f6f2268d24d2ff469c29745d392c52bcfcb5a669106d2df",
+      "sourceExcerpt": "Irish Moss is a low growing, evergreen, perennial groundcover in the carnation family with deep green moss-like leaves and tiny white daisy-like flowers. It forms a dense mat of slender stems that root at the nodes and tolerates moderate foot traffic. Irish Moss does best in moderately fertile, acid to neutral soil, in full sun with some midday shade. It does not do well in intense heat or drought and over watering can be a problem. The plant prefers cool, moist conditions and rocky or sandy soi"
+    }
+  },
+  {
+    "plantId": "3f626c09-4254-4b8f-942b-2cc5b1a4ab71",
+    "scientificName": "Lysimachia nummularia",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Lysimachia nummularia",
+      "checkedAt": "2026-11-05T15:38:23.458Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Lysimachia%20nummularia",
+      "taxa": [
+        {
+          "id": "1393708",
+          "scientificNameWithoutAuthor": "Lysimachia nummularia",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 3169379,
+          "powoId": "701260-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Lysimachia nummularia (Creeping Charlie, Creeping Jenny, Creeping Joan, Creeping Yellow Loosestrife, Moneywort, Running Jenny, Wandering Jenny, Wandering Sailor) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/lysimachia-nummularia/",
+      "checkedAt": "2026-11-05T15:39:17.237776+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "低矮或匍匐生长植物，可用于花境边缘、地表覆盖或容器垂吊。",
+    "appearanceFeatures": "匍匐茎节处生根，圆形对生叶间开黄色五瓣花。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Lysimachia nummularia (Creeping Charlie, Creeping Jenny, Creeping Joan, Creeping Yellow Loosestrife, Moneywort, Running Jenny, Wandering Jenny, Wandering Sailor) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/lysimachia-nummularia/",
+      "checkedAt": "2026-11-05T15:39:17.237776+00:00",
+      "pageSha256": "96fe21f573980b1527d66d67073dd6367206a8aff5af6b85f7a088dbd3111b88",
+      "sourceExcerpt": "Creeping Jenny is an herbaceous, semi-evergreen perennial in the Primulaceae (primrose) family native to Europe and temperate Asia. It was introduced in North America as an ornamental ground cover, then naturalized. Genus name honors King Lysimachus (661-281 B.C.), Macedonian King of Thrace and is derived from lysimacheios which was the ancient Greek name of a plant in this grouping. The Latin specific epithet nummularia means like a coin , referring to the shape of the leaves. Only a few inches"
+    }
+  },
+  {
+    "plantId": "e6c57079-1bb4-4dbb-968e-7e7815b74b4f",
+    "scientificName": "Euonymus fortunei",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Euonymus fortunei",
+      "checkedAt": "2026-11-05T15:38:23.659Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Euonymus%20fortunei",
+      "taxa": [
+        {
+          "id": "1392235",
+          "scientificNameWithoutAuthor": "Euonymus fortunei",
+          "scientificNameAuthorship": "(Turcz.) Hand.-Mazz.",
+          "gbifId": 3169137,
+          "powoId": "160893-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Euonymus fortunei (Climbing Euonymus, Japanese Euonymus, Spreading Euonymus, Wintercreeper, Winter Creeper, Wintercreeper Euonymus) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/euonymus-fortunei/",
+      "checkedAt": "2026-11-05T15:39:18.001501+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "低矮或匍匐生长植物，可用于花境边缘、地表覆盖或容器垂吊。",
+    "appearanceFeatures": "茎匍匐或攀援生长，叶片对生，部分园艺类型具有斑叶。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Euonymus fortunei (Climbing Euonymus, Japanese Euonymus, Spreading Euonymus, Wintercreeper, Winter Creeper, Wintercreeper Euonymus) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/euonymus-fortunei/",
+      "checkedAt": "2026-11-05T15:39:18.001501+00:00",
+      "pageSha256": "390d7f74b850043caf0573b2b6865e4ceeb3fc0ff033fa8075da945fb5345c03",
+      "sourceExcerpt": "Climbing Euonymus is an evergreen woody vine or sprawling shrub. The juvenile form is a procumbent, vine-like groundcover; and the adult form is a shrub. In nature, it can often be found in woods and thickets in the low mountains of its native Japan. Some cultivars (see list) may be more of a vine and others more of a small shrub, but keep in mind that the vining cultivars and some shrubs can both be invasive. Climbing Euonymus readily escapes into native forests and has no trouble dominating me"
+    }
+  },
+  {
+    "plantId": "8f974aa3-90b2-469b-83b2-782ecb2bf177",
+    "scientificName": "Trifolium repens",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Trifolium repens",
+      "checkedAt": "2026-11-05T15:38:24.319Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Trifolium%20repens",
+      "taxa": [
+        {
+          "id": "1363740",
+          "scientificNameWithoutAuthor": "Trifolium repens",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 5358748,
+          "powoId": "523626-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Trifolium repens (Clover, Dutch Clover, Ladino Clover, Purple Dutch Clover, Shamrock, White Clover, White Sweet Clover) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/trifolium-repens/",
+      "checkedAt": "2026-11-05T15:39:18.353715+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "低矮或匍匐生长植物，可用于花境边缘、地表覆盖或容器垂吊。",
+    "appearanceFeatures": "匍匐茎节处生根，三出复叶中央常见浅色斑，花为白色球状花序。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Trifolium repens (Clover, Dutch Clover, Ladino Clover, Purple Dutch Clover, Shamrock, White Clover, White Sweet Clover) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/trifolium-repens/",
+      "checkedAt": "2026-11-05T15:39:18.353715+00:00",
+      "pageSha256": "eb8d9434bc4b67aaa7c06a0873f0595bc4279e66b82a4e5bfdec739613070c30",
+      "sourceExcerpt": "Trifolium repens , or Clover, is a prostrate, mat-forming herbaceous perennial about four to six inches tall and spreading 12 inches or more by stems that root freely. Known for its 3-leaflet pattern and white flower heads, it is commonly considered a lawn weed. Native to Europe, the plant has naturalized to lawns and roadsides and fields throughout North America, and is frequently used as a cover crop due to its ability to fix nitrogen in the soil. It also provides good forage for livestock. Ea"
+    }
+  },
+  {
+    "plantId": "de87f114-f494-4be6-83d3-a7e102921a47",
+    "scientificName": "Zingiber officinale",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Zingiber officinale",
+      "checkedAt": "2026-11-05T15:38:23.971Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Zingiber%20officinale",
+      "taxa": [
+        {
+          "id": "1383765",
+          "scientificNameWithoutAuthor": "Zingiber officinale",
+          "scientificNameAuthorship": "Roscoe",
+          "gbifId": 2757280,
+          "powoId": "798372-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Zingiber officinale (Canton, Canton Ginger, Common Ginger, Cooking Ginger, Ginger, Stem Ginger, True Ginger) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/zingiber-officinale/",
+      "checkedAt": "2026-11-05T15:39:18.884099+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "芳香或食用草本，可用于家庭菜园、阳台容器或香草种植。",
+    "appearanceFeatures": "直立假茎着生披针形叶，地下根茎芳香且可作香料。",
+    "light": "半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Zingiber officinale (Canton, Canton Ginger, Common Ginger, Cooking Ginger, Ginger, Stem Ginger, True Ginger) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/zingiber-officinale/",
+      "checkedAt": "2026-11-05T15:39:18.884099+00:00",
+      "pageSha256": "5b6088ba616ccc3b95687ade5d7bf4f448db397e0d223e58168a33863e318557",
+      "sourceExcerpt": "While it thrives in zones 9-12, you can grow this tropical plant in a container or as an annual in cooler climates. It is known as the true ginger as it is one of the oldest known spice. Its origin is in the tropics of Asia. It is best known by its aroma and pungent flavor. Propagation can be accomplished by purchasing fresh ginger rhizomes in the spring and cut into short pieces, each with several healthy buds. After the cuts have dried out for a day or two plant them just below the surface of "
+    }
+  },
+  {
+    "plantId": "c27906bc-8064-4029-aff2-204ae1eefdc8",
+    "scientificName": "Curcuma longa",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Curcuma longa",
+      "checkedAt": "2026-11-05T15:38:24.271Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Curcuma%20longa",
+      "taxa": [
+        {
+          "id": "1383769",
+          "scientificNameWithoutAuthor": "Curcuma longa",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 2757624,
+          "powoId": "796451-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Curcuma longa (Common Turmeric, Turmeric) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/curcuma-longa/",
+      "checkedAt": "2026-11-05T15:39:19.124619+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "芳香或食用草本，可用于家庭菜园、阳台容器或香草种植。",
+    "appearanceFeatures": "宽披针形叶从地下根茎抽生，根茎内部呈黄色至橙黄色。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Curcuma longa (Common Turmeric, Turmeric) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/curcuma-longa/",
+      "checkedAt": "2026-11-05T15:39:19.124619+00:00",
+      "pageSha256": "6a81b44dfc065246697d1aebf68f2fb32970652603a39ca15cef4cd6ed771e07",
+      "sourceExcerpt": "Common Turmeric is an upright perennial herb with rhizomes that grow about 40 inches tall. The rhizomes are the source of a bright yellow-orange culinary spice. The bright yellow dye in the rhizomes is frequently used in food coloring, fabrics, and paints. It also has been used for medicinal purposes in India, Pakistan, and Bangladesh. The plant is a member of the Zingiberaceae or ginger family. Common Turmeric is the main ingredient in curry powder. The exact origin of turmeric is thought to be"
+    }
+  },
+  {
+    "plantId": "73efa74d-75af-4ef0-80b7-1bdab13d2415",
+    "scientificName": "Allium fistulosum",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Allium fistulosum",
+      "checkedAt": "2026-11-05T15:38:24.293Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Allium%20fistulosum",
+      "taxa": [
+        {
+          "id": "1382101",
+          "scientificNameWithoutAuthor": "Allium fistulosum",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 2856504,
+          "powoId": "528046-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "pending",
+      "sourceTitle": null,
+      "sourceUrl": null,
+      "checkedAt": null
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "芳香或食用草本，可用于家庭菜园、阳台容器或香草种植。",
+    "appearanceFeatures": "叶片中空细长，基部形成白色假茎，成熟后抽出球形花序。",
+    "light": "全日照至半阴，视当地热度调整",
+    "watering": "保持基质适度湿润、避免长期积水；按季节和盆土干湿调整供水。",
+    "horticultureSource": {
+      "status": "not verified",
+      "note": "未找到可用的物种级园艺来源，资料保留草稿，待后续补证。"
+    }
+  },
+  {
+    "plantId": "a10ea06f-0aed-41a3-93ba-2b65542bb220",
+    "scientificName": "Brassica juncea",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Brassica juncea",
+      "checkedAt": "2026-11-05T15:38:25.771Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Brassica%20juncea",
+      "taxa": [
+        {
+          "id": "1363904",
+          "scientificNameWithoutAuthor": "Brassica juncea",
+          "scientificNameAuthorship": "(L.) Czern.",
+          "gbifId": 3042751,
+          "powoId": "60442520-2"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Brassica juncea (Brown Mustard, Brown Mustards, Chinese Mustard, Chinese Mustards, Giant Red Mustard, Indian Mustard, Indian Mustards, Leaf Mustard, Leaf Mustards, Mustard Greens, Oriental Mustard, Oriental Mustards, Vegetable Mustard, Vegetable Mustards) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/brassica-juncea/",
+      "checkedAt": "2026-11-05T15:39:20.229883+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "芳香或食用草本，可用于家庭菜园、阳台容器或香草种植。",
+    "appearanceFeatures": "叶形可宽大、皱褶或具裂片，形态随叶用或茎用栽培类型变化。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Brassica juncea (Brown Mustard, Brown Mustards, Chinese Mustard, Chinese Mustards, Giant Red Mustard, Indian Mustard, Indian Mustards, Leaf Mustard, Leaf Mustards, Mustard Greens, Oriental Mustard, Oriental Mustards, Vegetable Mustard, Vegetable Mustards) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/brassica-juncea/",
+      "checkedAt": "2026-11-05T15:39:20.229883+00:00",
+      "pageSha256": "5a53e8be2d97e79c8f1086df47f7123175480a6991b0c14b8df81e813afa44ce",
+      "sourceExcerpt": "Brown Mustard is an annual herb in the mustard family (Brassicaceae). The genus name Brassica is Latin for cabbage. It has been introduced to all of North America from Eurasia. It is listed as invasive in some mid-western states. Mustard grows best in full sun to part shade and well-drained, rich, consistently moist soil. Watering early in the day will allow the plant to dry before nightfall and reduce the chance of fungal diseases. As a cool-season plant, it does best in the fall and spring, bo"
+    }
+  },
+  {
+    "plantId": "63f28697-adef-496e-b038-8cd26d7395ba",
+    "scientificName": "Mentha × piperita",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Mentha × piperita",
+      "checkedAt": "2026-11-05T15:38:24.647Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Mentha%20%C3%97%20piperita",
+      "taxa": [
+        {
+          "id": "1560691",
+          "scientificNameWithoutAuthor": "Mentha × piperita",
+          "scientificNameAuthorship": "L.",
+          "gbifId": 8707933,
+          "powoId": "450969-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Mentha x piperita (Peppermint, Peppermints) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/mentha-x-piperita/",
+      "checkedAt": "2026-11-05T15:39:20.518633+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "芳香或食用草本，可用于家庭菜园、阳台容器或香草种植。",
+    "appearanceFeatures": "方形茎上对生锯齿叶，揉搓后具有明显薄荷香气。",
+    "light": "全日照至半阴或散射光",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Mentha x piperita (Peppermint, Peppermints) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/mentha-x-piperita/",
+      "checkedAt": "2026-11-05T15:39:20.518633+00:00",
+      "pageSha256": "2b044811912bcc6d774392f416e3c45a9d74ca55ef61cea2552804807e0b5ecf",
+      "sourceExcerpt": "Peppermint is an upright perennial herb that is a cross between watermint ( M. aquatica ) and spearmint ( M. spicata ) . It is most commonly grown as a culinary or medicinal herb and/or a ground cover. It spreads by rhizomes forming an attractive, though aggressive, ground cover. It is tolerant of various light levels and soils except for dry ones but prefers rich moist soil in partial shade. It does best in neutral soils of 6.0-7.0 pH. It does surprisingly well in shadier sites, only needing a "
+    }
+  },
+  {
+    "plantId": "e394e4ff-2414-4ced-a87d-c88df045aea8",
+    "scientificName": "Foeniculum vulgare",
+    "plantnet": {
+      "status": "confirmed",
+      "scientificName": "Foeniculum vulgare",
+      "checkedAt": "2026-11-05T15:38:24.649Z",
+      "sourceUrl": "https://my-api.plantnet.org/v2/species?prefix=Foeniculum%20vulgare",
+      "taxa": [
+        {
+          "id": "1360739",
+          "scientificNameWithoutAuthor": "Foeniculum vulgare",
+          "scientificNameAuthorship": "Mill.",
+          "gbifId": 3034922,
+          "powoId": "842680-1"
+        }
+      ]
+    },
+    "horticulture": {
+      "status": "approved",
+      "sourceTitle": "Foeniculum vulgare (Bronze Fennel, Fennel, Finocchio, Florence Fennel, Sweet Fennel) | North Carolina Extension Gardener Plant Toolbox",
+      "sourceUrl": "https://plants.ces.ncsu.edu/plants/foeniculum-vulgare/",
+      "checkedAt": "2026-11-05T15:39:21.376673+00:00"
+    },
+    "scope": "species-level identification; garden profile where available",
+    "summary": "芳香或食用草本，可用于家庭菜园、阳台容器或香草种植。",
+    "appearanceFeatures": "叶片细裂如丝，茎端形成黄色复伞形花序，果实具香气。",
+    "light": "全日照",
+    "watering": "依来源所述保持土壤湿润并确保排水良好。",
+    "horticultureSource": {
+      "name": "NC State Extension Plant Toolbox",
+      "title": "Foeniculum vulgare (Bronze Fennel, Fennel, Finocchio, Florence Fennel, Sweet Fennel) | North Carolina Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/foeniculum-vulgare/",
+      "checkedAt": "2026-11-05T15:39:21.376673+00:00",
+      "pageSha256": "b56cb5c33094c93cfe4f502e220912354e882ad20590b7ae0ff2d7a88375e6c8",
+      "sourceExcerpt": "Fennel is an evergreen, herbaceous perennial, normally grown as an annual, with flowers and leaves that have a sweet, mildly anise or licorice flavor. The flowers bloom in summer and are often used in egg and fish dishes. The aromatic seeds are also put to use in cakes and breads. It has an upright, branching habit and can grow 3 to 5 feet high with aromatic, yellow-green leaves and tiny yellow flowers. The flowers are very attractive to butterflies and fennel is a larval plant for certain swall"
+    }
+  }
+]
