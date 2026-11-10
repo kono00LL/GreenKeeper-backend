@@ -71,6 +71,15 @@ function initializePlantDatabase(db) {
       CREATE INDEX IF NOT EXISTS idx_plant_sources_plant
         ON plant_sources(plant_id);
 
+      CREATE TABLE IF NOT EXISTS user_plants (
+        user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+        plant_id TEXT NOT NULL REFERENCES plants(id) ON DELETE CASCADE,
+        created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (user_id, plant_id)
+      );
+      CREATE INDEX IF NOT EXISTS idx_user_plants_plant_id
+        ON user_plants(plant_id, user_id);
+
     `);
 
     initializePlantImageDatabase(db);

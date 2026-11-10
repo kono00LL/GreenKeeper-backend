@@ -23,6 +23,11 @@ function createPlantRepository(db) {
     'JOIN plant_categories c ON c.id = r.category_id ' +
     'WHERE c.slug = ? ORDER BY p.name_zh COLLATE NOCASE, p.id',
   );
+  const plantsForUser = db.prepare(
+    'SELECT ' + listColumns + ' FROM user_plants up ' +
+    'JOIN plants p ON p.id = up.plant_id ' +
+    'WHERE up.user_id = ? ORDER BY up.created_at DESC, p.name_zh COLLATE NOCASE, p.id',
+  );
   const plantById = db.prepare(
     'SELECT id, name_zh AS nameZh, name_en AS nameEn, scientific_name AS scientificName, ' +
     'identity_status AS identityStatus, summary, appearance_features AS appearanceFeatures, ' +
@@ -37,6 +42,8 @@ function createPlantRepository(db) {
   );
   const aliases = db.prepare('SELECT alias AS name, language FROM plant_aliases WHERE plant_id = ? ORDER BY alias');
   const identificationRecords = db.prepare('SELECT id, name_zh AS nameZh, scientific_name AS scientificName, identity_status AS identityStatus, publication_status AS publicationStatus FROM plants');
+  const addUserPlant = db.prepare('INSERT OR IGNORE INTO user_plants (user_id, plant_id) VALUES (?, ?)');
+  const removeUserPlant = db.prepare('DELETE FROM user_plants WHERE user_id = ? AND plant_id = ?');
   function imageForPlant(id, includeSource = false) {
     const image = coverImage.get(id);
     return image ? {
@@ -61,6 +68,19 @@ function createPlantRepository(db) {
     }),
     hasCategory: (slug) => Boolean(findCategory.get(slug)),
     list: (slug) => (slug === undefined ? allPlants.all() : plantsForCategory.all(slug)).map((plant) => withCategories(plant)),
+    userPlants: (userId) => plantsForUser.all(userId).map((plant) => withCategories(plant)),
+    addUserPlant(userId, plantId) {
+      const summary = db.prepare('SELECT ' + listColumns + ' FROM plants p WHERE p.id = ?').get(plantId);
+      if (!summary) return null;
+      addUserPlant.run(userId, plantId);
+      return withCategories(summary);
+    },
+    removeUserPlant(userId, plantId) {
+      const exists = db.prepare('SELECT 1 FROM plants WHERE id = ?').get(plantId);
+      if (!exists) return null;
+      removeUserPlant.run(userId, plantId);
+      return { removed: true };
+    },
     detail(id) {
       const plant = plantById.get(id);
       return plant ? { ...withCategories(plant, true), aliases: aliases.all(id) } : null;

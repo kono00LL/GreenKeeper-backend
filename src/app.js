@@ -3,6 +3,7 @@ const { createIdentificationRouter } = require('./identifications/routes');
 const { createPostRouter } = require('./posts/routes');
 const { createPlantRouter } = require('./plants/routes');
 const { createPlantRepository } = require('./plants/repository');
+const { createUserPlantsRouter } = require('./plants/user-routes');
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
@@ -187,6 +188,7 @@ function createApp({ db, identificationClient = createPlantnetClient({ apiKey: p
   app.use('/uploads', express.static(uploadDirectory, { index: false, dotfiles: 'deny', setHeaders: (res) => res.set('X-Content-Type-Options', 'nosniff') }));
   app.use(createImageReadRouter(imageStorage));
   app.use('/plants', createPlantRouter({ db }));
+  app.use(createUserPlantsRouter({ db, requireAccess }));
   app.use(createPostRouter({ db, requireAccess }));
   app.use((req, res) => res.status(404).json({ error: { code: 'NOT_FOUND', message: 'Route not found' } }));
   app.use((error, req, res, next) => {
