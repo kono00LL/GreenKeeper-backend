@@ -15,9 +15,23 @@ function createUserPlantsRouter({ db, requireAccess }) {
     res.json({ plant });
   });
 
-  router.delete('/me/plants/:plantId', requireAccess, (req, res) => {
-    const result = repository.removeUserPlant(req.user.user_id, req.params.plantId);
-    if (!result) return res.status(404).json({ error: { code: 'PLANT_NOT_FOUND', message: 'Plant not found' } });
+  router.patch('/me/plants/:instanceId', requireAccess, (req, res) => {
+    const value = req.body?.customName;
+    if (typeof value !== 'string') {
+      return res.status(400).json({ error: { code: 'INVALID_CUSTOM_NAME', message: 'Custom name must be a string' } });
+    }
+    const customName = value.trim();
+    if ([...customName].length > 30) {
+      return res.status(400).json({ error: { code: 'INVALID_CUSTOM_NAME', message: 'Custom name must be at most 30 characters' } });
+    }
+    const plant = repository.renameUserPlant(req.user.user_id, req.params.instanceId, customName || null);
+    if (!plant) return res.status(404).json({ error: { code: 'PLANT_INSTANCE_NOT_FOUND', message: 'Plant instance not found' } });
+    res.json({ plant });
+  });
+
+  router.delete('/me/plants/:instanceId', requireAccess, (req, res) => {
+    const result = repository.removeUserPlant(req.user.user_id, req.params.instanceId);
+    if (!result) return res.status(404).json({ error: { code: 'PLANT_INSTANCE_NOT_FOUND', message: 'Plant instance not found' } });
     res.json(result);
   });
 

@@ -1,3 +1,5 @@
+const { randomUUID } = require('node:crypto');
+
 function createPlantRepository(db) {
   const categories = db.prepare(
     'SELECT c.id, c.slug, c.name_zh AS nameZh, c.name_en AS nameEn, COUNT(r.plant_id) AS plantCount ' +
@@ -24,7 +26,7 @@ function createPlantRepository(db) {
     'WHERE c.slug = ? ORDER BY p.name_zh COLLATE NOCASE, p.id',
   );
   const plantsForUser = db.prepare(
-    'SELECT ' + listColumns + ' FROM user_plants up ' +
+    'SELECT up.instance_id AS instanceId, up.created_at AS createdAt, up.custom_name AS customName, ' + listColumns + ' FROM user_plants up ' +
     'JOIN plants p ON p.id = up.plant_id ' +
     'WHERE up.user_id = ? ORDER BY up.created_at DESC, p.name_zh COLLATE NOCASE, p.id',
   );
@@ -42,8 +44,13 @@ function createPlantRepository(db) {
   );
   const aliases = db.prepare('SELECT alias AS name, language FROM plant_aliases WHERE plant_id = ? ORDER BY alias');
   const identificationRecords = db.prepare('SELECT id, name_zh AS nameZh, scientific_name AS scientificName, identity_status AS identityStatus, publication_status AS publicationStatus FROM plants');
-  const addUserPlant = db.prepare('INSERT OR IGNORE INTO user_plants (user_id, plant_id) VALUES (?, ?)');
-  const removeUserPlant = db.prepare('DELETE FROM user_plants WHERE user_id = ? AND plant_id = ?');
+  const addUserPlant = db.prepare('INSERT INTO user_plants (instance_id, user_id, plant_id, created_at) VALUES (?, ?, ?, ?)');
+  const userPlantByInstance = db.prepare(
+    'SELECT up.instance_id AS instanceId, up.created_at AS createdAt, up.custom_name AS customName, ' + listColumns + ' FROM user_plants up ' +
+    'JOIN plants p ON p.id = up.plant_id WHERE up.user_id = ? AND up.instance_id = ?',
+  );
+  const updateUserPlantName = db.prepare('UPDATE user_plants SET custom_name = ? WHERE user_id = ? AND instance_id = ?');
+  const removeUserPlant = db.prepare('DELETE FROM user_plants WHERE user_id = ? AND instance_id = ?');
   function imageForPlant(id, includeSource = false) {
     const image = coverImage.get(id);
     return image ? {
@@ -72,14 +79,21 @@ function createPlantRepository(db) {
     addUserPlant(userId, plantId) {
       const summary = db.prepare('SELECT ' + listColumns + ' FROM plants p WHERE p.id = ?').get(plantId);
       if (!summary) return null;
-      addUserPlant.run(userId, plantId);
-      return withCategories(summary);
+      const instanceId = randomUUID();
+      addUserPlant.run(instanceId, userId, plantId, new Date().toISOString());
+      return withCategories(userPlantByInstance.get(userId, instanceId));
     },
-    removeUserPlant(userId, plantId) {
-      const exists = db.prepare('SELECT 1 FROM plants WHERE id = ?').get(plantId);
-      if (!exists) return null;
-      removeUserPlant.run(userId, plantId);
+    removeUserPlant(userId, instanceId) {
+      const owned = userPlantByInstance.get(userId, instanceId);
+      if (!owned) return null;
+      removeUserPlant.run(userId, instanceId);
       return { removed: true };
+    },
+    renameUserPlant(userId, instanceId, customName) {
+      const owned = userPlantByInstance.get(userId, instanceId);
+      if (!owned) return null;
+      updateUserPlantName.run(customName, userId, instanceId);
+      return withCategories(userPlantByInstance.get(userId, instanceId));
     },
     detail(id) {
       const plant = plantById.get(id);

@@ -114,6 +114,61 @@ test('adds the identity review state when upgrading an existing plant table', ()
   }
 });
 
+test('migrates legacy user plant associations into repeatable instances', () => {
+  const legacyDb = new Database(':memory:');
+  try {
+    legacyDb.exec(`
+      CREATE TABLE users (id TEXT PRIMARY KEY, email TEXT NOT NULL);
+      CREATE TABLE plants (id TEXT PRIMARY KEY NOT NULL, scientific_name TEXT NOT NULL, name_zh TEXT NOT NULL);
+      CREATE TABLE user_plants (
+        user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+        plant_id TEXT NOT NULL REFERENCES plants(id) ON DELETE CASCADE,
+        created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (user_id, plant_id)
+      );
+      INSERT INTO users VALUES ('owner', 'owner@example.com');
+      INSERT INTO plants VALUES ('plant-1', 'Testus plantus', '测试植物');
+      INSERT INTO user_plants (user_id, plant_id, created_at) VALUES ('owner', 'plant-1', '2026-11-10T01:00:00.000Z');
+    `);
+    const { initializePlantDatabase } = require('../src/plants/database');
+    initializePlantDatabase(legacyDb);
+    const columns = legacyDb.prepare('PRAGMA table_info(user_plants)').all().map((column) => column.name);
+    assert.deepEqual(columns.slice(0, 4), ['instance_id', 'user_id', 'plant_id', 'created_at']);
+    assert.ok(columns.includes('custom_name'));
+    assert.deepEqual(legacyDb.prepare('SELECT user_id, plant_id, created_at FROM user_plants').all(), [{
+      user_id: 'owner', plant_id: 'plant-1', created_at: '2026-11-10T01:00:00.000Z',
+    }]);
+    initializePlantDatabase(legacyDb);
+    assert.equal(legacyDb.prepare('SELECT COUNT(*) AS count FROM user_plants').get().count, 1);
+  } finally {
+    legacyDb.close();
+  }
+});
+
+test('adds the custom name column to an existing instance table without changing instances', () => {
+  const legacyDb = new Database(':memory:');
+  try {
+    legacyDb.exec(`
+      CREATE TABLE users (id TEXT PRIMARY KEY);
+      CREATE TABLE plants (id TEXT PRIMARY KEY NOT NULL, scientific_name TEXT NOT NULL, name_zh TEXT NOT NULL);
+      CREATE TABLE user_plants (
+        instance_id TEXT PRIMARY KEY NOT NULL, user_id TEXT NOT NULL REFERENCES users(id),
+        plant_id TEXT NOT NULL REFERENCES plants(id), created_at TEXT NOT NULL
+      );
+      INSERT INTO users VALUES ('owner');
+      INSERT INTO plants VALUES ('plant-1', 'Testus plantus', '测试植物');
+      INSERT INTO user_plants VALUES ('instance-1', 'owner', 'plant-1', '2026-11-10T01:00:00.000Z');
+    `);
+    const { initializePlantDatabase } = require('../src/plants/database');
+    initializePlantDatabase(legacyDb);
+    assert.deepEqual(legacyDb.prepare('SELECT instance_id, user_id, plant_id, created_at, custom_name FROM user_plants').get(), {
+      instance_id: 'instance-1', user_id: 'owner', plant_id: 'plant-1', created_at: '2026-11-10T01:00:00.000Z', custom_name: null,
+    });
+  } finally {
+    legacyDb.close();
+  }
+});
+
 test('supports multiple aliases and categories while rejecting repeated associations', () => {
   const id = insertPlant();
   const other = insertPlant();
