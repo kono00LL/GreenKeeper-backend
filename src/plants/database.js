@@ -1,3 +1,5 @@
+const { randomUUID } = require('node:crypto');
+
 const categories = [
   { id: 'ferns', slug: 'ferns', nameZh: '蕨类', nameEn: 'Ferns', sortOrder: 0 },
   { id: 'cacti', slug: 'cacti', nameZh: '仙人掌', nameEn: 'Cacti', sortOrder: 1 },
@@ -71,6 +73,41 @@ function initializePlantDatabase(db) {
       CREATE INDEX IF NOT EXISTS idx_plant_sources_plant
         ON plant_sources(plant_id);
 
+      CREATE TABLE IF NOT EXISTS user_plants (
+        instance_id TEXT PRIMARY KEY NOT NULL,
+        user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+        plant_id TEXT NOT NULL REFERENCES plants(id) ON DELETE CASCADE,
+        created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        custom_name TEXT
+      );
+    `);
+
+    const userPlantColumns = db.prepare('PRAGMA table_info(user_plants)').all();
+    if (!userPlantColumns.some((column) => column.name === 'instance_id')) {
+      db.exec(`
+        ALTER TABLE user_plants RENAME TO user_plants_legacy;
+        CREATE TABLE user_plants (
+          instance_id TEXT PRIMARY KEY NOT NULL,
+          user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+          plant_id TEXT NOT NULL REFERENCES plants(id) ON DELETE CASCADE,
+          created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+          custom_name TEXT
+        );
+      `);
+      const legacyRows = db.prepare('SELECT user_id, plant_id, created_at FROM user_plants_legacy').all();
+      const insertLegacy = db.prepare('INSERT INTO user_plants (instance_id, user_id, plant_id, created_at) VALUES (?, ?, ?, ?)');
+      for (const row of legacyRows) insertLegacy.run(randomUUID(), row.user_id, row.plant_id, row.created_at);
+      db.exec('DROP TABLE user_plants_legacy');
+    }
+    const currentColumns = db.prepare('PRAGMA table_info(user_plants)').all();
+    if (!currentColumns.some((column) => column.name === 'custom_name')) {
+      db.exec('ALTER TABLE user_plants ADD COLUMN custom_name TEXT');
+    }
+    db.exec(`
+      CREATE INDEX IF NOT EXISTS idx_user_plants_user_created
+        ON user_plants(user_id, created_at DESC);
+      CREATE INDEX IF NOT EXISTS idx_user_plants_plant_id
+        ON user_plants(plant_id, user_id);
     `);
 
     initializePlantImageDatabase(db);
