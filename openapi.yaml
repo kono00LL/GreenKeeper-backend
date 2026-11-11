@@ -32,6 +32,52 @@ tags:
   - name: 收藏
     description: 管理当前用户的文章收藏并查看收藏列表。
 paths:
+  /auth/wechat/android:
+    post:
+      tags: [用户认证]
+      operationId: loginWithWeChatAndroid
+      summary: 使用 Android 微信授权登录或注册
+      description: >-
+        客户端通过微信原生 SDK 获得一次性 code 后提交。服务端使用仅保存在后端的 AppSecret 向微信换取身份，首次授权自动创建无邮箱账户；
+        相同 openid 后续登录复用原账户。服务端返回 GreenKeeper 自己的 JWT 会话。
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [code]
+              properties:
+                code: { type: string, minLength: 1, maxLength: 512 }
+      responses:
+        '200':
+          description: 微信登录或注册成功。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/AuthResponse' }
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          description: 微信授权 code 无效、过期或已使用。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '403':
+          description: 账户当前不可用。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '502':
+          description: 微信服务暂时不可用或返回异常。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
+        '503':
+          description: 微信登录服务未配置。
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ApiError' }
   /auth/email-code:
     post:
       tags: [用户认证]
@@ -1084,6 +1130,7 @@ components:
         user_email:
           type: string
           format: email
+          nullable: true
           description: 已规范化为小写的用户邮箱。
         user_name:
           type: string

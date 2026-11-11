@@ -4,6 +4,7 @@ const { createPostRouter } = require('./posts/routes');
 const { createPlantRouter } = require('./plants/routes');
 const { createPlantRepository } = require('./plants/repository');
 const { createUserPlantsRouter } = require('./plants/user-routes');
+const { createRemindersRouter } = require('./reminders/routes');
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
@@ -17,10 +18,13 @@ const { createRequestId, requestPath, errorDetails } = require('./diagnostics');
 const { createEmailAuthRouter } = require('./auth/routes');
 const { createEmailAuthService } = require('./auth/email-code-service');
 const { createTencentSesEmailSender } = require('./auth/tencent-ses');
+const { createWechatClient } = require('./auth/wechat-client');
+const { createWechatAuthService } = require('./auth/wechat-auth-service');
+const { createWechatAuthRouter } = require('./auth/wechat-routes');
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-function createApp({ db, identificationClient = createPlantnetClient({ apiKey: process.env.PLANTNET_API_KEY || '' }), aiClient = createDeepSeekClient(), emailSender = createTencentSesEmailSender(), emailCodeSecret = process.env.EMAIL_CODE_SECRET, uploadDirectory = path.join(process.env.DATA_DIRECTORY || path.join(__dirname, '..', 'data'), 'uploads'), uploadTempDirectory = path.join(path.dirname(uploadDirectory), '.uploads-tmp'), imageStorage = createImageStorage(uploadDirectory), jwtSecret = process.env.JWT_SECRET || 'greenkeeper-local-development-secret', accessTokenTtl = process.env.ACCESS_TOKEN_TTL || '15m', refreshTokenTtl = process.env.REFRESH_TOKEN_TTL || '7d', defaultAvatarUrl = process.env.DEFAULT_AVATAR_URL || null, corsOrigins = (process.env.CORS_ORIGINS || 'http://localhost:8081,http://127.0.0.1:8081').split(',').map(origin => origin.trim()).filter(Boolean) }) {
+function createApp({ db, identificationClient = createPlantnetClient({ apiKey: process.env.PLANTNET_API_KEY || '' }), aiClient = createDeepSeekClient(), emailSender = createTencentSesEmailSender(), emailCodeSecret = process.env.EMAIL_CODE_SECRET, wechatAppId = process.env.WECHAT_APP_ID, wechatAppSecret = process.env.WECHAT_APP_SECRET, wechatClient = createWechatClient({ appId: wechatAppId, appSecret: wechatAppSecret }), uploadDirectory = path.join(process.env.DATA_DIRECTORY || path.join(__dirname, '..', 'data'), 'uploads'), uploadTempDirectory = path.join(path.dirname(uploadDirectory), '.uploads-tmp'), imageStorage = createImageStorage(uploadDirectory), jwtSecret = process.env.JWT_SECRET || 'greenkeeper-local-development-secret', accessTokenTtl = process.env.ACCESS_TOKEN_TTL || '15m', refreshTokenTtl = process.env.REFRESH_TOKEN_TTL || '7d', defaultAvatarUrl = process.env.DEFAULT_AVATAR_URL || null, corsOrigins = (process.env.CORS_ORIGINS || 'http://localhost:8081,http://127.0.0.1:8081').split(',').map(origin => origin.trim()).filter(Boolean) }) {
   const app = express();
   const development = process.env.NODE_ENV !== 'production';
   const requestLogging = development || process.env.DEBUG === '1';
@@ -53,7 +57,7 @@ function createApp({ db, identificationClient = createPlantnetClient({ apiKey: p
     res.vary('Origin');
     if (origin && corsOrigins.includes(origin)) {
       res.set('Access-Control-Allow-Origin', origin);
-      res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, OPTIONS');
+      res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
       res.set('Access-Control-Allow-Headers', 'Authorization, Content-Type, X-Request-ID');
       res.set('Access-Control-Expose-Headers', 'X-Request-ID');
       if (req.method === 'OPTIONS') return res.sendStatus(204);
@@ -181,6 +185,17 @@ function createApp({ db, identificationClient = createPlantnetClient({ apiKey: p
     status: user.status,
     last_login_at: user.last_login_at,
   }) }));
+  const wechatAuthService = createWechatAuthService({ db, wechatClient });
+  app.use(createWechatAuthRouter({ service: wechatAuthService, createAuthResponse: (user) => authResponse({
+    user_id: user.id,
+    user_email: user.email,
+    user_name: user.user_name,
+    avatar_url: user.avatar_url,
+    gender: user.gender,
+    created_time: user.created_at,
+    status: user.status,
+    last_login_at: user.last_login_at,
+  }) }));
 
   app.use(createIdentificationRouter({ requireAccess, uploadTempDirectory, client: identificationClient, plantRepository: createPlantRepository(db) }));
   app.use(createAiRouter({ requireAccess, client: aiClient, plantRepository: createPlantRepository(db) }));
@@ -189,6 +204,7 @@ function createApp({ db, identificationClient = createPlantnetClient({ apiKey: p
   app.use(createImageReadRouter(imageStorage));
   app.use('/plants', createPlantRouter({ db }));
   app.use(createUserPlantsRouter({ db, requireAccess }));
+  app.use(createRemindersRouter({ db, requireAccess }));
   app.use(createPostRouter({ db, requireAccess }));
   app.use((req, res) => res.status(404).json({ error: { code: 'NOT_FOUND', message: 'Route not found' } }));
   app.use((error, req, res, next) => {

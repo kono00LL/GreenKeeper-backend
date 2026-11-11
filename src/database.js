@@ -1,5 +1,6 @@
 const { randomUUID } = require('node:crypto');
 const { initializePlantDatabase } = require('./plants/database');
+const { initializeReminderDatabase } = require('./reminders/database');
 
 const seedPosts = [
   { category: 'article', title: '为室内植物建立稳定的浇水节奏', excerpt: '观察土壤和光照，比固定日历更能帮助你判断植物何时需要水。', content: '先检查盆土表层和花盆重量，再决定是否浇水。不同植物、季节和光照环境的需水量都不同。', coverImage: 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=80' },
@@ -66,9 +67,10 @@ function addColumnIfMissing(db, table, column, definition) {
   if (!columns.some((item) => item.name === column)) db.exec(`ALTER TABLE ${table} ADD COLUMN ${column} ${definition}`);
 }
 
-function allowPasswordlessUsers(db) {
+function migrateUsersForPasswordlessAuth(db) {
   const passwordHash = db.prepare('PRAGMA table_info(users)').all().find((column) => column.name === 'password_hash');
-  if (!passwordHash || passwordHash.notnull === 0) return;
+  const email = db.prepare('PRAGMA table_info(users)').all().find((column) => column.name === 'email');
+  if ((!passwordHash || passwordHash.notnull === 0) && (!email || email.notnull === 0)) return;
 
   db.pragma('foreign_keys = OFF');
   try {
@@ -76,7 +78,7 @@ function allowPasswordlessUsers(db) {
       db.exec(`
         CREATE TABLE users_passwordless_migration (
           id TEXT PRIMARY KEY,
-          email TEXT NOT NULL COLLATE NOCASE UNIQUE,
+          email TEXT COLLATE NOCASE UNIQUE,
           password_hash TEXT,
           user_name TEXT DEFAULT '匿名用户',
           avatar_url TEXT,
@@ -102,7 +104,7 @@ function initializeDatabase(db) {
   db.pragma('foreign_keys = ON');
   db.exec(`
     CREATE TABLE IF NOT EXISTS users (
-      id TEXT PRIMARY KEY, email TEXT NOT NULL COLLATE NOCASE UNIQUE,
+      id TEXT PRIMARY KEY, email TEXT COLLATE NOCASE UNIQUE,
       password_hash TEXT,
       user_name TEXT DEFAULT '匿名用户', avatar_url TEXT,
       gender TEXT NOT NULL DEFAULT 'private' CHECK (gender IN ('male', 'female', 'private')),
@@ -139,8 +141,15 @@ function initializeDatabase(db) {
   addColumnIfMissing(db, 'users', 'last_login_at', 'TEXT');
   addColumnIfMissing(db, 'users', 'gender', "TEXT NOT NULL DEFAULT 'private' CHECK (gender IN ('male', 'female', 'private'))");
   db.prepare("UPDATE users SET gender = 'private' WHERE gender IS NULL OR gender NOT IN ('male', 'female', 'private')").run();
-  allowPasswordlessUsers(db);
+  migrateUsersForPasswordlessAuth(db);
   db.exec(`
+    CREATE TABLE IF NOT EXISTS wechat_accounts (
+      user_id TEXT PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
+      openid TEXT NOT NULL UNIQUE,
+      unionid TEXT,
+      created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+    );
+    CREATE INDEX IF NOT EXISTS idx_wechat_accounts_unionid ON wechat_accounts(unionid);
     CREATE TABLE IF NOT EXISTS email_verification_codes (
       id TEXT PRIMARY KEY,
       email TEXT NOT NULL COLLATE NOCASE,
@@ -167,6 +176,7 @@ function initializeDatabase(db) {
   db.prepare("UPDATE posts SET category = 'article' WHERE category IS NULL OR category NOT IN ('article', 'encyclopedia')").run();
 
   initializePlantDatabase(db);
+  initializeReminderDatabase(db);
 
   const insert = db.prepare(insertPostSql);
   if (db.prepare('SELECT COUNT(*) AS count FROM posts').get().count === 0) {
